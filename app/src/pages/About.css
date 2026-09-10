@@ -1,0 +1,323 @@
+/* /about mirrors the current production standalone page. */
+.ab-about {
+  padding: 150px 20px;
+}
+
+.ab-container {
+  max-width: 1380px;
+  margin: 0 auto;
+}
+
+.ab-about h1,
+.ab-about h2 {
+  color: #111;
+  font-family: Montserrat, "Roboto Flex", "Roboto", Arial, sans-serif;
+  font-weight: 700;
+}
+
+.ab-about h3,
+.ab-about h4 {
+  color: #111;
+}
+
+.ab-hero {
+  text-align: center;
+  margin-bottom: 80px;
+}
+
+.ab-hero h1 {
+  font-size: 3.2rem;
+  line-height: 1.2;
+}
+
+.ab-hero h1 span {
+  color: var(--primary-color, #9acd32);
+}
+
+.ab-hero p {
+  max-width: 800px;
+  margin: 20px auto;
+  color: #111;
+  font-size: 1.2rem;
+  line-height: 1.6;
+}
+
+.ab-about .btn {
+  border: none;
+  border-radius: 10px;
+  background: var(--primary-color, #9acd32);
+  color: #fff;
+  padding: 14px 30px;
+  font-size: 1.1rem;
+  transition: background-color .3s;
+}
+
+.ab-about .btn:hover {
+  background: #7ab72a;
+}
+
+.ab-goals {
+  margin-bottom: 80px;
+  text-align: center;
+}
+
+.ab-goals h2,
+.ab-demand h2,
+.ab-why h2,
+.ab-campuses h2 {
+  margin-bottom: 40px;
+}
+
+.ab-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 30px;
+  margin-top: 30px;
+}
+
+.ab-card {
+  background: #f9f9f9;
+  border-radius: 16px;
+  padding: 30px;
+  text-align: center;
+}
+
+.ab-goals .ab-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.ab-goals .ab-card img {
+  width: 70px;
+  margin-bottom: 15px;
+}
+
+.ab-card h3 {
+  margin-bottom: 10px;
+  font-size: 1.3rem;
+}
+
+.ab-card p {
+  color: #555;
+}
+
+.ab-demand {
+  margin: 80px 0;
+}
+
+.ab-demand h2,
+.ab-why,
+.ab-campuses {
+  text-align: center;
+}
+
+.ab-demand-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+}
+
+.ab-demand-card {
+  border-radius: 16px;
+  padding: 30px;
+}
+
+.ab-demand-card h3 {
+  margin-bottom: 15px;
+}
+
+.ab-demand-card.dark {
+  background: linear-gradient(135deg, #000 21%, #7cba27);
+  color: #fff;
+}
+
+.ab-demand-card.dark h3,
+.ab-demand-card.dark p {
+  color: #fff;
+}
+
+.ab-demand-card.light {
+  background: #f9f9f9;
+  color: #222;
+}
+
+.ab-why {
+  margin: 100px 0;
+}
+
+.ab-why h2 {
+  font-size: 2.2rem;
+  margin-bottom: 50px;
+}
+
+.ab-why-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 40px;
+}
+
+.ab-why .ab-card {
+  background: #fff;
+  border-radius: 20px;
+  padding: 20px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, .08);
+}
+
+.ab-why .ab-card img {
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  object-fit: cover;
+  border-radius: 12px;
+  margin-bottom: 15px;
+}
+
+.ab-why .ab-card h3 {
+  font-size: 1.4rem;
+}
+
+.ab-why .ab-card p {
+  color: #444;
+  font-size: 1rem;
+}
+
+.ab-campuses {
+  margin: 80px 0;
+}
+
+.ab-teachers {
+  margin: 100px 0;
+}
+
+.ab-teachers-head {
+  margin-bottom: 35px;
+  text-align: center;
+}
+
+.ab-teachers-head p {
+  margin: 0 0 9px;
+  color: #7cba27;
+  font-size: .78rem;
+  font-weight: 700;
+  letter-spacing: .12em;
+  text-transform: uppercase;
+}
+
+.ab-teachers-head h2 {
+  margin: 0;
+  font-size: 2.2rem;
+}
+
+.ab-teacher-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 24px;
+}
+
+.ab-teacher-card {
+  overflow: hidden;
+  border-radius: 20px;
+  background: #fff;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, .08);
+}
+
+.ab-teacher-card > img,
+.ab-teacher-placeholder {
+  display: grid;
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  place-items: center;
+  background: linear-gradient(135deg, #1a1a1a, #6c9f25);
+  color: #fff;
+  font-size: 4rem;
+  font-weight: 700;
+  object-fit: cover;
+}
+
+.ab-teacher-card > div:last-child { padding: 22px; }
+.ab-teacher-card h3 { margin: 0; font-size: 1.45rem; }
+.ab-teacher-role { margin: 7px 0 0; color: #6c9f25; font-weight: 700; }
+.ab-teacher-bio { margin: 12px 0 0; color: #4b4b4b; line-height: 1.5; }
+
+.ab-campus-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+  margin-top: 30px;
+}
+
+.ab-campus-card {
+  width: 460px;
+}
+
+.ab-campus-img {
+  position: relative;
+  overflow: hidden;
+  border-radius: 16px;
+  padding-top: 70%;
+  margin-bottom: 10px;
+}
+
+.ab-campus-img img {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.ab-campus-card p {
+  color: #111;
+}
+
+.ab-final {
+  border-radius: 16px;
+  background: linear-gradient(135deg, #000 21%, #7cba27);
+  color: #fff;
+  text-align: center;
+  padding: 60px 20px;
+}
+
+.ab-final h2 {
+  color: #fff;
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+@media (max-width: 1024px) {
+  .ab-hero h1 { font-size: 2.6rem; }
+  .ab-why-grid,
+  .ab-demand-grid,
+  .ab-teacher-grid { grid-template-columns: repeat(2, 1fr); }
+}
+
+@media (max-width: 768px) {
+  .ab-about { padding: 100px 15px; }
+  .ab-hero h1 { font-size: 2.2rem; }
+  .ab-hero p { font-size: 1rem; }
+  .ab-why-grid,
+  .ab-demand-grid,
+  .ab-teacher-grid { grid-template-columns: 1fr; }
+  .ab-campus-card { width: 100%; }
+}
+
+@media (max-width: 480px) {
+  .ab-about { padding: 80px 12px; }
+  .ab-hero h1 { font-size: 1.9rem; }
+  .ab-hero p {
+    max-width: 95%;
+    font-size: .95rem;
+  }
+  .ab-about .btn {
+    width: 100%;
+    padding: 14px;
+    font-size: 1rem;
+  }
+  .ab-goals .ab-card {
+    padding: 20px;
+  }
+  .ab-goals .ab-card img {
+    width: 60px;
+  }
+}

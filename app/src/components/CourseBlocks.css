@@ -1,0 +1,232 @@
+/* Shared course-page blocks. Prefixed .cb-* so it cannot collide. */
+
+/* Multi-paragraph intro under MoreCourse title (section-lead is single-block) */
+.cb-lead { margin: 0 auto 18px; }
+.cb-lead:last-of-type { margin-bottom: 40px; }
+
+/* Salary tiers (MoreCourse.bottom) */
+.cb-salary-title {
+  text-align: center;
+  font-size: 20px;
+  font-weight: 700;
+  color: var(--ink-page);
+  margin-bottom: 24px;
+}
+.cb-salary-data { color: var(--muted-page); font-size: 14px; font-weight: 400; }
+.cb-salary-card { text-align: center; }
+.cb-price {
+  margin-top: 14px;
+  font-size: 22px;
+  font-weight: 700;
+  color: var(--lime);
+}
+
+/* ===== Course hero — full-bleed dark photo band (live design) ===== */
+.cb-hero {
+  position: relative;
+  background-color: #0c120c;
+  background-size: cover;
+  background-position: center right;
+  background-repeat: no-repeat;
+  padding: 116px 0 36px;           /* clears the absolute over-hero nav */
+  overflow: hidden;
+}
+/* dark scrim (heaviest on the left, under the title) + green tint for legibility */
+.cb-hero::before {
+  content: "";
+  position: absolute; inset: 0;
+  background:
+    radial-gradient(120% 80% at 22% 28%, rgba(124, 183, 63, .10), transparent 55%),
+    linear-gradient(90deg, rgba(8, 12, 8, .93) 0%, rgba(8, 12, 8, .55) 48%, rgba(8, 12, 8, .3) 100%),
+    linear-gradient(180deg, rgba(8, 12, 8, .35) 0%, rgba(8, 12, 8, .8) 100%);
+}
+/* asset-free scattered starfield */
+.cb-hero::after {
+  content: "";
+  position: absolute; inset: 0; pointer-events: none; opacity: .85;
+  background-image:
+    radial-gradient(1.5px 1.5px at 20% 30%, rgba(255, 255, 255, .5), transparent),
+    radial-gradient(1.5px 1.5px at 70% 18%, rgba(255, 255, 255, .4), transparent),
+    radial-gradient(1.5px 1.5px at 40% 62%, rgba(255, 255, 255, .35), transparent),
+    radial-gradient(2px 2px at 85% 48%, rgba(150, 235, 32, .45), transparent),
+    radial-gradient(1.5px 1.5px at 55% 82%, rgba(255, 255, 255, .4), transparent),
+    radial-gradient(1.5px 1.5px at 10% 76%, rgba(255, 255, 255, .3), transparent),
+    radial-gradient(1.5px 1.5px at 92% 86%, rgba(255, 255, 255, .35), transparent),
+    radial-gradient(1.5px 1.5px at 33% 14%, rgba(255, 255, 255, .35), transparent);
+}
+/* hero content is wider than the default page wrap (matches live's ~1388px hero) */
+.cb-hero .wrap { max-width: 1388px; }
+.cb-hero-inner {
+  position: relative; z-index: 1;
+  min-height: 70vh;
+  display: flex; flex-direction: column;
+}
+.cb-hero-top {
+  display: flex; justify-content: space-between; align-items: flex-start;
+  gap: 32px; flex: 1;
+}
+.cb-hero-head { max-width: 60%; }
+.cb-hero-title { display: flex; flex-direction: column; line-height: .92; }
+.cb-kurs {
+  font-family: "Roboto Flex", system-ui, sans-serif;
+  color: #fff; text-transform: uppercase; font-weight: 800;
+  font-size: clamp(56px, 9vw, 132px); letter-spacing: .01em;
+}
+.cb-name {
+  color: #fff; text-transform: uppercase; font-weight: 700;
+  font-size: clamp(22px, 3vw, 44px); letter-spacing: .02em; margin-top: 16px;
+}
+.cb-hero-cta {
+  display: inline-block; align-self: flex-start; margin-top: 30px;
+  background: var(--accent); color: var(--ink); font-weight: 700; font-size: 16px;
+  padding: 15px 34px; border-radius: 999px;
+  box-shadow: 0 10px 22px rgba(124, 183, 63, .28);
+}
+.cb-hero-cta:hover { background: var(--accent-d); }
+.cb-hero-text {
+  color: #e8efe2; font-size: 17px; line-height: 1.5;
+  max-width: 360px; margin-top: 8px;
+}
+/* bottom stat strip — translucent dark rounded bar */
+.cb-stats {
+  display: grid; grid-template-columns: repeat(4, auto); gap: 12px 48px;
+  width: fit-content; max-width: 100%; margin-top: 40px;
+  padding: 18px 32px;
+  background: rgba(12, 16, 12, .35);
+  border: 1px solid rgba(255, 255, 255, .06);
+  border-radius: 20px;
+  -webkit-backdrop-filter: blur(24px); backdrop-filter: blur(24px);
+}
+.cb-stat { display: flex; flex-direction: column; gap: 6px; }
+.cb-stat-label { color: #fff; font-size: 16px; font-weight: 700; line-height: 1.3; }
+.cb-stat-value { color: #aaa; font-size: 16px; text-transform: uppercase; letter-spacing: .02em; }
+
+@media (max-width: 820px) {
+  .cb-hero { padding: 96px 0 28px; background-position: center; }
+  .cb-hero-top { flex-direction: column; }
+  .cb-hero-head { max-width: 100%; }
+  .cb-hero-text { max-width: 100%; margin-top: 18px; }
+  .cb-stats { grid-template-columns: repeat(2, 1fr); width: 100%; gap: 20px 24px; }
+}
+
+/* MoreCourse optional side graphic */
+.cb-more-split { display: grid; grid-template-columns: 1fr; gap: 24px; align-items: center; }
+@media (min-width: 820px) { .cb-more-split { grid-template-columns: 1.4fr 1fr; } }
+.cb-more-img { width: 100%; border-radius: 14px; }
+
+/* CourseProgram module tabs */
+.cb-tabs { display: flex; flex-wrap: wrap; gap: 10px; justify-content: center; margin-bottom: 24px; }
+.cb-tab {
+  padding: 10px 18px;
+  border-radius: 999px;
+  border: 1px solid var(--line);
+  background: var(--panel);
+  color: var(--muted);
+  font-size: 14px;
+  cursor: pointer;
+  transition-property: background-color, border-color, color, transform;
+  transition-duration: .15s;
+  transition-timing-function: ease-out;
+}
+.cb-tab:hover { color: var(--text); border-color: var(--accent); transform: translateY(-1px); }
+.cb-tab:active { transform: scale(.96); }
+.cb-tab.active { background: var(--accent); border-color: var(--accent); color: #fff; font-weight: 600; }
+.cb-tab-panel { max-width: 900px; margin: 0 auto; animation: cb-fade 0.28s ease; }
+@keyframes cb-fade { from { opacity: 0; transform: translateY(6px); } to { opacity: 1; transform: none; } }
+@media (prefers-reduced-motion: reduce) { .cb-tab-panel { animation: none; } }
+.cb-tab-month { text-align: center; color: var(--ink-page); font-size: 20px; margin-bottom: 10px; }
+.cb-lessons { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 240px), 1fr)); gap: 14px; margin-top: 18px; }
+.cb-lesson { text-align: left; }
+.cb-lesson h4 { margin: 0 0 6px; color: var(--ink-page); font-size: 15px; }
+.cb-lesson p { margin: 0; color: var(--muted-page); font-size: 14px; line-height: 1.5; }
+
+/* NearbyGroups — facts panel + Старт курса booking form */
+.cb-nearby-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 24px;
+  margin-top: 32px;
+  align-items: stretch;       /* equal-height cards so bottoms line up */
+}
+@media (min-width: 820px) { .cb-nearby-grid { grid-template-columns: 1fr 1fr; } }
+.cb-facts {
+  background: var(--panel);
+  border: 1px solid var(--line);
+  border-radius: 20px;        /* match .lead-card so both cards' corners agree */
+  padding: 24px;
+}
+.cb-facts-title { margin: 0 0 6px; color: var(--head); font-size: 20px; }
+.cb-facts-sub { margin: 0 0 16px; color: var(--lime); font-weight: 600; }
+/* in the two-column grid the booking card fills its column (lead-card caps at 520 for standalone use) */
+.cb-start { max-width: none; }
+.cb-start select {
+  width: 100%;
+  padding: 11px 12px;
+  border-radius: 10px;
+  border: 1px solid var(--line);
+  background: #0c0c0c;
+  color: var(--text);
+  font-size: 14px;
+}
+.lead-card.light .cb-start select { background: #fff; color: #111; }
+
+/* AlumniWorks cards */
+.cb-alumni-img { height: 180px; }
+.cb-alumni-meta { display: flex; align-items: center; gap: 12px; }
+.cb-alumni-avatar {
+  width: 40px;
+  height: 40px;
+  border-radius: 999px;
+  object-fit: cover;
+  background: var(--panel-2);
+}
+.cb-alumni-month { color: var(--muted); font-size: 13px; margin-top: 2px; }
+
+/* CostOfTraining — two-card pricing layout */
+.cb-cost { grid-template-columns: repeat(auto-fit, minmax(min(100%, 300px), 1fr)); align-items: stretch; }
+.cb-cost-left { display: flex; flex-direction: column; }
+.cb-cost-price {
+  font-size: 30px;
+  font-weight: 800;
+  color: var(--accent);
+  margin: 8px 0 4px;
+}
+.cb-cost-unit { font-size: 15px; font-weight: 400; color: var(--muted-page); }
+.cb-cost-old { color: var(--muted-page); font-size: 14px; margin-bottom: 18px; }
+.cb-cost-old s { margin: 0 4px; }
+.cb-cost-list { list-style: none; margin: 0 0 22px; padding: 0; display: grid; gap: 10px; }
+.cb-cost-list li {
+  position: relative;
+  padding-left: 24px;
+  color: var(--muted);
+  font-size: 14px;
+  line-height: 1.5;
+}
+/* Cost cards are light (.card on band-grey); facts panel keeps the dark base above. */
+.cb-cost-left .cb-cost-list li { color: var(--muted-page); }
+.cb-cost-list li::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 6px;
+  width: 14px;
+  height: 14px;
+  border-radius: 999px;
+  background: rgba(175, 255, 66, 0.16);
+  border: 1px solid rgba(175, 255, 66, 0.4);
+}
+.cb-cost-left .btn { margin-top: auto; }
+.cb-cost-right p { color: var(--muted-page); font-size: 14px; line-height: 1.6; margin-bottom: 14px; }
+.cb-cost-right .btn { margin-top: 6px; }
+
+@media (max-width: 480px) {
+  .cb-hero { padding-top: 86px; }
+  .cb-hero-inner { min-height: auto; }
+  .cb-kurs { font-size: clamp(2.8rem, 17vw, 4.25rem); overflow-wrap: anywhere; }
+  .cb-name { font-size: clamp(1.2rem, 8vw, 2rem); overflow-wrap: anywhere; }
+  .cb-hero-cta { width: 100%; text-align: center; }
+  .cb-stats { grid-template-columns: 1fr; padding: 20px; }
+  .cb-tabs { justify-content: flex-start; flex-wrap: nowrap; overflow-x: auto; padding-bottom: 8px; }
+  .cb-tab { flex: 0 0 auto; }
+  .cb-facts { padding: 20px; }
+}

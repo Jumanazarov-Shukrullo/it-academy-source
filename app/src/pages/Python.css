@@ -1,0 +1,1620 @@
+.python-page {
+  position: relative;
+  overflow: clip;
+  background: #fff;
+  color: #050505;
+  isolation: isolate;
+  font-family: "Roboto Flex", "Roboto", Arial, sans-serif;
+}
+
+.course-page,
+.course-page *,
+.py-alumni,
+.py-alumni * {
+  font-family: "Roboto Flex", "Roboto", Arial, sans-serif;
+}
+
+.python-stars {
+  position: fixed;
+  inset: 0;
+  z-index: 7;
+  pointer-events: none;
+  background-image:
+    radial-gradient(2px 2px at 7% 18%, rgba(255, 255, 255, .9), transparent 62%),
+    radial-gradient(2px 2px at 16% 74%, rgba(255, 255, 255, .8), transparent 62%),
+    radial-gradient(3px 3px at 36% 46%, rgba(255, 255, 255, .9), transparent 64%),
+    radial-gradient(2px 2px at 64% 21%, rgba(255, 255, 255, .9), transparent 62%),
+    radial-gradient(3px 3px at 83% 61%, rgba(255, 255, 255, .8), transparent 64%),
+    radial-gradient(2px 2px at 94% 29%, rgba(255, 255, 255, .85), transparent 62%),
+    radial-gradient(2px 2px at 22% 32%, rgba(150, 255, 95, .18), transparent 64%),
+    radial-gradient(2px 2px at 58% 87%, rgba(150, 255, 95, .18), transparent 64%);
+  background-size: 260px 260px, 310px 310px, 380px 380px, 330px 330px, 290px 290px, 360px 360px, 420px 420px, 500px 500px;
+  opacity: .85;
+}
+
+.py-wrap {
+  width: min(100% - 96px, 1710px);
+  margin: 0 auto;
+}
+
+.course-page--graphic .py-wrap {
+  width: min(100% - clamp(28px, 9.2vw, 180px), 1784px);
+}
+
+.py-section {
+  position: relative;
+  z-index: 1;
+  padding: clamp(76px, 7vw, 132px) 0;
+  background: #fff;
+}
+
+.py-dark-section {
+  position: relative;
+  z-index: 1;
+  padding: clamp(76px, 7vw, 132px) 0;
+  background: #000;
+  color: #fff;
+}
+
+.py-section-title {
+  margin: 0;
+  color: #050505;
+  font-family: "Roboto Flex", "Roboto", Arial, sans-serif;
+  font-size: clamp(32px, 3.8vw, 56px);
+  font-weight: 700;
+  line-height: 1.2;
+  letter-spacing: -.03em;
+}
+
+.py-centered {
+  text-align: center;
+}
+
+.py-on-dark h2,
+.py-on-dark h3 {
+  color: #fff;
+}
+
+.py-on-dark p {
+  color: #fff;
+}
+
+/* Hero */
+.py-hero {
+  position: relative;
+  z-index: 1;
+  min-height: 100dvh;
+  overflow: hidden;
+  background: #111;
+  color: #fff;
+}
+
+.py-hero-bg,
+.py-hero::before {
+  position: absolute;
+  inset: 0;
+  content: "";
+}
+
+.py-hero-bg {
+  background-image: url("/courses_python-2.jpg");
+  background-size: cover;
+  background-position: center top;
+  transform: scale(1.002);
+}
+
+.py-hero::before {
+  z-index: 1;
+  background: rgba(0, 0, 0, .48);
+}
+
+.py-hero-inner {
+  position: relative;
+  z-index: 2;
+  min-height: 100dvh;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding: clamp(128px, 12vw, 220px) 0 clamp(72px, 8vw, 118px);
+}
+
+.course-page--graphic .py-hero-inner {
+  padding-top: clamp(76px, 5vw, 96px);
+}
+
+.py-hero-title {
+  align-self: flex-start;
+  margin: 0 auto 0 0;
+  color: #fff;
+  font-family: "Roboto Flex", "Roboto", Arial, sans-serif;
+  font-size: clamp(76px, 10.7vw, 196px);
+  font-weight: 700;
+  line-height: .85;
+  letter-spacing: -.01em;
+  text-transform: uppercase;
+  white-space: normal;
+  max-width: 100%;
+  overflow-wrap: break-word;
+  text-wrap: balance;
+}
+
+.py-hero-title span {
+  font-weight: 700;
+}
+
+.course-page--graphic .py-hero-title {
+  max-width: min(100%, 792px);
+  font-size: clamp(76px, 7.85vw, 140px);
+  line-height: .98;
+  letter-spacing: -.01em;
+  overflow-wrap: normal;
+  word-break: normal;
+}
+
+.course-page--web_programming .py-hero-title {
+  font-size: clamp(56px, 8.45vw, 132px);
+  line-height: 1.2;
+  letter-spacing: -.03em;
+}
+
+.course-page--datascience .py-hero-title {
+  font-weight: 500;
+  font-size: clamp(76px, 9.7vw, 150px);
+  line-height: .85;
+  letter-spacing: -.01em;
+}
+
+.course-page--graphic .py-hero-text {
+  margin-top: clamp(234px, 26.4vh, 280px);
+}
+
+.course-page--graphic .py-lime-btn {
+  border: 2px solid rgba(255, 255, 255, .92);
+  background: transparent;
+  color: #fff;
+}
+
+.py-hero-text {
+  max-width: 760px;
+  margin: clamp(210px, 24vh, 320px) 0 30px;
+  color: #fff;
+  font-size: clamp(23px, 1.58vw, 30px);
+  font-weight: 600;
+  line-height: 1.23;
+}
+
+.py-hero-bottom {
+  display: grid;
+  grid-template-columns: minmax(650px, 1fr) minmax(300px, 420px);
+  gap: clamp(24px, 5vw, 110px);
+  align-items: end;
+}
+
+.py-hero-title + .py-hero-bottom {
+  margin-top: clamp(90px, 22vh, 260px);
+}
+
+.py-hero-bottom--cta-only {
+  grid-template-columns: minmax(300px, 420px);
+  justify-content: end;
+}
+
+.py-stats {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(128px, 1fr));
+  gap: 24px;
+  width: min(100%, 1010px);
+  padding: 28px 34px;
+  border-radius: 24px;
+  background: rgba(30, 30, 30, .56);
+  -webkit-backdrop-filter: blur(18px);
+  backdrop-filter: blur(18px);
+}
+
+.py-stat {
+  min-width: 0;
+}
+
+.py-stat-label {
+  display: block;
+  max-width: 170px;
+  margin-bottom: 24px;
+  color: #fff;
+  font-size: clamp(19px, 1.35vw, 26px);
+  font-weight: 700;
+  line-height: 1.08;
+}
+
+.py-stat-value {
+  display: block;
+  color: rgba(255, 255, 255, .68);
+  font-size: clamp(18px, 1.25vw, 25px);
+  font-weight: 700;
+}
+
+.py-lime-btn {
+  display: inline-flex;
+  min-height: 68px;
+  align-items: center;
+  justify-content: center;
+  padding: 17px 52px;
+  border-radius: 999px;
+  background: #8cff00;
+  color: #000;
+  font-size: clamp(27px, 2vw, 36px);
+  font-weight: 700;
+  line-height: 1;
+  white-space: nowrap;
+  box-shadow: 0 12px 28px rgba(81, 139, 28, .24);
+  transition-property: background-color, box-shadow, transform;
+  transition-duration: .18s;
+  transition-timing-function: ease-out;
+}
+
+.py-lime-btn:hover {
+  background: #adff4c;
+  box-shadow: 0 16px 34px rgba(81, 139, 28, .32);
+}
+
+.py-lime-btn:active {
+  transform: scale(.96);
+}
+
+/* More course + salary */
+.py-more {
+  padding-top: clamp(76px, 7vw, 116px);
+  padding-bottom: clamp(90px, 10vw, 190px);
+  overflow: hidden;
+}
+
+.py-more-grid {
+  position: relative;
+  display: grid;
+  grid-template-columns: minmax(280px, 42%) minmax(0, 58%);
+  gap: clamp(34px, 5vw, 88px);
+  min-height: 0;
+}
+
+.py-more-grid--no-image {
+  min-height: 0;
+}
+
+.py-more-title {
+  max-width: 337px;
+  text-align: left;
+  font-size: clamp(32px, 3.67vw, 54px);
+  line-height: .87;
+}
+
+.py-more-copy {
+  position: relative;
+  z-index: 2;
+}
+
+.py-more-copy > p {
+  max-width: 771px;
+  margin: 0 0 30px;
+  color: #050505;
+  font-size: clamp(16px, 1.72vw, 24px);
+  font-weight: 400;
+  line-height: 1.2;
+  letter-spacing: -.03em;
+}
+
+.py-salary-head {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto;
+  align-items: center;
+  gap: 24px;
+  margin-top: 20px;
+  margin-bottom: 47px;
+}
+
+.py-salary-head h3 {
+  max-width: 387px;
+  margin: 0;
+  color: #050505;
+  font-size: clamp(24px, 2.8vw, 40px);
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: -.04em;
+}
+
+.py-salary-head span {
+  display: inline-flex;
+  min-width: 164px;
+  justify-content: center;
+  padding: 7px 25px;
+  border: 1.42px solid #000;
+  border-radius: 31px;
+  color: #000;
+  font-size: clamp(14px, 1.22vw, 16px);
+  font-weight: 400;
+  line-height: 1.36;
+  letter-spacing: -.03em;
+  white-space: nowrap;
+}
+
+.py-orb-hand {
+  position: absolute;
+  left: clamp(-110px, -6vw, -64px);
+  bottom: 150px;
+  width: min(42vw, 690px);
+  z-index: 1;
+  pointer-events: none;
+}
+
+.py-salary-cards {
+  display: grid;
+  gap: 12px;
+  align-items: start;
+}
+
+.py-salary-card {
+  position: relative;
+  z-index: 2;
+  width: min(100%, var(--salary-width));
+  min-height: 188px;
+  margin-left: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 6px 25px 16px 23px;
+  border: 1px solid #000;
+  border-radius: 9px;
+  background: rgba(255, 255, 255, .94);
+}
+
+.py-salary-card:nth-child(2) {
+  width: min(calc(100% + clamp(280px, 30vw, 420px)), var(--salary-width));
+  margin-left: clamp(-420px, -30vw, -280px);
+}
+
+.py-salary-card:nth-child(3) {
+  width: min(calc(100% + clamp(500px, 42vw, 760px)), var(--salary-width));
+  margin-left: clamp(-760px, -42vw, -500px);
+}
+
+.py-salary-card h4 {
+  margin: 0 0 22px;
+  color: #050505;
+  font-size: clamp(20px, 2.12vw, 29px);
+  font-weight: 700;
+  line-height: 1.61;
+  letter-spacing: -.03em;
+}
+
+.py-salary-card p {
+  margin: 0;
+  color: #777;
+  font-size: clamp(14px, 1.4vw, 18px);
+  font-weight: 400;
+  line-height: .95;
+}
+
+.py-salary-card strong {
+  display: block;
+  margin-top: auto;
+  color: #000;
+  font-size: clamp(32px, 3.48vw, 51px);
+  font-weight: 700;
+  line-height: normal;
+}
+
+/* Good for it */
+.py-good {
+  padding-top: clamp(66px, 5.7vw, 104px);
+  padding-bottom: clamp(82px, 8vw, 144px);
+}
+
+.py-two-col-head {
+  display: grid;
+  grid-template-columns: minmax(300px, 44%) minmax(0, 1fr);
+  gap: clamp(34px, 5vw, 92px);
+  align-items: start;
+  margin-bottom: clamp(58px, 6vw, 94px);
+}
+
+.py-two-col-head h2,
+.py-alumni-head h2 {
+  margin: 0;
+  font-size: clamp(32px, 3.8vw, 56px);
+  font-weight: 700;
+  line-height: 1.2;
+  letter-spacing: -.03em;
+}
+
+.py-two-col-head p {
+  max-width: 920px;
+  margin: 12px 0 0;
+  text-align: center;
+  font-size: clamp(14px, 1.8vw, 24px);
+  font-weight: 400;
+  line-height: 1.2;
+  letter-spacing: -.03em;
+}
+
+.py-good-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: clamp(42px, 6vw, 104px);
+}
+
+.py-good-card img {
+  width: 100%;
+  aspect-ratio: 1.78;
+  object-fit: cover;
+  margin-bottom: 32px;
+}
+
+.py-good-card h3 {
+  margin: 0 0 22px;
+  color: #fff;
+  font-size: clamp(26px, 1.8vw, 36px);
+  font-weight: 700;
+  line-height: 1.05;
+}
+
+.py-good-card p {
+  margin: 0;
+  color: #fff;
+  font-size: clamp(18px, 1.25vw, 25px);
+  font-weight: 500;
+  line-height: 1.25;
+}
+
+/* Program */
+.py-program {
+  padding-top: clamp(84px, 7.5vw, 142px);
+  padding-bottom: clamp(98px, 9vw, 170px);
+}
+
+.py-module-tabs {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(160px, 262px));
+  justify-content: center;
+  gap: clamp(36px, 4.2vw, 78px);
+  margin: clamp(58px, 5.5vw, 86px) 0 64px;
+  padding-bottom: 38px;
+  border-bottom: 2px solid #222;
+}
+
+.py-module-tabs button {
+  min-height: 61px;
+  border: 0;
+  border-radius: 0;
+  background: #a3ff34;
+  color: #000;
+  font-size: clamp(27px, 2.2vw, 42px);
+  font-weight: 700;
+  line-height: 1;
+}
+
+.py-module-tabs button.is-active {
+  background: #242424;
+  color: #a3ff34;
+}
+
+.py-program-panel {
+  max-width: 100%;
+}
+
+.py-program-month {
+  margin: 0 0 36px;
+  color: #8b8b8b;
+  font-size: clamp(34px, 2.6vw, 50px);
+  font-weight: 700;
+}
+
+.py-program-panel h3 {
+  margin: 0 0 30px;
+  color: #050505;
+  font-size: clamp(31px, 2.2vw, 44px);
+  font-weight: 700;
+  line-height: 1.08;
+}
+
+.py-lesson {
+  border-top: 2px solid #343434;
+  border-bottom: 2px solid #343434;
+}
+
+.py-lesson + .py-lesson {
+  border-top: 0;
+}
+
+.py-lesson summary {
+  position: relative;
+  display: block;
+  padding: 24px 80px 34px 0;
+  color: #050505;
+  font-size: clamp(30px, 2.1vw, 43px);
+  font-weight: 600;
+  list-style: none;
+  cursor: pointer;
+}
+
+.py-lesson summary::-webkit-details-marker {
+  display: none;
+}
+
+.py-lesson summary::after {
+  content: "";
+  position: absolute;
+  right: 10px;
+  top: 38px;
+  width: 25px;
+  height: 25px;
+  border-top: 5px solid #000;
+  border-left: 5px solid #000;
+  transform: rotate(45deg);
+}
+
+.py-lesson:not([open]) summary::after {
+  top: 30px;
+  transform: rotate(225deg);
+}
+
+.py-lesson p {
+  max-width: 1370px;
+  margin: 0;
+  padding: 32px clamp(24px, 3.5vw, 64px) 54px;
+  color: #050505;
+  font-size: clamp(24px, 1.75vw, 34px);
+  font-weight: 500;
+  line-height: 1.2;
+}
+
+/* Alumni works and video */
+.py-alumni {
+  overflow: hidden;
+  background: #191919;
+  padding-top: clamp(74px, 7vw, 126px);
+  padding-bottom: 0;
+}
+
+.py-alumni-head {
+  max-width: 1370px;
+  margin: 0 auto clamp(56px, 5vw, 86px);
+  text-align: center;
+}
+
+.py-alumni-head p {
+  margin: clamp(44px, 4vw, 66px) auto 0;
+  max-width: 1300px;
+  font-size: clamp(14px, 1.8vw, 25px);
+  font-weight: 400;
+  line-height: 1.2;
+  letter-spacing: -.03em;
+}
+
+.py-work-stage {
+  position: relative;
+  display: flex;
+  width: min(100%, 1365px);
+  min-height: clamp(560px, 40vw, 720px);
+  align-items: flex-start;
+  gap: clamp(24px, 2.55vw, 50px);
+  margin: 0 auto;
+  overflow-x: auto;
+  overflow-y: hidden;
+  padding: 0 clamp(24px, 4vw, 72px) 26px;
+  perspective: 1100px;
+  scroll-snap-type: x proximity;
+  scrollbar-width: none;
+  cursor: grab;
+  user-select: none;
+  touch-action: pan-x;
+}
+
+.py-work-stage::-webkit-scrollbar {
+  display: none;
+}
+
+.py-work-stage.is-dragging {
+  cursor: grabbing;
+  scroll-snap-type: none;
+}
+
+.py-work-card {
+  position: relative;
+  flex: 0 0 clamp(220px, 17.5vw, 360px);
+  height: clamp(500px, 38vw, 700px);
+  overflow: hidden;
+  background: #101010;
+  box-shadow: 0 34px 70px rgba(0, 0, 0, .34);
+  scroll-snap-align: center;
+  -webkit-user-drag: none;
+}
+
+.py-work-card-0,
+.py-work-card-5 {
+  transform: rotateY(28deg) scale(.93);
+}
+
+.py-work-card-1 {
+  transform: rotateY(12deg) scale(.98);
+}
+
+.py-work-card-4 {
+  transform: rotateY(-14deg) scale(.98);
+}
+
+.py-work-card-5 {
+  transform: rotateY(-30deg) scale(.9);
+}
+
+.py-work-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: top center;
+  pointer-events: none;
+  -webkit-user-drag: none;
+}
+
+.py-work-meta {
+  position: absolute;
+  top: 30px;
+  left: 30px;
+  right: 30px;
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  color: #fff;
+  text-shadow: 0 1px 14px rgba(0, 0, 0, .55);
+}
+
+.py-work-meta img {
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+  border: 4px solid rgba(255, 255, 255, .45);
+  object-fit: cover;
+}
+
+.py-work-meta strong {
+  display: block;
+  color: #fff;
+  font-size: clamp(22px, 1.7vw, 34px);
+  font-weight: 700;
+}
+
+.py-work-meta span {
+  display: block;
+  color: rgba(255, 255, 255, .82);
+  font-size: clamp(15px, 1.1vw, 22px);
+  font-weight: 700;
+}
+
+.py-video-section {
+  padding-top: clamp(88px, 8vw, 154px);
+  padding-bottom: clamp(88px, 8vw, 154px);
+  background: #061507;
+}
+
+.py-video-frame {
+  width: min(100%, 1490px);
+  margin: 0 auto;
+  overflow: hidden;
+  border-radius: 20px;
+  background: #101010;
+  box-shadow: 0 42px 90px rgba(0, 0, 0, .45);
+  aspect-ratio: 16 / 9;
+}
+
+.py-video-frame iframe {
+  width: 100%;
+  height: 100%;
+  border: 0;
+  opacity: .82;
+}
+
+/* Why choose */
+.py-why {
+  padding-top: clamp(86px, 7.5vw, 142px);
+}
+
+.py-why-head {
+  text-align: center;
+  margin-bottom: clamp(72px, 7vw, 126px);
+}
+
+.py-why-head h2 {
+  margin: 0 0 28px;
+  color: #050505;
+  font-size: clamp(48px, 4.3vw, 76px);
+  font-weight: 700;
+  line-height: 1;
+}
+
+.py-logo-row {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: clamp(28px, 3vw, 56px);
+}
+
+.py-logo-row img {
+  width: clamp(112px, 8vw, 164px);
+  height: auto;
+}
+
+.py-logo-row span {
+  color: #000;
+  font-size: clamp(70px, 6.4vw, 124px);
+  font-weight: 500;
+  line-height: 1;
+  letter-spacing: 0;
+}
+
+.py-why-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: clamp(36px, 4vw, 64px);
+  max-width: 1600px;
+  margin: 0 auto;
+}
+
+.py-why-card {
+  min-height: 338px;
+  padding: clamp(34px, 3.5vw, 66px);
+  border-radius: 30px;
+  background: #151515;
+  color: #fff;
+}
+
+.py-why-card h3 {
+  max-width: 700px;
+  margin: 0 0 clamp(38px, 4vw, 70px);
+  color: #fff;
+  font-size: clamp(38px, 3vw, 62px);
+  font-weight: 500;
+  line-height: 1.03;
+}
+
+.py-why-card p {
+  margin: 0;
+  color: #fff;
+  font-size: clamp(20px, 1.45vw, 29px);
+  font-weight: 650;
+  line-height: 1.16;
+}
+
+/* Summary and start form */
+.py-nearby {
+  padding-top: clamp(28px, 4vw, 72px);
+}
+
+.py-nearby-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: clamp(60px, 4vw, 72px);
+  max-width: 1620px;
+}
+
+.py-info-card {
+  min-height: 930px;
+  padding: clamp(58px, 4.6vw, 84px);
+  border-radius: 0 0 24px 24px;
+  background: #191919;
+  color: #fff;
+}
+
+.py-info-card h2 {
+  margin: 0;
+  color: #fff;
+  font-size: clamp(44px, 3.5vw, 68px);
+  font-weight: 700;
+  line-height: 1.05;
+}
+
+.py-info-sub {
+  margin: 34px 0 54px;
+  color: #fff;
+  font-size: clamp(29px, 2vw, 40px);
+  font-weight: 500;
+}
+
+.py-info-card ul {
+  display: grid;
+  gap: clamp(42px, 4vw, 70px);
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.py-info-card li,
+.py-start-text {
+  color: #fff;
+  font-size: clamp(23px, 1.65vw, 34px);
+  font-weight: 500;
+  line-height: 1.15;
+}
+
+.py-start-text {
+  max-width: 700px;
+  margin: 34px 0 58px;
+}
+
+.py-start-form {
+  display: grid;
+  gap: 44px;
+}
+
+.py-inline-field {
+  display: grid;
+  grid-template-columns: 118px minmax(0, 1fr);
+  align-items: end;
+  gap: 24px;
+  color: #fff;
+}
+
+.py-inline-field span {
+  color: #fff;
+  font-size: clamp(28px, 1.9vw, 38px);
+  font-weight: 500;
+}
+
+.py-inline-field select,
+.py-line-field input {
+  width: 100%;
+  min-width: 0;
+  border: 0;
+  border-bottom: 2px solid rgba(255, 255, 255, .72);
+  border-radius: 0;
+  background: transparent;
+  color: #fff;
+  font-size: clamp(28px, 1.9vw, 38px);
+  font-weight: 500;
+  outline: none;
+}
+
+.py-inline-field select {
+  appearance: none;
+  padding: 0 56px 13px 0;
+  background-image:
+    linear-gradient(45deg, transparent 50%, #8cff00 50%),
+    linear-gradient(135deg, #8cff00 50%, transparent 50%);
+  background-position:
+    calc(100% - 28px) 42%,
+    calc(100% - 11px) 42%;
+  background-size: 18px 18px, 18px 18px;
+  background-repeat: no-repeat;
+}
+
+.py-inline-field option {
+  color: #111;
+}
+
+.py-line-field {
+  display: grid;
+  gap: 10px;
+  color: #9a9a9a;
+}
+
+.py-line-field span {
+  color: #9a9a9a;
+  font-size: clamp(24px, 1.6vw, 32px);
+  font-weight: 500;
+}
+
+.py-line-field input {
+  padding: 4px 0 12px;
+}
+
+.py-offer-link {
+  margin-top: 10px;
+  color: #787878;
+  font-size: clamp(18px, 1.2vw, 24px);
+  font-weight: 700;
+}
+
+.py-outline-btn {
+  display: inline-flex;
+  width: fit-content;
+  min-width: 240px;
+  min-height: 56px;
+  align-items: center;
+  justify-content: center;
+  padding: 10px 44px;
+  border: 3px solid currentColor;
+  border-radius: 999px;
+  background: transparent;
+  color: currentColor;
+  font-size: clamp(22px, 1.3vw, 27px);
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.py-start-form .py-outline-btn {
+  color: #fff;
+}
+
+.py-form-status,
+.py-form-error {
+  margin: 0;
+  color: #fff;
+  font-size: 26px;
+  font-weight: 700;
+}
+
+.py-form-error {
+  color: #ff8a8a;
+}
+
+.py-students-strip {
+  position: relative;
+  z-index: 1;
+  display: block;
+  width: 100%;
+  min-height: clamp(420px, 40vw, 768px);
+  object-fit: cover;
+  object-position: center;
+}
+
+/* Cost */
+.py-cost {
+  padding-top: clamp(72px, 7vw, 130px);
+  background: #f2f2f2;
+}
+
+.py-cost-sub {
+  margin: clamp(36px, 3vw, 56px) 0 clamp(72px, 6vw, 118px);
+  text-align: center;
+  color: #050505;
+  font-size: clamp(25px, 1.8vw, 36px);
+  font-weight: 700;
+}
+
+.py-cost-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: clamp(38px, 3vw, 64px);
+  max-width: 1640px;
+  margin: 0 auto;
+  align-items: stretch;
+}
+
+.py-price-card {
+  position: relative;
+  min-height: 800px;
+  overflow: hidden;
+  padding: clamp(48px, 4.5vw, 76px) clamp(44px, 4vw, 66px);
+  border-radius: 22px;
+  background: #fff;
+  color: #050505;
+  box-shadow: 0 22px 44px rgba(0, 0, 0, .14);
+}
+
+.py-price-card h3 {
+  position: relative;
+  z-index: 1;
+  max-width: 700px;
+  margin: 0 0 70px;
+  color: #050505;
+  font-size: clamp(38px, 3vw, 62px);
+  font-weight: 700;
+  line-height: 1.1;
+}
+
+.py-price {
+  margin: 0 0 34px;
+  color: #000;
+  font-size: clamp(48px, 4vw, 78px);
+  font-weight: 700;
+  line-height: 1;
+}
+
+.py-price span {
+  font-size: clamp(24px, 1.7vw, 34px);
+}
+
+.py-old-price {
+  margin: 0 0 62px;
+  color: #a4a4a4;
+  font-size: clamp(31px, 2.3vw, 45px);
+  font-weight: 700;
+}
+
+.py-old-price s {
+  margin: 0 7px;
+}
+
+.py-feature-list {
+  display: grid;
+  gap: 44px;
+  margin: 0;
+  padding: clamp(46px, 4vw, 68px);
+  border-radius: 0 0 20px 20px;
+  background: #f0f0f0;
+  list-style: none;
+}
+
+.py-feature-list li {
+  display: grid;
+  grid-template-columns: 36px minmax(0, 1fr);
+  gap: 22px;
+  align-items: start;
+  color: #050505;
+  font-size: clamp(23px, 1.55vw, 32px);
+  font-weight: 500;
+  line-height: 1.15;
+}
+
+.py-feature-list img {
+  width: 34px;
+  height: 34px;
+}
+
+.py-installment-card {
+  display: flex;
+  flex-direction: column;
+}
+
+.py-round-star {
+  position: absolute;
+  top: 56px;
+  right: 42px;
+  width: min(42%, 330px);
+  opacity: .55;
+}
+
+.py-installment-card p {
+  position: relative;
+  z-index: 1;
+  max-width: 690px;
+  margin: 0 0 44px;
+  color: #050505;
+  font-size: clamp(25px, 1.9vw, 38px);
+  font-weight: 500;
+  line-height: 1.18;
+}
+
+.py-consult {
+  position: relative;
+  z-index: 1;
+  display: grid;
+  grid-template-columns: minmax(120px, 240px) minmax(0, 1fr);
+  gap: 28px 36px;
+  align-items: center;
+  margin-top: auto;
+}
+
+.py-consult img {
+  grid-row: span 2;
+  width: 230px;
+  max-width: 100%;
+  opacity: .55;
+}
+
+.py-consult span {
+  color: #050505;
+  text-align: center;
+  font-size: clamp(21px, 1.45vw, 28px);
+  font-weight: 600;
+  line-height: 1.15;
+}
+
+.py-consult .py-outline-btn {
+  color: #050505;
+  justify-self: center;
+  text-transform: none;
+  font-size: clamp(20px, 1.3vw, 26px);
+  font-weight: 700;
+}
+
+.py-contact {
+  background: #fff;
+}
+
+.py-contact .lead-card {
+  margin: 0 auto;
+  width: min(100%, 710px);
+  max-width: 710px;
+  padding: 48px;
+  border: 1px solid #f1f1f1;
+  border-radius: 24px;
+  background: #fff;
+  color: #000;
+}
+
+.py-contact .lead-card h2 {
+  margin: 0 0 10px;
+  color: #000;
+  font-size: clamp(32px, 2.17vw, 42px);
+  font-weight: 600;
+  line-height: 1.15;
+  letter-spacing: -.03em;
+}
+
+.py-contact .lead-card .lead-sub {
+  margin: 0 0 34px;
+  color: #666;
+  font-size: clamp(16px, 1vw, 19px);
+  font-weight: 400;
+  line-height: 1.35;
+}
+
+.course-contact-form {
+  display: block;
+}
+
+.course-contact-fields {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.course-contact-input,
+.course-contact-phone {
+  width: 100%;
+  min-height: 51px;
+  border: 1px solid #dcdcdc;
+  border-radius: 12px;
+  background: #fafafa;
+}
+
+.course-contact-input {
+  display: block;
+  padding: 14px 18px;
+  color: #000;
+  font-size: 17.6px;
+  font-weight: 400;
+  outline: none;
+}
+
+.course-contact-phone {
+  display: flex;
+  align-items: center;
+  padding-left: 12px;
+}
+
+.course-contact-flag {
+  display: block;
+  width: 26px;
+  height: 26px;
+  flex: none;
+}
+
+.course-contact-flag img {
+  width: 26px;
+  height: 26px;
+}
+
+.course-contact-phone input {
+  width: 100%;
+  min-width: 0;
+  border: 0;
+  border-radius: 0;
+  background: transparent;
+  padding: 14px;
+  color: #000;
+  font-size: 17.6px;
+  font-weight: 400;
+  outline: none;
+}
+
+.course-contact-input::placeholder,
+.course-contact-phone input::placeholder {
+  color: #7d7d7d;
+  opacity: 1;
+}
+
+.course-contact-submit {
+  display: inline-block;
+  width: 100%;
+  min-height: 51px;
+  margin-top: 24px;
+  padding: 14px;
+  border: 0;
+  border-radius: 40px;
+  background: #7dba28;
+  color: #fff;
+  font-size: 19.2px;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.course-contact-submit:hover {
+  background: #6ea922;
+}
+
+.py-top-link {
+  position: fixed;
+  right: 40px;
+  bottom: 38px;
+  z-index: 22;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 136px;
+  min-height: 56px;
+  padding: 12px 19px;
+  border-radius: 8px;
+  background: rgba(40, 40, 40, .94);
+  color: #fff;
+  font-size: 18px;
+  font-weight: 700;
+  box-shadow: 0 8px 18px rgba(0, 0, 0, .24);
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(10px);
+  transition: opacity .18s ease, visibility .18s ease, transform .18s ease;
+}
+
+.py-top-link.is-visible {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+}
+
+@media (max-width: 1180px) {
+  .py-wrap {
+    width: min(100% - 42px, 1710px);
+  }
+
+  .py-hero-bottom,
+  .py-more-grid,
+  .py-two-col-head,
+  .py-nearby-grid,
+  .py-cost-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .py-hero-title {
+    white-space: normal;
+  }
+
+  .py-hero-text {
+    margin-top: clamp(110px, 18vh, 180px);
+  }
+
+  .py-stats {
+    grid-template-columns: repeat(2, 1fr);
+    width: 100%;
+    gap: 24px;
+  }
+
+  .py-lime-btn {
+    justify-self: start;
+  }
+
+  .py-more-grid {
+    min-height: 0;
+  }
+
+  .py-orb-hand {
+    position: relative;
+    left: auto;
+    bottom: auto;
+    order: 3;
+    width: min(72vw, 540px);
+    margin-top: 18px;
+  }
+
+  .py-salary-card,
+  .py-salary-card:nth-child(n + 2) {
+    width: 100%;
+    margin-left: 0;
+  }
+
+  .py-good-grid,
+  .py-why-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .py-module-tabs {
+    grid-template-columns: repeat(2, minmax(150px, 1fr));
+  }
+
+  .py-logo-row {
+    flex-direction: column;
+  }
+
+  .py-info-card {
+    min-height: auto;
+    border-radius: 22px;
+  }
+}
+
+@media (max-width: 720px) {
+  .py-section,
+  .py-dark-section {
+    padding: 56px 0;
+  }
+
+  .py-wrap {
+    width: min(100% - 28px, 1710px);
+  }
+
+  .py-hero-inner {
+    padding-top: 112px;
+    padding-bottom: 40px;
+  }
+
+  .course-page--graphic .py-hero-inner {
+    padding-top: 112px;
+  }
+
+  .course-page--graphic .py-hero-text {
+    margin-top: 150px;
+  }
+
+  .py-hero-title {
+    font-size: clamp(54px, 17vw, 84px);
+  }
+
+  .course-page--web_programming .py-hero-title,
+  .course-page--graphic .py-hero-title {
+    font-size: clamp(42px, 12vw, 60px);
+    overflow-wrap: anywhere;
+  }
+
+  .course-page--graphic .py-wrap {
+    width: min(100% - 28px, 1710px);
+  }
+
+  .py-hero-text {
+    margin-top: 150px;
+    font-size: 20px;
+  }
+
+  .py-hero-bottom {
+    gap: 24px;
+  }
+
+  .py-stats {
+    grid-template-columns: 1fr;
+    padding: 24px;
+  }
+
+  .py-stat-label {
+    margin-bottom: 8px;
+  }
+
+  .py-lime-btn {
+    width: 100%;
+    min-height: 58px;
+    padding-inline: 22px;
+    font-size: 25px;
+  }
+
+  .py-section-title,
+  .py-two-col-head h2,
+  .py-alumni-head h2 {
+    font-size: clamp(40px, 13vw, 58px);
+  }
+
+  .py-more-copy > p,
+  .py-two-col-head p,
+  .py-alumni-head p,
+  .py-lesson p,
+  .py-info-card li,
+  .py-start-text,
+  .py-installment-card p {
+    font-size: 20px;
+  }
+
+  .py-salary-head {
+    grid-template-columns: 1fr;
+  }
+
+  .py-salary-head h3 {
+    font-size: 38px;
+  }
+
+  .py-salary-card {
+    min-height: 210px;
+    padding: 22px;
+  }
+
+  .py-salary-card h4 {
+    margin-bottom: 34px;
+  }
+
+  .py-salary-card strong {
+    font-size: 42px;
+  }
+
+  .py-module-tabs {
+    grid-template-columns: 1fr;
+    gap: 14px;
+    margin-top: 36px;
+    padding-bottom: 24px;
+  }
+
+  .py-lesson summary {
+    padding-right: 52px;
+    font-size: 24px;
+  }
+
+  .py-work-stage {
+    width: 100%;
+    transform: none;
+    padding-bottom: 18px;
+  }
+
+  .py-work-card,
+  .py-work-card-0,
+  .py-work-card-1,
+  .py-work-card-4,
+  .py-work-card-5 {
+    flex-basis: 78vw;
+    height: 560px;
+    transform: none;
+    scroll-snap-align: center;
+  }
+
+  .py-logo-row span {
+    font-size: clamp(48px, 14vw, 70px);
+  }
+
+  .py-why-card,
+  .py-info-card,
+  .py-price-card {
+    padding: 32px 24px;
+  }
+
+  .py-inline-field {
+    grid-template-columns: 1fr;
+    gap: 8px;
+  }
+
+  .py-feature-list {
+    padding: 30px 22px;
+  }
+
+  .py-feature-list li {
+    grid-template-columns: 30px minmax(0, 1fr);
+    gap: 16px;
+    font-size: 19px;
+  }
+
+  .py-consult {
+    grid-template-columns: 1fr;
+  }
+
+  .py-consult img {
+    display: none;
+  }
+
+  .py-top-link {
+    right: 18px;
+    bottom: 18px;
+    min-width: 112px;
+    min-height: 46px;
+    font-size: 15px;
+  }
+
+  .py-contact .lead-card {
+    padding: 28px 22px;
+  }
+
+  .py-contact .lead-card h2 {
+    font-size: 28px;
+  }
+
+  .course-contact-input,
+  .course-contact-phone,
+  .course-contact-submit {
+    min-height: 48px;
+  }
+}
+
+@media (max-width: 480px) {
+  .py-wrap,
+  .course-page--graphic .py-wrap {
+    width: min(100% - 24px, 1710px);
+  }
+
+  .py-hero-inner,
+  .course-page--graphic .py-hero-inner {
+    min-height: 100svh;
+    padding-top: 72px;
+    padding-bottom: 24px;
+  }
+
+  .py-hero-title,
+  .course-page--web_programming .py-hero-title,
+  .course-page--graphic .py-hero-title,
+  .course-page--datascience .py-hero-title {
+    font-size: clamp(2.4rem, 14vw, 4rem);
+    line-height: .94;
+    overflow-wrap: anywhere;
+  }
+
+  .py-hero-text,
+  .course-page--graphic .py-hero-text {
+    margin-top: clamp(4rem, 15vh, 7.5rem);
+    margin-bottom: 20px;
+    font-size: 17px;
+  }
+
+  .py-stats {
+    gap: 16px;
+    padding: 20px 18px;
+    border-radius: 18px;
+  }
+
+  .py-stat-label,
+  .py-stat-value {
+    font-size: 16px;
+  }
+
+  .py-lime-btn {
+    min-height: 52px;
+    padding-inline: 18px;
+    font-size: 19px;
+    white-space: normal;
+    text-align: center;
+  }
+
+  .py-section,
+  .py-dark-section {
+    padding-block: 46px;
+  }
+
+  .py-section-title,
+  .py-two-col-head h2,
+  .py-alumni-head h2,
+  .py-why-head h2 {
+    font-size: clamp(2rem, 11vw, 2.75rem);
+    overflow-wrap: anywhere;
+  }
+
+  .py-more-copy > p,
+  .py-two-col-head p,
+  .py-alumni-head p,
+  .py-lesson p,
+  .py-info-card li,
+  .py-start-text,
+  .py-installment-card p {
+    font-size: 17px;
+  }
+
+  .py-salary-head h3 {
+    font-size: 30px;
+  }
+
+  .py-salary-head span {
+    min-width: 0;
+    width: 100%;
+    white-space: normal;
+  }
+
+  .py-lesson summary {
+    padding-right: 42px;
+    font-size: 20px;
+  }
+
+  .py-work-card,
+  .py-work-card-0,
+  .py-work-card-1,
+  .py-work-card-4,
+  .py-work-card-5 {
+    flex-basis: min(82vw, 320px);
+    height: min(138vw, 500px);
+  }
+
+  .py-logo-row span {
+    font-size: clamp(2.5rem, 13vw, 3.75rem);
+    overflow-wrap: anywhere;
+  }
+
+  .py-why-card,
+  .py-info-card,
+  .py-price-card,
+  .py-feature-list {
+    padding: 24px 18px;
+  }
+
+  .py-feature-list li {
+    gap: 12px;
+    font-size: 17px;
+  }
+
+  .py-contact .lead-card {
+    padding: 24px 16px;
+  }
+}

@@ -1,0 +1,171 @@
+{
+  "courses": [
+    {
+      "slug": "web_programming",
+      "title_ru": "Front end",
+      "title_uz": "Front end",
+      "summary_ru": "Научись создавать сайты на одном из самых популярных языков программирования",
+      "summary_uz": "Eng mashhur dasturlash tillaridan birida saytlar yaratishni o‘rganing",
+      "image": "",
+      "sort_order": 0
+    },
+    {
+      "slug": "python",
+      "title_ru": "курс PYTHON",
+      "title_uz": "PYTHON kursi",
+      "summary_ru": "Освойте универсальный язык программирования для веба, автоматизации, анализа данных и создания ИИ!",
+      "summary_uz": "Veb, avtomatlashtirish, ma’lumotlarni tahlil qilish va sun’iy intellekt yaratish uchun universal dasturlash tilini o‘zlashtiring!",
+      "image": "courses_python.jpg",
+      "sort_order": 1
+    },
+    {
+      "slug": "backend",
+      "title_ru": "Back-end",
+      "title_uz": "Back-end",
+      "summary_ru": "Научись создавать серверную логику и работать с данными при помощи языка программирования Python",
+      "summary_uz": "Python dasturlash tili yordamida server mantig‘ini yaratish va ma’lumotlar bilan ishlashni o‘rganing",
+      "image": "",
+      "sort_order": 2
+    },
+    {
+      "slug": "nodejs",
+      "title_ru": "Node js",
+      "title_uz": "Node js",
+      "summary_ru": "Вы действующий front-end разработчик? Усильте свои навыки, став fullstack не изучая дополнительный язык программирования",
+      "summary_uz": "Siz amaldagi front-end dasturchimisiz? Qo‘shimcha dasturlash tilini o‘rganmasdan fullstack bo‘lish orqali mahoratingizni oshiring",
+      "image": "courses_nodejs.jpg",
+      "sort_order": 3
+    },
+    {
+      "slug": "datascience",
+      "title_ru": "data science",
+      "title_uz": "data science",
+      "summary_ru": "Анализ больших данных, машинное обучение, тестирование и решение задач",
+      "summary_uz": "Katta hajmli ma’lumotlarni tahlil qilish, mashinali o‘rganish, sinovdan o‘tkazish va muammolarni hal qilish",
+      "image": "courses_data_science.png",
+      "sort_order": 4
+    },
+    {
+      "slug": "graphic",
+      "title_ru": "графический дизайн",
+      "title_uz": "grafik dizayn",
+      "summary_ru": "Научитесь работать с цветом, композицией и шрифтами, создавайте стильные и профессиональные визуалы!",
+      "summary_uz": "Rang, kompozitsiya va shriftlar bilan ishlashni o‘rganing, zamonaviy va professional vizual tasvirlar yarating!",
+      "image": "courses_graphic_design.jpg",
+      "sort_order": 5
+    },
+    {
+      "slug": "unity",
+      "title_ru": "Unity",
+      "title_uz": "Unity",
+      "summary_ru": "Откройте для себя мир игр, создавайте свои миры и персонажей. Курс идеально подойдёт для детей от 11 лет",
+      "summary_uz": "O‘yinlar olamini kashf eting, o‘z olamingiz va personajlaringizni yarating. Kurs 11 yoshdan katta bolalar uchun juda mos keladi",
+      "image": "courses_unity.jpg",
+      "sort_order": 6
+    },
+    {
+      "slug": "scratch",
+      "title_ru": "курс Scratch",
+      "title_uz": "Scratch kursi",
+      "summary_ru": "Путешествие в программирование для детей! Легкий вход в программирование: научим кодить, создавая увлекательные проекты, игры и анимации!",
+      "summary_uz": "Bolalar uchun dasturlashga sayohat! Dasturlashga oson kirish: qiziqarli loyihalar, o‘yinlar va animatsiyalar yaratish orqali kodlashni o‘rgatamiz!",
+      "image": "courses_scratch.jpg",
+      "sort_order": 7
+    },
+    {
+      "slug": "computer-literacy",
+      "title_ru": "Компьютерная грамотность",
+      "title_uz": "Kompyuter savodxonligi",
+      "summary_ru": "Освой владение компьютером с нулевого уровня до уверенного пользователя",
+      "summary_uz": "Kompyuterni nol darajadan ishonchli foydalanuvchi darajasigacha o‘zlashtirish",
+      "image": "courses_computer_literacy.png",
+      "sort_order": 8
+    }
+  ],
+  "news": [
+    {
+      "slug": "it-sphere-for-parents",
+      "title_ru": "Об IT-сфере для родителей (что важно знать ?)",
+      "title_uz": "Ota-onalar uchun IT sohasi haqida (nimalarni bilish muhim?)",
+      "excerpt_ru": "Мы собрали для вас всю самую необходимую информацию чтобы во всём разобраться",
+      "excerpt_uz": "Biz hamma narsani tushunish uchun siz uchun eng zarur ma’lumotlarni to‘pladik",
+      "body_ru": "",
+      "body_uz": "",
+      "cover_image": "news_1.jpg"
+    },
+    {
+      "slug": "alumni-story",
+      "title_ru": "История выпускника академии",
+      "title_uz": "Akademiya bitiruvchisi tarixi",
+      "excerpt_ru": "Выпускник IT-Academy о начале обучения, трудностях и планах на будущее",
+      "excerpt_uz": "IT-Academy bitiruvchisi o‘qishni boshlash, qiyinchiliklar va kelajakdagi rejalar haqida",
+      "body_ru": "",
+      "body_uz": "",
+      "cover_image": "news_2.webp"
+    },
+    {
+      "slug": "new-branch-sergeli",
+      "title_ru": "Новый филиал IT-Academy в Сергелийском районе!",
+      "title_uz": "IT-Academy’ning Sergeli tumanidagi yangi filiali!",
+      "excerpt_ru": "",
+      "excerpt_uz": "",
+      "body_ru": "",
+      "body_uz": "",
+      "cover_image": "filial_sergeli.jpeg"
+    },
+    {
+      "slug": "story-2",
+      "title_ru": "Как ты попал в академию и почему именно академия?",
+      "title_uz": "Sen akademiyaga qanday kelib qolding va nima uchun aynan akademiya?",
+      "excerpt_ru": "",
+      "excerpt_uz": "",
+      "body_ru": "Я нашел Академию через Инстаграм. Просмотрел множество вариантов по обучению в области IT в сети, но этот выбор оправдал ожидания. Меня привлек акцент на жизни учеников в аккаунте: здесь больше контента о них, а не только о преподавателях или программе обучения. Я ценил открытость и прозрачность этого подхода.\n\nЗаписавшись на пробный урок у Алишера, я также оценил открытость и дружескую атмосферу занятий. В отличие от опыта с изучением того же английского, где часто ощущался барьер между преподавателем и учеником, здесь такого не было. В Академии легко устанавливается связь между преподавателями и учениками, они проводят время вместе в свободное от занятий время, что встречается нечасто. Я видел, как ученики и преподаватели общаются, словно друзья или родственники, и это меня впечатлило.\n\nСамое сложное в процессе обучения были домашние задания, особенно в JavaScript. Но я старался справиться с ними. В основном, мне не приходилось сталкиваться с чем-то особенно сложным лично для меня, хотя у Алишера были свои требования. Он иногда уходил на неделю на экзамен, и чтобы мы не теряли время, давал нам групповые проекты. Это было довольно интересно и в то же время вызывало некоторые сложности.\n\nНас делили на группы и давали разные задачи. Если кто-то не выполнял проект, все в группе страдали. Мы должны были представить проект и нашу работу в презентации в Excel или Word формате, а также показать, как мы использовали инструменты и ссылки на сайты. Это было довольно трудно, потому что пропуск этих проектов означал неделю без занятий.\n\nОдиночные задания не так сложны, потому что ты знаешь, что сможешь справиться с ними. Но работать в команде было сложнее, особенно если в группе были люди, которые не так успешно справлялись с заданиями. Но это был хороший способ развивать навыки. Даже если кто-то отставал, мы все помогали друг другу и догоняли. Эти групповые проекты были сложными, но и очень полезными.\n\nНастал момент X, когда я выпускался из академии, и тогда были свои ожидания. Но, честно говоря, мои ожидания были довольно пессимистичными. Понимание приближения к концу обучения вызывало некоторые тревожные мысли. Наша конечная цель была ясна - устроиться на работу. Но на тот момент мы еще даже не были джуниорами, и это создавало определенные вызовы. Иногда встречаются случаи, когда выпускники сталкиваются с проблемой трудоустройства, особенно если их навыки не соответствуют требованиям рынка труда. Мы, как студенты, были готовы к трудностям, но все равно было непросто.\n\nГотовка к завершению обучения была интенсивной и требовала постоянного развития. Я понимал, что после окончания академии моя учеба не закончится, наоборот, станет доступно больше времени для изучения более продвинутых технологий. В это время начал являться более глубокий анализ статистики рынка труда, чтобы подготовиться к трудоустройству.\n\nТрудности в трудоустройстве неизбежно пришлось преодолевать, но моя интенсивная работа над собой помогла мне. Постоянные усилия в течение дня, часто без выходных, позволили мне добиться хороших результатов. Эти усилия и результаты сыграли роль в моем успешном трудоустройстве.\n\nИз того, что не проходилось в курсе по фронту, я бы порекомендовал сосредоточиться на следующих важных вещах. В первую очередь, имеет смысл хотя бы поверхностно изучить классовые компоненты или в JavaScript сами классы. Также полезно ознакомиться со структурами данных и основами работы с базами данных, включая SQL и запросы к базам данных. Понимание базовых концепций бэкенда, таких как статусы запросов, также является важным, так как в реальной работе вы можете столкнуться с ситуациями, где вам придется взаимодействовать с бэкендом и понимать его основы. Это важно, потому что на практике часто приходится работать не только с фронтендом, но и с бэкендом. Даже если ваша специализация - фронтенд, понимание основ бэкенда поможет вам лучше взаимодействовать с ним и понимать, как работают ваши запросы и данные. На практике выбор того, что изучать, может быть сугубо индивидуальным. Некоторые предпочитают учить Python или другие языки бэкенда, в то время как другие считают, что Node.js является важным инструментом для фронтендеров, так как он позволяет работать с фуллстек-разработкой, не покидая зоны комфорта JavaScript. Но важно помнить, что компании определяют, какие технологии они используют, и ваши навыки должны быть адаптированы под их требования. Однако знание Node.js может быть полезным, так как многие принципы работы с бэкендом переносимы на различные технологии, и вы легко сможете переключиться на работу с другими языками программирования или технологиями.\n\nЗнание Node.js не означает, что ты обречен на одну область. Можно легко перенести свои навыки на Python и работать с ним. Чем больше инструментов ты знаешь, тем ценнее ты становишься. На моей работе нет строгого разделения на фронтенд и бэкенд разработчиков - мы все делаем разные задачи. Миддл разработчики работают и над мобильными, и над веб-приложениями, и над десктопными. Мы поощряем универсальность и гибкость - если есть задача и оплата за нее, бери ее, учись и делай. Это мотивирует нас и делает нашу работу интереснее. Когда ты выходишь из зоны комфорта и изучаешь новые вещи, ты лучше понимаешь, что тебе по-настоящему нравится. Некоторые из наших мобильных разработчиков когда-то были фронтендерами, но им больше понравилась мобильная разработка. Это пример того, как пробовать новые вещи может помочь найти свою нишу и стать лучше в своей области.А возвращаясь к тому, можешь рассказать про свой обычный рабочий день и чем тебе приходится заниматься?\n\nМой рабочий день обычно начинается с того, что я проверяю коммиты в нашем репозитории, чтобы видеть, какие изменения были внесены командой. Затем я приступаю к своим текущим задачам. Часто утром я отмечаю, что мои изменения готовы к ревью. На этом этапе Team Lead или Product Manager проверяют мои изменения, после чего они могут быть приняты или требовать дополнительных правок. После завершения этой задачи я перехожу к другим задачам из нашего списка. У нас в компании свободный график, но обычно я работаю 7-8 часов в день. Это важно для поддержания стабильности и эффективности работы. Несмотря на свободный график, мы иногда приходим в офис, который арендован рядом с нашим домом. CEO считает, что это особствует большей продуктивности и лучшим идеям. Тем не менее, никто не принуждается ходить в офис, и у нас есть ключи от офиса, чтобы мы могли прийти и поработать там в любое время. В нашей команде я начал как Junior Frontend React Developer, но постепенно расширяю свой круг обязанностей и начинаю заниматься бэкэндом. Это происходит из-за того, что иногда фронтенд готов, но бэкэнд еще нет, и чтобы не терять времени, мне поручают создать запросы к базе данных самостоятельно. Поэтому я стремлюсь к полноценному стеку, но пока официально остаюсь фронтендером.\n\nКем видешь себя через 5 лет?\n\nЧерез пять лет я вижу себя в фанкомпании, подобной Facebook, Amazon, Netflix, Google или Apple. Однако я осознаю, что нужно быть гибким и открытым для возможностей. Поэтому я также рассматриваю вариант работы в Дубае, где активно инвестируют крупные компа нии. Сейчас я стремлюсь к работе в Google, потому что там больше возможностей в сфере программной инженерии, но также интересуюсь искусственным интеллектом и Python.\n\nХотя у меня есть опасения относительно будущего рынка AI, потому что сравнимый с бумом 2000-х годов, он кажется менее значимым. Поэтому я не тороплюсь с решением и смотрю, как развиваются эти технологии. Если интерес к искусственному интеллекту упадет, то я склонен к работе в Google в Калифорнии или, возможно, в Дубае, предпочитая теплые страны. Я понимаю, что на пути к этим целям могут возникнуть препятствия, но я готов к тому, чтобы преодолевать их.",
+      "body_uz": "Akademiyani instagram orqali topdim. Tarmoqda IT ta’limi bo‘yicha ko‘plab variantlarni ko‘rib chiqdim, ammo bu tanlov o‘zini oqladi. Meni akkauntdagi o‘quvchilar hayotiga urg‘u jalb qildi: bu yerda faqat o‘qituvchilar yoki ta’lim dasturi haqida emas, balki ular haqida ko‘proq kontent mavjud. Men bu yondashuvning ochiqligi va shaffofligini qadrladim.\n\nAlisherning sinov darsiga yozilib, darsning ochiqligi va do‘stona muhitini ham baholadim. Ingliz tilini o‘rganish tajribasidan farqli o‘laroq, bu yerda o‘qituvchi va o‘quvchi o‘rtasidagi to‘siq tez-tez sezilib turardi. Akademiyada o‘qituvchilar va o‘quvchilar o‘rtasida oson aloqa o‘rnatiladi, ular darsdan bo‘sh vaqtlarida birga vaqt o‘tkazadilar, bu kamdan-kam uchraydi. Men o‘quvchilar va o‘qituvchilarning xuddi do‘stlar yoki qarindoshlardek muloqot qilishlarini ko‘rdim va bu meni hayratga soldi.\n\nO‘rganish jarayonida eng qiyin narsa uy vazifalari edi, ayniqsa JavaScriptda. Lekin men ularni yengishga harakat qildim. Asosan, shaxsan men uchun unchalik qiyin bo‘lgan narsaga duch kelmadim, garchi Alisherning o‘z talablari bor edi. U ba’zan bir haftaga imtihonga ketib qolar, vaqtni boy bermaslik uchun bizga guruhli loyihalar berardi. Bu juda qiziqarli va shu bilan birga ba’zi qiyinchiliklarni keltirib chiqardi.\n\nBizni guruhlarga bo‘lib, turli topshiriqlar berishdi. Agar kimdir loyihani bajarmasa, guruhdagi barcha aziyat chekardi. Loyiha va ishimizni taqdimotda Excel yoki Word formatida taqdim etishimiz, shuningdek, vositalar va saytlarga havolalardan qanday foydalanganimizni ko‘rsatishimiz kerak edi. Bu juda qiyin edi, chunki bu loyihalarni o‘tkazib yuborish bir haftalik darssiz qolishni anglatardi.\n\nYakka topshiriqlar unchalik qiyin emas, chunki siz ularni bajara olishingizni bilasiz. Ammo jamoada ishlash qiyinroq edi, ayniqsa, guruhda topshiriqlarni unchalik muvaffaqiyatli bajara olmaydigan odamlar bo‘lsa. Ammo bu ko‘nikmalarni rivojlantirishning yaxshi usuli edi. Birortasi orqada qolsa ham, hammamiz bir-birimizga yordamlashib, yetib olardik. Ushbu guruh loyihalari murakkab, ammo juda foydali edi.\n\nMen akademiyani bitirayotganimda X nuqtasi yetib keldi va o‘sha paytda o‘z kutganlarim bor edi. Lekin, to‘g‘risini aytsam, umidlarim ancha umidsiz edi. Ta’limning oxiriga yaqinlashayotganini tushunish ba’zi xavotirli fikrlarni uyg‘otdi. Pirovard maqsadimiz aniq edi - ishga joylashish. Ammo o‘sha paytda biz hali junior ham emasdik va bu ma’lum qiyinchiliklarni keltirib chiqarardi. Ba’zida bitiruvchilar ishga joylashish muammosiga duch kelish holatlari uchraydi, ayniqsa, ularning ko‘nikmalari mehnat bozori talablariga javob bermasa. Biz talabalar qiyinchiliklarga tayyor edik, lekin baribir oson bo‘lmadi.\n\nO‘qishni tugatishga tayyorgarlik intensiv bo‘lib, doimiy rivojlanishni talab qildi. Akademiyani tugatganimdan so‘ng o‘qishim tugamasligini, aksincha, yanada ilg‘or texnologiyalarni o‘rganish uchun ko‘proq vaqt bo‘lishini tushundim. Bu davrda ishga joylashishga tayyorgarlik ko‘rish uchun mehnat bozori statistikasini chuqurroq tahlil qilish boshlandi.\n\nIshga joylashishdagi qiyinchiliklarni albatta yengib o‘tishim kerak edi, lekin o‘z ustimda qattiq ishlashim menga yordam berdi. Kun bo‘yi tinimsiz harakat qilish, ko‘pincha dam olish kunlarisiz, menga yaxshi natijalarga erishish imkonini berdi. Bu sa’y-harakatlar va natijalar mening muvaffaqiyatli ishga joylashishimda muhim rol o‘ynadi.\n\nFront bo‘yicha o‘tilmagan narsalardan quyidagi muhim narsalarga e’tibor qaratishni tavsiya qilgan bo‘lardim. Birinchi navbatda, hech bo‘lmaganda sinf komponentlarini yoki JavaScriptda sinflarning o‘zini yuzaki o‘rganish ma’noga ega. Shuningdek, ma’lumotlar tuzilmalari va ma’lumotlar bazalari bilan ishlash asoslari, jumladan SQL va ma’lumotlar bazalariga so‘rovlar bilan tanishish foydali. So‘rov holatlari kabi asosiy bekend tushunchalarini tushunish ham muhim, chunki haqiqiy ishda bekend bilan ishlash va uning asoslarini tushunishga to‘g‘ri keladigan vaziyatlarga duch kelishingiz mumkin. Bu muhim, chunki amaliyotda ko‘pincha nafaqat frontend, balki backend bilan ham ishlashga to‘g‘ri keladi. Mutaxassisligingiz frontend bo‘lsa ham, backend asoslarini tushunish sizga u bilan yaxshiroq muloqot qilish va so‘rovlaringiz hamda ma’lumotlaringiz qanday ishlashini tushunishga yordam beradi. Amalda nimani o‘rganishni tanlash mutlaqo individual bo‘lishi mumkin. Ba’zilar Python yoki boshqa backend tillarini o‘rganishni afzal ko‘rishadi, boshqalari esa Node.js frontenders uchun muhim vosita deb hisoblashadi, chunki u JavaScript qulaylik zonasidan chiqmasdan to‘liq stek dasturlash bilan ishlash imkonini beradi. Ammo shuni yodda tutish kerakki, kompaniyalar qanday texnologiyalardan foydalanishini belgilaydi va sizning ko‘nikmalaringiz ularning talablariga moslashtirilishi kerak. Biroq, Node.js haqidagi bilimlar foydali bo‘lishi mumkin, chunki backend bilan ishlashning ko‘plab tamoyillari turli texnologiyalarga o‘tkaziladi va siz boshqa dasturlash tillari yoki texnologiyalari bilan ishlashga osongina o‘tishingiz mumkin.\n\nNode.jsni bilishing bir sohaga mahkumligingni anglatmaydi. Ko‘nikmalaringizni Python’ga osongina o‘tkazishingiz va u bilan ishlashingiz mumkin. Qancha ko‘p vositalarni bilsang, shuncha qadrli bo‘lasan. Mening ishimda frontend va backend dasturchilarga qat’iy bo‘linish yo‘q - biz hammamiz turli vazifalarni bajaramiz. Middl ishlab chiquvchilari mobil, veb-ilovalar va kompyuter dasturlari ustida ishlaydi. Biz universallik va moslashuvchanlikni rag‘batlantiramiz - agar vazifa va uning uchun to‘lov bo‘lsa, uni oling, o‘rganing va bajaring. Bu bizga motivatsiya beradi va ishimizni yanada qiziqarli qiladi. Qulaylik zonasidan chiqib, yangi narsalarni o‘rganganingizda, o‘zingizga nima yoqishini yaxshiroq tushunasiz. Bizning mobil dasturchilarimizning ba’zilari bir paytlar frontender bo‘lgan, ammo ularga mobil dasturlash ko‘proq yoqdi. Bu yangi narsalarni sinab ko‘rish o‘z sohangizni topishga va o‘z sohangizda yaxshiroq bo‘lishga qanday yordam berishi mumkinligiga misol bo‘la oladi.\n\nMening ish kunim odatda jamoa tomonidan qanday o‘zgarishlar kiritilganini ko‘rish uchun omborimizdagi qo‘shimchalarni tekshirishdan boshlanadi. Keyin hozirgi ishlarimga kirishaman. Ko‘pincha ertalab o‘zgarishlarim hayajonlanishga tayyorligini payqayman. Bu bosqichda Jamoa rahbari yoki Mahsulot menejeri mening o‘zgartirishlarimni tekshiradi, shundan so‘ng ular qabul qilinishi yoki qo‘shimcha tahrirlar talab qilinishi mumkin. Bu vazifani bajarib bo‘lgach, ro‘yxatimizdagi boshqa vazifalarga o‘taman. Kompaniyamizda erkin ish vaqti bor, lekin odatda kuniga 7-8 soat ishlayman. Bu ishning barqarorligi va samaradorligini saqlash uchun muhimdir. Erkin jadvalga qaramay, ba’zida uyimiz yonida ijaraga olingan ofisga kelamiz. Bosh direktorning fikricha, bu ko‘proq mahsuldorlik va yaxshiroq g‘oyalarni o‘z ichiga oladi. Shunga qaramay, hech kim ofisga borishga majburlanmaydi va bizda istalgan vaqtda kelib ishlashimiz uchun ofis kaliti bor. Jamoamizda men Junior Frontend React Developer sifatida ish boshladim, lekin asta-sekin o‘z vazifalarimni kengaytirib, bekend bilan shug‘ullana boshladim. Buning sababi shundaki, ba’zida frontend tayyor, lekin backend hali yo‘q va vaqtni behuda sarflamaslik uchun menga mustaqil ravishda ma’lumotlar bazasiga so‘rovlar yaratish topshiriladi. Shuning uchun to‘laqonli stekka intilaman, lekin hozircha rasman frontender bo‘lib qolaman.\n\n5 yildan keyin o‘zingni kim deb bilasan?\n\nBesh yildan so‘ng o‘zimni “Facebook,” “Amazon,” “Netflix,” “Google” yoki “Apple” kabi fan-kompaniyalarda ko‘raman. Biroq, men moslashuvchan va imkoniyatlar uchun ochiq bo‘lish kerakligini tushunaman. Shu bois yirik kompaniyalar faol sarmoya kiritayotgan Dubayda ishlash variantini ham ko‘rib chiqmoqdaman. Hozirda Google’da ishlashni maqsad qilganman, chunki u yerda dasturiy ta’minot muhandisligi bo‘yicha imkoniyatlar ko‘proq, lekin sun’iy intellekt va Python’ga ham qiziqaman.\n\nSun’iy intellekt bozorining kelajagi haqida xavotirlarim bor, chunki 2000-yillardagi yuksalish bilan solishtirganda, u kamroq ahamiyatga ega ko‘rinadi. Shuning uchun men qaror qabul qilishga shoshilmayman va bu texnologiyalar qanday rivojlanayotganini kuzataman. Agar sun’iy intellektga qiziqish pasaysa, men Kaliforniyada yoki Dubayda Google’da ishlashga moyilman, issiq mamlakatlarni afzal ko‘raman. Men bu maqsadlar yo‘lida to‘siqlar paydo bo‘lishi mumkinligini tushunaman, lekin men ularni yengib o‘tishga tayyorman.",
+      "cover_image": "news_stories_1.jpg"
+    }
+  ],
+  "vacancies": [
+    {
+      "title_ru": "Администратор",
+      "title_uz": "Администратор",
+      "location": "ул.Шахрисабз 7",
+      "image": "vacancy-admin.png",
+      "sort_order": 0
+    },
+    {
+      "title_ru": "Менеджер по продажам",
+      "title_uz": "Менеджер по продажам",
+      "location": "ул.Шахрисабз 7",
+      "image": "vacancy-card-1.jpg",
+      "sort_order": 1
+    },
+    {
+      "title_ru": "Преподаватель Ai",
+      "title_uz": "Преподаватель Ai",
+      "location": "ул.Шахрисабз 7",
+      "image": "vacancy-card-2.jpg",
+      "sort_order": 2
+    },
+    {
+      "title_ru": "Преподаватель по графическому дизайну",
+      "title_uz": "Преподаватель по графическому дизайну",
+      "location": "ул.Шахрисабз 7",
+      "image": "vacancy-card-3.jpg",
+      "sort_order": 3
+    },
+    {
+      "title_ru": "Преподаватель английского языка",
+      "title_uz": "Преподаватель английского языка",
+      "location": "Сергели, Массив 6А",
+      "image": "vacancy-card-4.jpg",
+      "sort_order": 4
+    },
+    {
+      "title_ru": "Преподаватель Back-end",
+      "title_uz": "Преподаватель Back-end",
+      "location": "ул.Шахрисабз 7 и Сергели",
+      "image": "vacancy-card-5.jpg",
+      "sort_order": 5
+    }
+  ]
+}

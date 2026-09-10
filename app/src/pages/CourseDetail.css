@@ -1,0 +1,182 @@
+.course-page--managed .py-hero-title {
+  max-width: min(100%, 1280px);
+  font-size: clamp(3.75rem, 8vw, 8.75rem);
+  line-height: .9;
+  overflow-wrap: anywhere;
+}
+
+.managed-course-about {
+  overflow: hidden;
+}
+
+.managed-course-about-grid {
+  display: grid;
+  grid-template-columns: minmax(260px, .72fr) minmax(0, 1.28fr);
+  gap: clamp(2.5rem, 8vw, 9rem);
+  align-items: start;
+}
+
+.managed-course-kicker {
+  margin: 0 0 1rem;
+  color: #7dba28;
+  font-size: .82rem;
+  font-weight: 800;
+  letter-spacing: .14em;
+  text-transform: uppercase;
+}
+
+.managed-course-about .py-section-title {
+  max-width: 11ch;
+  text-wrap: balance;
+}
+
+.managed-course-copy {
+  max-width: 900px;
+}
+
+.managed-course-copy p {
+  margin: 0;
+  color: #222;
+  font-size: clamp(1.15rem, 1.65vw, 1.65rem);
+  line-height: 1.5;
+  white-space: pre-line;
+  text-wrap: pretty;
+}
+
+.managed-course-copy p + p {
+  margin-top: 1.35em;
+}
+
+.managed-course-cta {
+  background:
+    radial-gradient(80% 160% at 100% 0%, rgba(140, 255, 0, .16), transparent 58%),
+    #080b08;
+}
+
+.managed-course-cta-grid {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(260px, 390px);
+  gap: clamp(2rem, 7vw, 7rem);
+  align-items: end;
+}
+
+.managed-course-cta h2 {
+  max-width: 15ch;
+  margin: 0;
+  color: #fff;
+  font-size: clamp(2.75rem, 6vw, 6.5rem);
+  line-height: .94;
+  letter-spacing: -.045em;
+  text-wrap: balance;
+}
+
+.managed-course-cta-text {
+  max-width: 54ch;
+  margin: 1.5rem 0 0;
+  color: rgba(255, 255, 255, .72);
+  font-size: clamp(1rem, 1.35vw, 1.3rem);
+  line-height: 1.5;
+  text-wrap: pretty;
+}
+
+.managed-course-state {
+  min-height: calc(100svh - 68px);
+  display: grid;
+  place-items: center;
+  padding: 3rem 1.25rem;
+  background:
+    radial-gradient(90% 100% at 80% 0%, rgba(140, 255, 0, .16), transparent 60%),
+    #080b08;
+  color: #fff;
+}
+
+.managed-course-state-card {
+  width: min(100%, 760px);
+  padding: clamp(2rem, 6vw, 4.5rem);
+  border-radius: 28px;
+  background: rgba(23, 30, 22, .78);
+  box-shadow:
+    0 0 0 1px rgba(255, 255, 255, .08),
+    0 24px 70px rgba(0, 0, 0, .28);
+  text-align: center;
+  -webkit-backdrop-filter: blur(18px);
+  backdrop-filter: blur(18px);
+}
+
+.managed-course-state-card > p {
+  margin: 0 0 1rem;
+  color: #a8fc4e;
+  font-size: .8rem;
+  font-weight: 800;
+  letter-spacing: .16em;
+}
+
+.managed-course-state-card h1 {
+  margin: 0;
+  color: #fff;
+  font-size: clamp(2.2rem, 7vw, 5.5rem);
+  line-height: .95;
+  text-wrap: balance;
+}
+
+.managed-course-state-actions {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: .75rem;
+  margin-top: 2rem;
+}
+
+.managed-course-state-actions a,
+.managed-course-state-actions button {
+  min-height: 48px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: .8rem 1.25rem;
+  border: 0;
+  border-radius: 999px;
+  background: #a8fc4e;
+  color: #102009;
+  font-weight: 750;
+  transition-property: background-color, transform;
+  transition-duration: 160ms;
+  transition-timing-function: ease-out;
+}
+
+.managed-course-state-actions a:hover,
+.managed-course-state-actions button:hover {
+  background: #bbf77f;
+}
+
+.managed-course-state-actions a:active,
+.managed-course-state-actions button:active {
+  transform: scale(.96);
+}
+
+@media (max-width: 900px) {
+  .managed-course-about-grid,
+  .managed-course-cta-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .managed-course-about .py-section-title {
+    max-width: 16ch;
+  }
+
+  .managed-course-cta .py-lime-btn {
+    width: 100%;
+  }
+}
+
+@media (max-width: 480px) {
+  .course-page--managed .py-hero-title {
+    font-size: clamp(2.15rem, 11.5vw, 3rem);
+    overflow-wrap: break-word;
+    word-break: normal;
+  }
+
+  .managed-course-state-card {
+    border-radius: 20px;
+  }
+}

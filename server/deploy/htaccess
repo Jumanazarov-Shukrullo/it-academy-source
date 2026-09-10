@@ -1,0 +1,54 @@
+# Deploys to the beta docroot as `.htaccess`.
+# Lets the PHP API/uploads pass through; everything else falls back to the SPA.
+
+# Plesk/PHP-FPM drops the Authorization header by default — re-expose it so the
+# Bearer-token admin API (/api, /cms) can authenticate.
+<IfModule mod_setenvif.c>
+  SetEnvIf Authorization "(.*)" HTTP_AUTHORIZATION=$1
+</IfModule>
+
+<IfModule mod_rewrite.c>
+  RewriteEngine On
+  RewriteBase /
+
+  # Carry the Authorization header into the FPM env (belt-and-suspenders).
+  RewriteCond %{HTTP:Authorization} .
+  RewriteRule ^ - [E=HTTP_AUTHORIZATION:%{HTTP:Authorization}]
+
+  # Real backend + uploaded files: serve as-is.
+  RewriteCond %{REQUEST_URI} ^/(api|cms|uploads)/ [NC]
+  RewriteRule ^ - [L]
+
+  # SPA fallback: anything not a real file/dir -> index.html (client routing).
+  RewriteCond %{REQUEST_FILENAME} !-f
+  RewriteCond %{REQUEST_FILENAME} !-d
+  RewriteRule ^ index.html [L]
+</IfModule>
+
+# Security + staging headers (lives in the beta deploy only, so the build
+# artifact stays production-safe — no noindex baked into index.html).
+<IfModule mod_headers.c>
+  Header always set X-Content-Type-Options "nosniff"
+  Header always set X-Frame-Options "SAMEORIGIN"
+  Header always set Referrer-Policy "strict-origin-when-cross-origin"
+  Header always set Strict-Transport-Security "max-age=31536000; includeSubDomains"
+  # Staging copy must never be indexed alongside production it-academy.uz.
+  Header always set X-Robots-Tag "noindex, nofollow"
+</IfModule>
+
+# Cache policy: index.html must never be cached (it points at hashed assets, so
+# stale HTML = users stuck on an old build). Hashed assets are immutable.
+<IfModule mod_headers.c>
+  <FilesMatch "\.html$">
+    Header set Cache-Control "no-cache, no-store, must-revalidate"
+  </FilesMatch>
+  <FilesMatch "\.(js|css|woff2?|ttf|png|jpe?g|svg|webp)$">
+    Header set Cache-Control "public, max-age=31536000, immutable"
+  </FilesMatch>
+</IfModule>
+
+# Never serve the CMS config (it holds DB + HolliHop secrets). PHP executes it
+# rather than printing source, but deny direct access as defense in depth.
+<Files "config.php">
+  Require all denied
+</Files>

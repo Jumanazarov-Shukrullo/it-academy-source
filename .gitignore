@@ -1,0 +1,24 @@
+# dependencies / build
+node_modules/
+app/dist/
+*.log
+
+# secrets — NEVER commit
+.env
+.env.*
+!.env.example
+!.env.deploy.example
+**/secret*.php
+server/cms/config.php
+*_netrc
+*.lftp
+
+# local test artifacts
+.playwright-mcp/
+/schedule-slice.png
+
+# local reference mirror of the live site (49MB of assets, not source)
+reference/live-site/
+
+# OS
+.DS_Store

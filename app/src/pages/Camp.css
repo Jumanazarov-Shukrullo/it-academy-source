@@ -1,0 +1,82 @@
+/* /camp page-specific styles. All classes prefixed .camp- to avoid collisions. */
+
+.camp-icons-band { padding-top: 8px; padding-bottom: 8px; }
+.camp-icons { display: block; width: 100%; height: auto; }
+
+.camp-hero {
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+.camp-hero::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0.55), rgba(0, 0, 0, 0.82));
+  pointer-events: none;
+}
+.camp-hero .wrap {
+  position: relative;
+  z-index: 1;
+}
+
+.camp-hero-card {
+  max-width: 720px;
+}
+.camp-hero-card h1 { text-transform: uppercase; }
+.camp-hero-extra {
+  color: var(--lime);
+  font-size: 18px;
+  margin-bottom: 18px;
+  text-transform: uppercase;
+}
+.camp-hero-cta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  justify-content: center;
+}
+
+/* Hero info facts */
+.camp-facts {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 12px;
+  margin-top: 28px;
+}
+.camp-fact {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  padding: 14px 16px;
+  background: rgba(20, 24, 15, 0.85);
+  border: 1px solid var(--line);
+  border-radius: 12px;
+  text-align: left;
+}
+.camp-fact-title {
+  color: var(--muted);
+  font-size: 13px;
+}
+.camp-fact-text {
+  color: var(--head);
+  font-weight: 600;
+  font-size: 17px;
+}
+
+/* CampFor — two larger cards side by side */
+.camp-for {
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 320px), 1fr));
+}
+.camp-for-card h3 {
+  color: var(--lime);
+}
+.camp-for-img {
+  height: 220px;
+}
+
+@media (max-width: 480px) {
+  .camp-hero-cta .btn { width: 100%; }
+  .camp-facts { grid-template-columns: 1fr; }
+  .camp-for-img { height: auto; aspect-ratio: 16 / 10; }
+}

@@ -1,0 +1,8 @@
+/* /web_programming — page-specific only. The full-width students banner
+   that sits between NearbyGroups and CostOfTraining. The global .card-img
+   class forces a 140px crop, so this banner gets its own rounded rule. */
+.wp-students {
+  width: 100%;
+  border-radius: var(--radius);
+  object-fit: cover;
+}

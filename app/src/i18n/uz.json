@@ -1,0 +1,2103 @@
+{
+  "nav": {
+    "about": "Biz haqimizda",
+    "courses": "Kurslar",
+    "schedule": "Jadval",
+    "b2b": "B2B",
+    "freeLesson": "Bepul dars",
+    "admin": "Admin",
+    "snow": "Qor",
+    "on": "yoniq",
+    "off": "o‘chiq",
+    "language": "Til"
+  },
+  "home": {
+    "title": "O‘zbekistonda IT kurslar",
+    "subtitle": "Frontend, Backend, Python, Node.js, dizayn, Scratch, Unity va Data Science — rus va o‘zbek tillarida.",
+    "seeSchedule": "Jadvalni ko‘rish",
+    "seeCourses": "Barcha kurslar"
+  },
+  "courses": {
+    "title": "Kurslar",
+    "empty": "Kurslar tez orada paydo bo‘ladi."
+  },
+  "schedule": {
+    "title": "Yaqqinda boshlanadigan guruhlar",
+    "branch": "Filial",
+    "all": "Barcha filiallar",
+    "course": "Kurs",
+    "days": "Kunlar",
+    "time": "Vaqt",
+    "start": "Boshlanishi",
+    "duration": "Davomiyligi",
+    "discount": "Chegirma",
+    "months": "oy",
+    "empty": "Hozircha e’lon qilingan darslar yo‘q.",
+    "online": "Onlayn",
+    "sergeli": "Sergeli",
+    "yunusabad": "Yunusobod, Bosh pochtamt"
+  },
+  "b2b": {
+    "kicker": "B2B",
+    "navCourses": "Kurslar",
+    "navSchedule": "Jadval",
+    "coursesTitle": "Jamoalar uchun korporativ ta’lim",
+    "coursesLead": "Kompaniyalar uchun kurslar: dastur biznes vazifalari, xodimlar darajasi va o‘qish formatiga moslashtiriladi.",
+    "allCourses": "Barcha B2B kurslar",
+    "coursesEmpty": "B2B kurslar tez orada paydo bo‘ladi.",
+    "scheduleTitle": "Joriy B2B jadvali",
+    "scheduleLead": "Korporativ guruhlar, sanalar, format va jamoani yozdirish uchun barcha ma’lumotlar.",
+    "currentSchedule": "Jadval",
+    "currentScheduleText": "Yaqin korporativ guruhlar sanalari, formati, manzili va qatnashish shartlari bilan.",
+    "scheduleEmpty": "Hozircha e’lon qilingan B2B jadvali yo‘q.",
+    "viewSchedule": "Jadvalni ko‘rish",
+    "viewCourses": "Kurslarni ko‘rish",
+    "contactCta": "Ariza qoldirish",
+    "heroPanelLabel": "Ta’limni qanday boshlaymiz",
+    "heroSteps": {
+      "audit": "Jamoa darajasini aniqlash",
+      "program": "Biznes vazifalariga mos dastur",
+      "delivery": "O‘qish, amaliyot va hisobot"
+    },
+    "contactKicker": "Korporativ ariza",
+    "contactTitle": "Jamoangiz uchun dastur tayyorlaymiz",
+    "contactText": "Kontakt qoldiring, menejer guruh tarkibi, o‘quv maqsadlari va qulay formatni aniqlashtiradi.",
+    "scheduleContactTitle": "Eng yaqin guruhni tanlaymiz",
+    "scheduleContactText": "Nechta xodimni o‘qitish kerakligini ayting. Sana, format va dasturni taklif qilamiz.",
+    "contactSubmit": "Ta’limni muhokama qilish",
+    "flexibleDates": "Kelishiladi",
+    "dates": "Sanalar",
+    "days": "Kunlar",
+    "time": "Vaqt",
+    "location": "Manzil",
+    "trainer": "Trener",
+    "seats": "Joylar",
+    "price": "Narx",
+    "until": "dan"
+  },
+  "admin": {
+    "login": "Administrator kirishi",
+    "username": "Login",
+    "password": "Parol",
+    "signIn": "Kirish",
+    "signOut": "Chiqish",
+    "openMenu": "Menyuni ochish",
+    "closeMenu": "Menyuni yopish",
+    "actions": "Amallar",
+    "paymentDate": "To‘lov sanasi",
+    "paymentSum": "Summa",
+    "schedule": "Jadval",
+    "b2bCourses": "B2B kurslar",
+    "b2bSchedule": "B2B jadvali",
+    "students": "O‘quvchilar",
+    "leads": "Arizalar",
+    "leadsEmpty": "Hozircha arizalar yo‘q.",
+    "leadDate": "Sana",
+    "leadName": "Ism",
+    "leadPhone": "Telefon",
+    "leadCourse": "Kurs / slot",
+    "leadForm": "Forma",
+    "add": "Qo‘shish",
+    "edit": "Tahrirlash",
+    "save": "Saqlash",
+    "delete": "O‘chirish",
+    "cancel": "Bekor qilish",
+    "published": "E’lon qilingan",
+    "hide": "Yashirish",
+    "show": "Ko‘rsatish",
+    "moveUp": "Yuqoriga",
+    "moveDown": "Pastga",
+    "order": "Tartib",
+    "imageReplaceHint": "Yuklangan rasm kurs saqlangandan so‘ng joriy fonni almashtiradi.",
+    "courseLinkHint": "Universal kurs sahifasini ochish uchun maydonni bo‘sh qoldiring. Faqat maxsus ichki yoki tashqi havola uchun to‘ldiring.",
+    "courses": "Kurslar",
+    "teachers": "O‘qituvchilar",
+    "news": "Yangiliklar",
+    "vacancies": "Vakansiyalar",
+    "media": "Media",
+    "videos": "Videolar",
+    "videoHint": "Saytdagi videolar — YouTube'dan. Video havolasini (yoki ID'sini) qo‘ying, miniatyura avtomatik chiqadi. Qatorlarni tugmalar bilan qo‘shing/o‘chiring.",
+    "videoHero": "Bosh sahifadagi fon videosi",
+    "videoFeedback": "Sharhlar (bosh sahifa + kurs sahifalari)",
+    "videoCamp": "Lager",
+    "videoTitle": "Nomi",
+    "texts": "Sayt matnlari",
+    "textsHint": "Saytdagi istalgan matn kalit bo‘yicha. Kalit yoki qiymat bo‘yicha qidiring, RU/UZ ni tahrirlang — o‘zgarishlar saytda darhol ko‘rinadi. «Tiklash» asl matnni qaytaradi.",
+    "revert": "Tiklash",
+    "search": "Qidirish…",
+    "scopeAll": "Barcha matnlar",
+    "upload": "Yuklash",
+    "replace": "Almashtirish",
+    "copy": "Nusxa olish",
+    "copied": "Nusxa olindi",
+    "mediaSearch": "Fayl nomi bo‘yicha qidirish…",
+    "mediaGuideTitle": "Mediakutubxona qanday ishlaydi",
+    "mediaGuideText": "Fayllar nomiga qarab avtomatik guruhlanadi. Saytdagi rasmni matn yoki kodni o‘zgartirmasdan yangilash uchun xuddi shu nomdagi faylni almashtiring.",
+    "mediaNamingTitle": "Fayl nomlari",
+    "mediaNamingText": "Qisqa lotincha nomlardan foydalaning: bo‘lim + mazmun + kerak bo‘lsa raqam. Bo‘sh joylar o‘rniga pastki chiziq ishlating.",
+    "mediaAll": "Barcha fayllar",
+    "mediaKindImage": "Rasm",
+    "mediaKindVideo": "Video",
+    "mediaSourceAsset": "Sayt fayli",
+    "mediaSourceUpload": "Yuklangan",
+    "mediaEmpty": "Fayllar topilmadi",
+    "mediaGroups": {
+      "courses": "Kurslar — posterlar",
+      "teachers": "O‘qituvchilar",
+      "camp": "Lager",
+      "vacancies": "Vakansiyalar",
+      "news": "Yangiliklar",
+      "branches": "Filiallar",
+      "about": "Kompaniya haqida",
+      "logos": "Logotip va ikonkalar",
+      "other": "Boshqa (dekor)"
+    },
+    "mediaGroupInfo": {
+      "courses": {
+        "short": "Kurslar",
+        "hint": "Kurs posterlari, karta rasmlari va kurs sahifalari uchun grafikalar.",
+        "pattern": "courses_*, more_course_*"
+      },
+      "teachers": {
+        "short": "Ustoz",
+        "hint": "O‘qituvchilar rasmlari va nomida teacher bor materiallar.",
+        "pattern": "*teacher*"
+      },
+      "camp": {
+        "short": "Lager",
+        "hint": "Yozgi lager, bolalar rasmlari va camp bo‘limi materiallari.",
+        "pattern": "camp*, child*, hotel*"
+      },
+      "vacancies": {
+        "short": "Vakansiya",
+        "hint": "Vakansiyalar va HR bloklari uchun rasmlar.",
+        "pattern": "vacancy*, job_*"
+      },
+      "news": {
+        "short": "Yangilik",
+        "hint": "Yangiliklar va stories uchun muqova rasmlari.",
+        "pattern": "news*"
+      },
+      "branches": {
+        "short": "Filial",
+        "hint": "Filial rasmlari: Yunusobod, Sergeli va boshqa lokatsiyalar.",
+        "pattern": "yunusabad, sergeli, filial"
+      },
+      "about": {
+        "short": "Biz haqimizda",
+        "hint": "Bosh sahifa, kompaniya haqida va afzalliklar bloki uchun rasmlar.",
+        "pattern": "good_for_it*, students, web_home, about*"
+      },
+      "logos": {
+        "short": "Brend",
+        "hint": "Logotiplar, xizmat rasmlari va brend elementlari.",
+        "pattern": "logo*, academy*, user, dodo"
+      },
+      "other": {
+        "short": "Boshqa",
+        "hint": "Aniq prefikssiz fayllar. Yangi fayllar kerakli bo‘limga tushishi uchun yuqoridagi qoidaga ko‘ra nomlang.",
+        "pattern": "moslik yo‘q"
+      }
+    },
+    "confirmDelete": "Yozuv o‘chirilsinmi?",
+    "confirmDeleteFile": "Ushbu fayl saytdan o‘chirilsinmi? Amalni qaytarib bo‘lmaydi.",
+    "saveFailed": "Saqlab bo‘lmadi — qayta urinib ko‘ring",
+    "loginFailed": "Login yoki parol noto‘g‘ri",
+    "loginSub": "IT Academy boshqaruv paneli",
+    "dashboard": "Boshqaruv paneli",
+    "recentLeads": "So‘nggi arizalar",
+    "viewSite": "Saytni ochish",
+    "grpContent": "Kontent",
+    "grpOps": "Operatsiyalar",
+    "grpB2B": "B2B",
+    "courseFields": {
+      "slug": "Tizim nomi (slug)",
+      "title_ru": "Nomi · RU",
+      "title_uz": "Nomi · UZ",
+      "summary_ru": "Tavsif · RU",
+      "summary_uz": "Tavsif · UZ",
+      "description_ru": "To‘liq tavsif · RU",
+      "description_uz": "To‘liq tavsif · UZ",
+      "price": "Narx",
+      "duration_months": "Oylar (zaxira)",
+      "duration_ru": "Davomiyligi · RU",
+      "duration_uz": "Davomiyligi · UZ",
+      "lessons_ru": "Darslar soni · RU",
+      "lessons_uz": "Darslar soni · UZ",
+      "format_ru": "Format · RU",
+      "format_uz": "Format · UZ",
+      "lesson_duration_ru": "Dars davomiyligi · RU",
+      "lesson_duration_uz": "Dars davomiyligi · UZ",
+      "button_ru": "Tugma matni · RU",
+      "button_uz": "Tugma matni · UZ",
+      "button_url": "Maxsus tugma havolasi (ixtiyoriy)",
+      "image": "Fon rasmi",
+      "sort_order": "Tartib",
+      "is_published": "E’lon qilingan"
+    },
+    "b2bCourseFields": {
+      "title_ru": "Nomi · RU",
+      "title_uz": "Nomi · UZ",
+      "summary_ru": "Qisqacha · RU",
+      "summary_uz": "Qisqacha · UZ",
+      "description_ru": "Tavsif · RU",
+      "description_uz": "Tavsif · UZ",
+      "duration_ru": "Davomiylik · RU",
+      "duration_uz": "Davomiylik · UZ",
+      "format_ru": "Format · RU",
+      "format_uz": "Format · UZ",
+      "image": "Rasm",
+      "sort_order": "Tartib",
+      "is_published": "E’lon qilingan"
+    },
+    "b2bFields": {
+      "course_ru": "Kurs · RU",
+      "course_uz": "Kurs · UZ",
+      "audience_ru": "Auditoriya · RU",
+      "audience_uz": "Auditoriya · UZ",
+      "format_ru": "Format · RU",
+      "format_uz": "Format · UZ",
+      "location_ru": "Manzil · RU",
+      "location_uz": "Manzil · UZ",
+      "days_ru": "Kunlar · RU",
+      "days_uz": "Kunlar · UZ",
+      "time_from": "Vaqt boshlanishi",
+      "time_to": "Vaqt tugashi",
+      "start_date": "Boshlanish sanasi",
+      "end_date": "Tugash sanasi",
+      "duration_ru": "Davomiylik · RU",
+      "duration_uz": "Davomiylik · UZ",
+      "trainer_ru": "Trener · RU",
+      "trainer_uz": "Trener · UZ",
+      "seats": "Joylar",
+      "price_ru": "Narx · RU",
+      "price_uz": "Narx · UZ",
+      "description_ru": "Tavsif · RU",
+      "description_uz": "Tavsif · UZ",
+      "sort_order": "Tartib",
+      "is_published": "E’lon qilingan"
+    }
+  },
+  "portal": {
+    "title": "O‘quvchi shaxsiy kabineti",
+    "needAuth": "O‘quvchi ma’lumotlari faqat administrator kirgandan so‘ng ko‘rinadi.",
+    "attendance": "Davomat",
+    "payments": "To‘lovlar",
+    "loading": "Yuklanmoqda…",
+    "error": "Ma’lumotlarni yuklab bo‘lmadi."
+  },
+  "stub": {
+    "wip": "Bu sahifa saytning yangi versiyasiga ko‘chirilmoqda.",
+    "back": "Bosh sahifaga"
+  },
+  "footer": {
+    "footerNews": {
+      "text": "Tarqatma xabarlarga obuna bo‘ling va yangiliklar hamda maxsus takliflarni birinchilardan bo‘lib oling!",
+      "email": "Email manzilingiz",
+      "link": "Tasdiqlash"
+    },
+    "footerRouter": [
+      {
+        "id": 1,
+        "text": "Biz haqimizda",
+        "to": "/about"
+      },
+      {
+        "id": 3,
+        "text": "Kurslar",
+        "to": "/courses"
+      },
+      {
+        "id": 5,
+        "text": "Bepul dars",
+        "to": "/#contact"
+      },
+      {
+        "id": 6,
+        "text": "Oferta",
+        "to": "/Публичная оферта 2025.pdf"
+      }
+    ],
+    "footerHelp": {
+      "title": "Yordam va ko‘mak",
+      "subtitle": "+998781130512",
+      "contentItems": [
+        {
+          "id": 1,
+          "text": "Toshkent shahri, Yunusobod tumani, Shahrisabz ko‘chasi, 7-uy"
+        },
+        {
+          "id": 2,
+          "text": "Toshkent shahri, Sergeli tumani Sergeli-6, 110b"
+        }
+      ],
+      "contacts": [
+        {
+          "title": "+998 90 610 05 12",
+          "href": "+998906100512"
+        },
+        {
+          "title": "+998 90 000 28 12",
+          "href": "+998900002812"
+        }
+      ],
+      "telegram": {
+        "title": "Telegram",
+        "handle": "it_academy_manager"
+      }
+    },
+    "rights": "IT Academy. Barcha huquqlar himoyalangan."
+  },
+  "header": {
+    "title": "Toshkentdagi IT kurslari <br/> Bizga 5 yildan ortiq ishonch bildirilgan",
+    "link": "Maslahat olish"
+  },
+  "whyWe": "Nega tanlanadi",
+  "aboutUs": [
+    {
+      "id": 1,
+      "title": "Tajribali o‘qituvchilar",
+      "text": "Biz IT va dizayn sohasida haqiqiy tajribaga ega professionallar jamoasini to‘pladik. Ular nafaqat o‘rgatadi, balki sizga sohadagi tushunchalarni yetkazadi va haqiqatan ham talab qilinadigan ko‘nikmalarni o‘zlashtirishingizga yordam beradi."
+    },
+    {
+      "id": 2,
+      "title": "Trenddan oldingi ta’lim",
+      "text": "Bizning dasturlarimiz sanoat bilan birga yangilanmoqda. Biz nafaqat bilim beramiz, balki kursdan so‘ng ko‘nikmalarni darhol amalda qo‘llay olishingiz uchun sizni bozorning haqiqiy vazifalariga tayyorlaymiz."
+    },
+    {
+      "id": 3,
+      "title": "Birinchi kundan amaliyot",
+      "text": "Har bir mashg‘ulot portfelingiz sari qo‘yilgan qadamdir. Siz haqiqiy holatlarni hal qilasiz, jamoalarda ishlaysiz va ish beruvchilar yoki mijozlarga darhol ko‘rsatish mumkin bo‘lgan loyihalarni yaratasiz."
+    },
+    {
+      "id": 4,
+      "title": "Qulay IT-makon",
+      "text": "Bizning kovorkingimizda o‘rganing, mashq qiling va rivojlaning. Barcha talabalar uchun bepul foydalanish imkoniyati - darsdan keyin qoling, loyihalaringiz ustida ishlang va hamfikrlarni toping."
+    },
+    {
+      "id": 5,
+      "title": "5 yillik ishonch va natijalar",
+      "text": "Biz allaqachon yirik kompaniyalarda ishlayotgan, o‘z loyihalarini ishga tushirgan va IT sohasiga dadil qadam qo‘ygan yuzlab talabalarni o‘qitdik. Bo‘lajak professionallar hamjamiyatiga qo‘shiling!"
+    }
+  ],
+  "studentFeedback": {
+    "title": "Talabalarimiz sharhi",
+    "text": "Talabalarimizning haqiqiy hikoyalarini tinglang! Ular o‘z tajribalari bilan o‘rtoqlashadilar, kurs va IT sohasidagi dastlabki yutuqlari haqida so‘zlab beradilar. Videoni tomosha qiling va ishonch hosil qiling - siz ham uddalay olasiz!",
+    "videos": [
+      {
+        "id": 1,
+        "src": "https://www.youtube.com/embed/jb4gYzG5Wbs",
+        "title": "O‘quvchimizning o‘qish yakunidagi yutuqlari"
+      },
+      {
+        "id": 2,
+        "src": "https://www.youtube.com/embed/yU-TOP5X9Ec",
+        "title": "O‘quvchimizning onasining fikri"
+      },
+      {
+        "id": 3,
+        "src": "https://www.youtube.com/embed/72kfwVX-Mcs",
+        "title": "Birinchi koddan frontend ishlab chiqishgacha"
+      },
+      {
+        "id": 4,
+        "src": "https://www.youtube.com/embed/qWn1f6YJYsU",
+        "title": "Biz haqimizda qisqacha"
+      }
+    ]
+  },
+  "counseling": {
+    "counselingData": [
+      {
+        "id": 1,
+        "title": "MASLAHAT",
+        "text": "Atigi 5 daqiqa ichida barcha savollaringizga javob beramiz va kurs tanlashda yordam beramiz. Keling, maslahatga yoziling! Keyingi tugmani bosganingizdan so‘ng, biz siz uchun menejer tanlashni boshlaymiz, qisqa 5 ta savolga javob bering va biz sizga 5 daqiqadan so‘ng qayta qo‘ng‘iroq qilamiz"
+      },
+      {
+        "id": 2,
+        "title": "Filial",
+        "text": "Bizning manzillarimizdan qaysi biri siz uchun Yunusobod yoki Sergeli eng qulay?",
+        "select": "Tanlamoq",
+        "branches": [
+          "Yunusobod",
+          "Sergelilar"
+        ]
+      },
+      {
+        "id": 3,
+        "title": "Ismingiz",
+        "userName": "Ism kiritish"
+      },
+      {
+        "id": 4,
+        "title": "Aloqa raqamingiz"
+      },
+      {
+        "id": 5,
+        "title": "Oxirgi qadam",
+        "text": "Ma’lumotlarni tasdiqlash Maslahat olish uchun tugmani bosing, va’da berganimizdek, tez orada siz bilan bog‘lanamiz"
+      }
+    ],
+    "btns": [
+      {
+        "id": 1,
+        "text": "Tasdiqlash"
+      },
+      {
+        "id": 2,
+        "text": "Keyingi"
+      }
+    ]
+  },
+  "news": {
+    "title": "IT-Academy yangiliklari",
+    "newsData": [
+      {
+        "id": 1,
+        "src": "/news_1.jpg",
+        "title": "Ota-onalar uchun IT sohasi haqida (nimalarni bilish muhim?)",
+        "text": "Biz hamma narsani tushunish uchun siz uchun eng zarur ma’lumotlarni to‘pladik",
+        "time": "2024-yil, 5-sentyabr"
+      },
+      {
+        "id": 2,
+        "src": "/news_2.webp",
+        "title": "Akademiya bitiruvchisi tarixi",
+        "text": "IT-Academy bitiruvchisi o‘qishni boshlash, qiyinchiliklar va kelajakdagi rejalar haqida",
+        "time": "2024-yil 15-may"
+      },
+      {
+        "id": 3,
+        "src": "/filial_sergeli.jpeg",
+        "title": "IT-Academy’ning Sergeli tumanidagi yangi filiali!",
+        "text": "",
+        "time": "2024-yil 14-may"
+      }
+    ],
+    "link": "Boshqa yangiliklar"
+  },
+  "location": {
+    "title": "Filiallar",
+    "text": "Har bir joy o‘ziga xos atmosferaga ega bo‘lib, metrogacha piyoda borish mumkin bo‘lgan masofada joylashgan. Filiallarimizda bir narsa o‘zgarmas - bu sifatli ta’lim va o‘quvchilarga yondashuv. Filiallarimizga tashrif buyuring va bunga o‘zingiz ishonch hosil qiling",
+    "maps": [
+      {
+        "id": 1,
+        "locationText": "Joylashuvi",
+        "src": "https://maps.app.goo.gl/Q13tTjQU8VcwZeUa9",
+        "title": "YUNUSOBOD"
+      },
+      {
+        "id": 2,
+        "locationText": "Joylashuvi",
+        "src": "https://maps.app.goo.gl/WYkG4hqrQfLJrv5e8",
+        "title": "Sergeli"
+      }
+    ],
+    "link": "Filial haqida batafsil"
+  },
+  "contact": {
+    "title": "Bepul darsga yoziling",
+    "text": " Raqamingizni qoldiring. Tez orada siz bilan bog‘lanamiz!",
+    "userName": "Ismingiz",
+    "link": "Ushbu kursga yozilish",
+    "course": "Tanlangan kurs",
+    "successTitle": "Ariza uchun rahmat!",
+    "successText": "Ma'lumotlaringizni oldik, tez orada bog'lanamiz va tafsilotlarni aniqlaymiz.",
+    "submit": "Ariza qoldirish"
+  },
+  "courseSelection": {
+    "btn": "KURSNI TANLASH"
+  },
+  "validForm": {
+    "errorUserName": [
+      {
+        "id": 1,
+        "text": "Foydalanuvchi nomi talab qilinadi"
+      },
+      {
+        "id": 2,
+        "text": "Yaroqsiz foydalanuvchi nomi"
+      }
+    ],
+    "errorTgName": "Telegram foydalanuvchisi talab qilinadi",
+    "errorPhone": [
+      {
+        "id": 1,
+        "text": "Telefon raqami talab qilinadi"
+      },
+      {
+        "id": 2,
+        "text": "Yana kiriting"
+      },
+      {
+        "id": 3,
+        "text": "raqamlar"
+      },
+      {
+        "id": 4,
+        "text": "Telefon raqami xato"
+      }
+    ]
+  },
+  "sendMessage": {
+    "success": "Xabar yuborildi",
+    "error": "Xatolik yuz berdi"
+  },
+  "ticker": "Sayt test rejimida ishlamoqda. Saytimizning yangilangan versiyasi ustida ishlayapmiz. Ayrim sahifa va funksiyalar hozircha mavjud emas yoki dolzarb bo‘lmagan ma’lumotlarni o‘z ichiga oladi. Tushunganingiz va sabr qilganingiz uchun tashakkur!",
+  "notFound": {
+    "text": "Sahifa qurilmoqda",
+    "link": "Asosiy sahifaga qaytish"
+  },
+  "courseProgramPhyton": {
+    "title": "Kurs dasturi",
+    "modules": [
+      {
+        "id": 1,
+        "text": "Modul 1"
+      },
+      {
+        "id": 2,
+        "text": "Modul 2"
+      },
+      {
+        "id": 3,
+        "text": "Modul 3"
+      },
+      {
+        "id": 4,
+        "text": "Modul 4"
+      }
+    ],
+    "plans": [
+      {
+        "id": 1,
+        "month": "1 oy",
+        "stage": "Python bilan tanishish. Python asoslari."
+      },
+      {
+        "id": 2,
+        "month": "2 oy",
+        "stage": "Funktsional dasturlash. Ob'ektga yo'naltirilgan dasturlash.JSON va so'rovlar."
+      },
+      {
+        "id": 3,
+        "month": "3 oy",
+        "stage": "Ma'lumotlar bazalari bilan ishlash: SQL. Ma'lumotlar bazalari bilan ishlash: Postgresql."
+      },
+      {
+        "id": 4,
+        "month": "4 oy",
+        "stage": "Tahlil qilish."
+      }
+    ],
+    "programs": {
+      "1": [
+        {
+          "id": 1,
+          "title": "PYTHON asoslari",
+          "text": "Python o'zining soddaligi va ko'p qirraliligi bilan ajralib turadigan dasturlash tilidir. foydalanishda.U back-end ishlab chiqishda, katta ma'lumotlarni qayta ishlashda va mashinani o'rganishda qo'llaniladi. Modulda Python, shartlar, ro'yxatlar, tsikllar, generatorlar, lug'atlar va funktsiyalar mavjud."
+        }
+      ],
+      "2": [
+        {
+          "id": 1,
+          "title": "Funktsional dasturlash",
+          "text": "Funktsional dasturlash - bu dasturchilar komponentlar o'rtasidagi o'zaro ta'sir va aloqa qoidalarini tavsiflaydi. Siz funktsiya va o'zgaruvchilar ko'rinishidagi asosli dastur yozishni va modullar, importlar va paketlar bilan ishlashni o'rganasiz."
+        },
+        {
+          "id": 2,
+          "title": "OOP",
+          "text": "Ob'ektga yo'naltirilgan dasturlash - bu kodni tashkil qilish ma'lumotlar va ob'ektlar atrofida yo'naltirilgan dasturlashga yondashuv. Kod yozish jarayonini tezlashtirish va uni yanada o'qilishi uchun o'rganiladi."
+        },
+        {
+          "id": 2,
+          "title": "JSON",
+          "text": "JSON ma'lumotlar almashinuvi standartidir. U turli veb-ilovalar, bitta dasturning mijoz va server qismlari yoki uning komponentlari o'rtasida sahifani qayta yuklamasdan ma'lumotlarni uzatishga yordam beradi. Siz virtual muhit va so'rovlarni parametrlar bilan o'rganasiz."
+        }
+      ],
+      "3": [
+        {
+          "id": 1,
+          "title": "SQL",
+          "text": "SQL - bu ma'lumotlar bazasidan kerakli ma'lumotlarni olish uchun so'rovlar tili. Darslar SQL asoslari, SQLite3 ga kirish, buyruqlar va Pythonga integratsiyani qamrab oladi."
+        },
+        {
+          "id": 1,
+          "title": "OOP",
+          "text": "Ob'ektga yo'naltirilgan dasturlash - bu kodni tashkil qilish ma'lumotlar va ob'ektlar atrofida yo'naltirilgan dasturlashga yondashuv. Kod yozish jarayonini tezlashtirish va uni yanada o'qilishi uchun o'rganiladi."
+        }
+      ],
+      "4": [
+        {
+          "id": 1,
+          "title": "Tahlil qilish",
+          "text": "Tahlil qilish - bu turli veb-saytlarda joylashtirilgan ma'lumotlarni to'plash va tizimlashtirish jarayoni.Siz HTML va CSS-ni, sinflar bilan tahlil qilish va tahlil qilish asoslarini o'rganasiz."
+        }
+      ]
+    }
+  },
+  "moreСourseDatascience": {
+    "top": {
+      "title": "Kurs haqida batafsil",
+      "text": [
+        "Data Scientist biznes vazifalarni hal qilish uchun katta hajmdagi ma'lumotlarni tahlil qiladi. U ma'lumotlarni yig'adi, qayta ishlaydi va tuzilmalashtiradi, yashirin qonuniyatlarni topadi, modellarni ishlab chiqadi va testlarni o'tkazadi. Soddaroq qilib aytganda, uning vazifasi - asosli qarorlar qabul qilish uchun ma'lumotlardan qimmatli ma'lumotlarni ajratib olishdir."
+      ],
+      "subtitle": "Data Science dasturchilarining maoshi",
+      "data": "hh.uz ma'lumotlariga ko'ra"
+    },
+    "bottom": [
+      {
+        "id": 1,
+        "title": "Junior",
+        "text": "kursdan so'ng",
+        "price": "5 000 000 so'm",
+        "maxWidth": 620
+      },
+      {
+        "id": 2,
+        "title": "Middle",
+        "text": "kursdan keyin 1-2 yil",
+        "price": "10 000 000 so'm",
+        "maxWidth": 983
+      },
+      {
+        "id": 3,
+        "title": "Senior",
+        "text": "5+ yil",
+        "price": "30 000 000 so'm",
+        "maxWidth": 1366
+      }
+    ]
+  },
+  "moreСoursePhyton": {
+    "top": {
+      "title": "Kurs haqida batafsil",
+      "text": [
+        "Python ko'p qirrali va mashhur dasturlash tilidir. Ushbu kursda siz zamonaviy veb-ilovalar, onlayn-do'konlar va murakkab Telegram botlarini yaratishni o'rganasiz.Atigi 64 ta o'quv darslarida siz zamonamizning eng talabchan kasblaridan biri uchun barcha zarur ko'nikmalarni egallaysiz."
+      ],
+      "subtitle": "Python dasturchisi ish haqi",
+      "data": "по данным hh.uz"
+    },
+    "bottom": [
+      {
+        "id": 1,
+        "title": "Junior",
+        "text": "kursdan keyin",
+        "price": "4 000 000 so'm",
+        "maxWidth": 620
+      },
+      {
+        "id": 2,
+        "title": "Middle",
+        "text": "Kursdan 1-2 yil o'tgach",
+        "price": "8 000 000 so'm",
+        "maxWidth": 983
+      },
+      {
+        "id": 3,
+        "title": "Senior",
+        "text": "5+ yil",
+        "price": "14 000 000 so'm",
+        "maxWidth": 1366
+      }
+    ]
+  },
+  "moreСourseDataScience": {
+    "title": "Kurs dasturi",
+    "modules": [
+      {
+        "id": 1,
+        "text": "Modul 1"
+      },
+      {
+        "id": 2,
+        "text": "Modul 2"
+      },
+      {
+        "id": 3,
+        "text": "Modul 3"
+      },
+      {
+        "id": 4,
+        "text": "Modul 4"
+      }
+    ],
+    "plans": [
+      {
+        "id": 1,
+        "month": "1 oy",
+        "stage": "Til va matematikaning asosiy tushunchalariga kirish"
+      },
+      {
+        "id": 2,
+        "month": "2 oy",
+        "stage": "Ma'lumotlar fanining asosiy vositalariga kirish"
+      },
+      {
+        "id": 3,
+        "stage": "Statistika va mashinani o'rganishga kirish"
+      },
+      {
+        "id": 4,
+        "stage": "Ta'lim va neyron tarmoqlarga kirish"
+      }
+    ],
+    "programs": {
+      "1": [
+        {
+          "id": 1,
+          "title": "Python sintaksisi va asosiy elementlariga kirish",
+          "text": "Siz shartlar, roʻyxatlar, kortejlar, toʻplamlar va lugʻatlar kabi Python maʼlumotlar tuzilmalari bilan ishlash, funksiyalar yaratish va fayllar bilan ishlashni oʻrganasiz."
+        },
+        {
+          "id": 2,
+          "title": "Chiziqli algebra",
+          "text": "Chiziqli algebra ma'lumotlar fanlari va mashinalarni o'rganish uchun matematikaning asosiy bo'limidir. U ma'lumotlarni qayta ishlash va o'zgartirishda, shuningdek, modelni baholashda qo'llaniladi. Ushbu darslarda siz vektorlar, matritsalar va chiziqli tenglamalar tizimini yechish usullarini o'rganasiz."
+        }
+      ],
+      "2": [
+        {
+          "id": 1,
+          "title": "Matematik analiz asoslari",
+          "text": "Differensial va integral hisoblar ma'lumotlar fanining asosi hisoblanadi va mashinani o'rganish. U modellarni optimallashtirish uchun ishlatiladi: maqsad funktsiyasini minimallashtirish yoki maksimallashtirish uchun eng yaxshi parametrlarni tanlash. Siz hosilalar va integrallarni o'rganasiz va ularni amalda qo'llashni o'rganasiz."
+        },
+        {
+          "id": 2,
+          "title": "Ma'lumotlar bilan ishlash",
+          "text": "Ilg'or tahlil usullari va etishmayotgan ma'lumotlarni boshqarish"
+        },
+        {
+          "id": 3,
+          "title": "NumPy dasturiga kirish",
+          "text": "NumPy raqamli ma'lumotlar va matritsalar bilan samarali ishlash uchun Python kutubxonasidir. Bu hisob-kitoblarni sezilarli darajada tezlashtiradi va katta hajmdagi ma'lumotlarni qayta ishlashni soddalashtiradi. Mashg'ulotlar davomida siz asosiy va ilg'or operatsiyalarni, shuningdek, matritsalar bilan ishlashni o'zlashtirasiz."
+        },
+        {
+          "id": 4,
+          "title": "Pandalar bilan tanishtirish",
+          "text": "Pandas - bu jadval ma'lumotlari bilan ishlashni osonlashtirish uchun mo'ljallangan Python kutubxonasi. Bu sizga Excelga o'xshash ma'lumotlarni samarali saqlash, qayta ishlash va tahlil qilish imkonini beradi, lekin ancha kuchliroq va tezroq. Siz asosiy va ilg'or operatsiyalarni, shuningdek etishmayotgan qiymatlar bilan ishlash usullarini o'rganasiz."
+        },
+        {
+          "id": 5,
+          "title": "Matplotlibga kirish",
+          "text": "Matplotlib - bu Python uchun kuchli kutubxona bo'lib, har xil turdagi grafiklar, diagrammalar va boshqa vizual tasvirlarni yaratish orqali ma'lumotlarni vizualizatsiya qilish uchun mo'ljallangan. U ma'lumotlarni samarali ko'rsatish uchun vositalarni taqdim etadi, bu esa ma'lumotlarni yaxshiroq tahlil qilish va talqin qilishni osonlashtiradi. Matplotlib-ni o'zlashtirib, siz ma'lumotlaringizning grafik tasvirlarini yaratishingiz, uni idrok etishingiz va tushunishingizni yaxshilashingiz mumkin bo'ladi."
+        },
+        {
+          "id": 6,
+          "title": "Jadvalni birlashtirish va guruhlash",
+          "text": "Jadval ma'lumotlari bilan ishlash ularni optimallashtirish va tahlilni soddalashtirish uchun kerakli toifalarga guruhlashni o'z ichiga oladi. Bu sizga katta hajmdagi ma'lumotlarni samarali qayta ishlash, ma'lumotlarni asosiy xususiyatlar bo'yicha saralash va keyingi tahlil qilish va qaror qabul qilish uchun umumiy natijalarni olish imkonini beradi."
+        },
+        {
+          "id": 7,
+          "title": "Seaborn bilan tanishtirish",
+          "text": "Seaborn - bu Matplotlib-da qurilgan statistik vizualizatsiya kutubxonasi. U foydalanuvchilarga qulay interfeys va zamonaviy standart grafiklarni taklif etadi. Kurs davomida siz grafiklarni yaratish, asosiy statistika, ehtimollik taqsimoti, gipoteza testi, korrelyatsiya va regressiya haqida bilib olasiz."
+        },
+        {
+          "id": 8,
+          "title": "Ma'lumotlar bazalari va SQLga kirish",
+          "text": "SQL - bu ma'lumotlarni olish, o'zgartirish, qo'shish, o'chirish va tahlil qilish imkonini beruvchi ma'lumotlar bazasi so'rovlari tili. Misol uchun, SQL-dan foydalanib, siz mijozning oxirgi oydagi barcha buyurtmalarini topishingiz yoki umumiy savdo miqdorini hisoblashingiz mumkin."
+        }
+      ],
+      "3": [
+        {
+          "id": 1,
+          "title": "Power BI ga kirish",
+          "text": "Power Query yordamida maʼlumotlarni import qilish, tozalash va oʻzgartirish maʼlumotlaringizni keyingi tahlilga tayyorlashga yordam beradi. Ma'lumotlarni vizualizatsiya qilish, filtrlar, bo'laklar va hisobotlarni yaratish ma'lumotlarni aniq taqdim etishga yordam beradi. DAX asoslari hisob-kitoblar va tahlillarni amalga oshirish uchun ishlatiladi. Power BI xizmatida nashr qilish va hamkorlik qilish sizga natijalarni almashish va jamoangiz bilan samarali hamkorlik qilish imkonini beradi."
+        },
+        {
+          "id": 2,
+          "title": "Statistikaning asosiy tushunchalari",
+          "text": "Statistikani o'rganish ehtimollik taqsimoti, gipotezani tekshirish va korrelyatsiya va regressiya kabi ma'lumotlarni tahlil qilish usullari kabi asosiy tushunchalarni o'zlashtirishni o'z ichiga oladi. Ushbu vositalar o'zgaruvchilar orasidagi munosabatlarni tahlil qilish va ma'lumotlaringizdan asosli xulosalar chiqarishga yordam beradi."
+        }
+      ],
+      "4": [
+        {
+          "id": 1,
+          "title": "Mashina o'rganishga kirish",
+          "text": "Sun'iy intellektga kirish kompyuterlarga naqshni aniqlash yoki mashina va chuqur o'rganishdan foydalangan holda ma'lumotlarni qayta ishlash kabi vazifalarni bajarishni o'rganish imkonini beruvchi usullarni o'z ichiga oladi."
+        },
+        {
+          "id": 2,
+          "title": "Yechim algoritmlari",
+          "text": "Raqamli qiymatlarni bashorat qilish uchun chiziqli regressiya, tasniflash uchun logistik regressiya qo'llaniladi. Qaror daraxtlari ma'lumotlarni shartlarga qarab taqsimlash orqali qaror qabul qilishga yordam beradi va tasodifiy o'rmon algoritmi bashorat aniqligini oshirish uchun bir nechta qaror daraxtlaridan foydalanadi."
+        },
+        {
+          "id": 3,
+          "title": "Vektor mashinasini qo'llab-quvvatlash (SVM)",
+          "text": "SVM (Support vektor mashinasi) - tasniflash va regressiya muammolarini hal qilish uchun ishlatiladigan mashhur o'rganish usuli. Bu matn yoki rasmlarni tasniflash, spamni aniqlash, yuzlarni tanib olish, bashorat qilish va boshqa ko'p narsalarga yordam beradi."
+        },
+        {
+          "id": 4,
+          "title": "Klasterlash",
+          "text": "Klasterlash - bu K-o'rtacha algoritmi yordamida ob'ektlarni kichik to'plamlarga guruhlash vazifasi. Bu usul ma'lumotlarni o'xshash belgilarga ko'ra guruhlarga bo'lish orqali tartibga solishga yordam beradi."
+        },
+        {
+          "id": 5,
+          "title": "PCA va o'lchamlarni kamaytirish",
+          "text": "PCA (Principal Component Analysis) - imkon qadar ko'proq ma'lumotni saqlaydigan ma'lumotlarning o'lchamlarini kamaytirish usuli. Bu ma'lumotlarni o'rganish va vizualizatsiya qilishni soddalashtiradi, shuningdek, keraksiz o'zgaruvchilar ta'sirini bartaraf etish orqali mashinani o'rganish algoritmlari ishini tezlashtiradi."
+        },
+        {
+          "id": 6,
+          "title": "Modelni baholash, o'zaro tasdiqlash",
+          "text": "Cross-validation - bu ma'lumotlarni bir nechta bo'limlarga bo'ladigan va ushbu bo'limlarda bir nechta algoritmlarni o'rgatadigan namunaviy o'qitish va baholash usuli. Siz ma'lumotlarni soddalashtirish va modelni o'zaro tekshirish yordamida baholash uchun asosiy komponentlar tahlilidan qanday foydalanishni o'rganasiz."
+        }
+      ]
+    }
+  },
+  "frontEnd": {
+    "title": "Front end",
+    "text": "Eng mashhur dasturlash tillaridan birida saytlar yaratishni o‘rganing",
+    "info": "8 oy",
+    "link": "Batafsil"
+  },
+  "compLiteracy": {
+    "title": "Kompyuter savodxonligi",
+    "text": [
+      "Bo‘lmoq",
+      "kompyuter"
+    ],
+    "extra": " ishonchli foydalanuvchi ",
+    "info": "3 oy",
+    "link": "Batafsil"
+  },
+  "backend": {
+    "title": "Back-end",
+    "text": "Python dasturlash tili yordamida server mantig‘ini yaratish va ma’lumotlar bilan ishlashni o‘rganing",
+    "info": "8 oy",
+    "link": "Batafsil"
+  },
+  "unity": {
+    "title": "Unity",
+    "subLeft": "O‘yin yaratish kursi",
+    "subRight": "bolalar uchun",
+    "info": "6 oy",
+    "link": "Batafsil"
+  },
+  "nodeJS": {
+    "title": "Node.JS",
+    "text": "JavaScriptda Full stack kursi bilan frontend chegaralarini kengaytirish: Node.js da serverni ishlab chiqish.",
+    "info": "8 oy",
+    "link": "Batafsil"
+  },
+  "scratch": {
+    "title": "Scratch",
+    "subLeft": "IT sohasidagi ilk qadamlar",
+    "subRight": "eng yoshlar uchun",
+    "info": "3 oy",
+    "link": "Batafsil"
+  },
+  "dataScience": {
+    "title": "Data Science",
+    "text": "Ma’lumotlarni tahlil qilishni va mashinali o‘rganish modellarini yaratishni o‘rganing",
+    "info": "8 oy",
+    "link": "Batafsil"
+  },
+  "graphicDesign": {
+    "title": "Grafik dizayn",
+    "text": "zo‘r loyihalar yaratishni o‘rganing",
+    "subtitle": "Ijtimoiy tarmoqlar, brendlar va veb uchun dizayn",
+    "info": "8 oy",
+    "link": "Batafsil"
+  },
+  "feedback": [
+    {
+      "id": 1,
+      "title": "Bu yerda ta’lim olish - I dunyoga kuchli startdirT! 🔥",
+      "subtitle": "Azim Makhmov"
+    },
+    {
+      "id": 2,
+      "title": "Amaliy yondashuv va eng yaxshi o‘qituvchilar uchun akademiyaga rahmat! 🚀",
+      "subtitle": "Aleksandr Martin"
+    },
+    {
+      "id": 3,
+      "title": "Dasturlashni o‘rganish uchun eng yaxshi joy! 💻",
+      "subtitle": "Bobur Ubayev"
+    },
+    {
+      "id": 4,
+      "title": "O‘qitish usuli shunchaki VAU! Hamma narsa taxlab qo‘yilgan. 😍",
+      "subtitle": "Odil Khaharov"
+    },
+    {
+      "id": 5,
+      "title": "Maksimal amaliyot va foydali ma’lumot, tavsiya qilaman! ✅",
+      "subtitle": "Mikhail Petrov"
+    },
+    {
+      "id": 6,
+      "title": "Ushbu kurslardan so‘ng, men kodda o‘zimni ishonchli his qilaman.! 🎯",
+      "subtitle": "Amina Saidova"
+    },
+    {
+      "id": 7,
+      "title": "Juda foydali materiallar, hatto yangi boshlovchi ham tushunadi! 📚",
+      "subtitle": "Erkin Rasulov"
+    },
+    {
+      "id": 8,
+      "title": "Endi dasturlash mening sevimli mashg‘ulotim, Akademiyaga rahmat! ❤️",
+      "subtitle": "Tatiana Ivanova"
+    },
+    {
+      "id": 9,
+      "title": "Eng yaxshi kurs! Hamma murakkab narsalarni sodda tilda tushuntirishadi. 👍",
+      "subtitle": "Rustam Kadyrov"
+    },
+    {
+      "id": 10,
+      "title": "Shiddatli, ajoyib va nihoyatda qiziqarli! 😃",
+      "subtitle": "Diana Karimova"
+    },
+    {
+      "id": 11,
+      "title": "Shunchaki bilim emas, balki haqiqiy ish tajribasini beradi! 💼",
+      "subtitle": "Sergey Volkov"
+    },
+    {
+      "id": 12,
+      "title": "Nafaqat kurslar, balki to‘laqonli IT hamjamiyati! 🌍",
+      "subtitle": "Nargiza Tursunova"
+    },
+    {
+      "id": 13,
+      "title": "Nihoyat haqiqiy o‘qitiladigan kurslarni topdim! 🎓",
+      "subtitle": "Victor Smirnov"
+    },
+    {
+      "id": 14,
+      "title": "IT sohasidagi birinchi ishim - ushbu kurslar tufayli! 🏆",
+      "subtitle": "Elena Maksimova"
+    },
+    {
+      "id": 15,
+      "title": "Qiyin bo‘ladi deb o‘ylagandim, lekin bu yerda hammasi a’lo darajada! 💡",
+      "subtitle": "Alisher Nurmatov"
+    }
+  ],
+  "newsStories": [
+    {
+      "id": 1
+    },
+    {
+      "id": 2,
+      "title_1": "Sen akademiyaga qanday kelib qolding va nima uchun aynan akademiya?",
+      "text_1": "Akademiyani instagram orqali topdim. Tarmoqda IT ta’limi bo‘yicha ko‘plab variantlarni ko‘rib chiqdim, ammo bu tanlov o‘zini oqladi. Meni akkauntdagi o‘quvchilar hayotiga urg‘u jalb qildi: bu yerda faqat o‘qituvchilar yoki ta’lim dasturi haqida emas, balki ular haqida ko‘proq kontent mavjud. Men bu yondashuvning ochiqligi va shaffofligini qadrladim.",
+      "img_1": "/news_stories_1.jpg",
+      "text_2": "Alisherning sinov darsiga yozilib, darsning ochiqligi va do‘stona muhitini ham baholadim. Ingliz tilini o‘rganish tajribasidan farqli o‘laroq, bu yerda o‘qituvchi va o‘quvchi o‘rtasidagi to‘siq tez-tez sezilib turardi. Akademiyada o‘qituvchilar va o‘quvchilar o‘rtasida oson aloqa o‘rnatiladi, ular darsdan bo‘sh vaqtlarida birga vaqt o‘tkazadilar, bu kamdan-kam uchraydi. Men o‘quvchilar va o‘qituvchilarning xuddi do‘stlar yoki qarindoshlardek muloqot qilishlarini ko‘rdim va bu meni hayratga soldi.",
+      "title_2": "Bizda o‘qish davomida qanday qiyinchiliklarga duch kelishga ulgurding?",
+      "text_3": "O‘rganish jarayonida eng qiyin narsa uy vazifalari edi, ayniqsa JavaScriptda. Lekin men ularni yengishga harakat qildim. Asosan, shaxsan men uchun unchalik qiyin bo‘lgan narsaga duch kelmadim, garchi Alisherning o‘z talablari bor edi. U ba’zan bir haftaga imtihonga ketib qolar, vaqtni boy bermaslik uchun bizga guruhli loyihalar berardi. Bu juda qiziqarli va shu bilan birga ba’zi qiyinchiliklarni keltirib chiqardi.",
+      "text_4": "Bizni guruhlarga bo‘lib, turli topshiriqlar berishdi. Agar kimdir loyihani bajarmasa, guruhdagi barcha aziyat chekardi. Loyiha va ishimizni taqdimotda Excel yoki Word formatida taqdim etishimiz, shuningdek, vositalar va saytlarga havolalardan qanday foydalanganimizni ko‘rsatishimiz kerak edi. Bu juda qiyin edi, chunki bu loyihalarni o‘tkazib yuborish bir haftalik darssiz qolishni anglatardi.",
+      "text_5": "Yakka topshiriqlar unchalik qiyin emas, chunki siz ularni bajara olishingizni bilasiz. Ammo jamoada ishlash qiyinroq edi, ayniqsa, guruhda topshiriqlarni unchalik muvaffaqiyatli bajara olmaydigan odamlar bo‘lsa. Ammo bu ko‘nikmalarni rivojlantirishning yaxshi usuli edi. Birortasi orqada qolsa ham, hammamiz bir-birimizga yordamlashib, yetib olardik. Ushbu guruh loyihalari murakkab, ammo juda foydali edi.",
+      "title_3": "“Х” lahzasi Sen chiqding. Qanday kutilmalar bor?",
+      "img_2": "/news_stories_2.jpg",
+      "text_6": "Men akademiyani bitirayotganimda X nuqtasi yetib keldi va o‘sha paytda o‘z kutganlarim bor edi. Lekin, to‘g‘risini aytsam, umidlarim ancha umidsiz edi. Ta’limning oxiriga yaqinlashayotganini tushunish ba’zi xavotirli fikrlarni uyg‘otdi. Pirovard maqsadimiz aniq edi - ishga joylashish. Ammo o‘sha paytda biz hali junior ham emasdik va bu ma’lum qiyinchiliklarni keltirib chiqarardi. Ba’zida bitiruvchilar ishga joylashish muammosiga duch kelish holatlari uchraydi, ayniqsa, ularning ko‘nikmalari mehnat bozori talablariga javob bermasa. Biz talabalar qiyinchiliklarga tayyor edik, lekin baribir oson bo‘lmadi.",
+      "text_7": "O‘qishni tugatishga tayyorgarlik intensiv bo‘lib, doimiy rivojlanishni talab qildi. Akademiyani tugatganimdan so‘ng o‘qishim tugamasligini, aksincha, yanada ilg‘or texnologiyalarni o‘rganish uchun ko‘proq vaqt bo‘lishini tushundim. Bu davrda ishga joylashishga tayyorgarlik ko‘rish uchun mehnat bozori statistikasini chuqurroq tahlil qilish boshlandi.",
+      "text_8": "Ishga joylashishdagi qiyinchiliklarni albatta yengib o‘tishim kerak edi, lekin o‘z ustimda qattiq ishlashim menga yordam berdi. Kun bo‘yi tinimsiz harakat qilish, ko‘pincha dam olish kunlarisiz, menga yaxshi natijalarga erishish imkonini berdi. Bu sa’y-harakatlar va natijalar mening muvaffaqiyatli ishga joylashishimda muhim rol o‘ynadi.",
+      "text_9": "Front bo‘yicha o‘tilmagan narsalardan quyidagi muhim narsalarga e’tibor qaratishni tavsiya qilgan bo‘lardim. Birinchi navbatda, hech bo‘lmaganda sinf komponentlarini yoki JavaScriptda sinflarning o‘zini yuzaki o‘rganish ma’noga ega. Shuningdek, ma’lumotlar tuzilmalari va ma’lumotlar bazalari bilan ishlash asoslari, jumladan SQL va ma’lumotlar bazalariga so‘rovlar bilan tanishish foydali. So‘rov holatlari kabi asosiy bekend tushunchalarini tushunish ham muhim, chunki haqiqiy ishda bekend bilan ishlash va uning asoslarini tushunishga to‘g‘ri keladigan vaziyatlarga duch kelishingiz mumkin. Bu muhim, chunki amaliyotda ko‘pincha nafaqat frontend, balki backend bilan ham ishlashga to‘g‘ri keladi. Mutaxassisligingiz frontend bo‘lsa ham, backend asoslarini tushunish sizga u bilan yaxshiroq muloqot qilish va so‘rovlaringiz hamda ma’lumotlaringiz qanday ishlashini tushunishga yordam beradi. Amalda nimani o‘rganishni tanlash mutlaqo individual bo‘lishi mumkin. Ba’zilar Python yoki boshqa backend tillarini o‘rganishni afzal ko‘rishadi, boshqalari esa Node.js frontenders uchun muhim vosita deb hisoblashadi, chunki u JavaScript qulaylik zonasidan chiqmasdan to‘liq stek dasturlash bilan ishlash imkonini beradi. Ammo shuni yodda tutish kerakki, kompaniyalar qanday texnologiyalardan foydalanishini belgilaydi va sizning ko‘nikmalaringiz ularning talablariga moslashtirilishi kerak. Biroq, Node.js haqidagi bilimlar foydali bo‘lishi mumkin, chunki backend bilan ishlashning ko‘plab tamoyillari turli texnologiyalarga o‘tkaziladi va siz boshqa dasturlash tillari yoki texnologiyalari bilan ishlashga osongina o‘tishingiz mumkin.",
+      "text_10": "Node.jsni bilishing bir sohaga mahkumligingni anglatmaydi. Ko‘nikmalaringizni Python’ga osongina o‘tkazishingiz va u bilan ishlashingiz mumkin. Qancha ko‘p vositalarni bilsang, shuncha qadrli bo‘lasan. Mening ishimda frontend va backend dasturchilarga qat’iy bo‘linish yo‘q - biz hammamiz turli vazifalarni bajaramiz. Middl ishlab chiquvchilari mobil, veb-ilovalar va kompyuter dasturlari ustida ishlaydi. Biz universallik va moslashuvchanlikni rag‘batlantiramiz - agar vazifa va uning uchun to‘lov bo‘lsa, uni oling, o‘rganing va bajaring. Bu bizga motivatsiya beradi va ishimizni yanada qiziqarli qiladi. Qulaylik zonasidan chiqib, yangi narsalarni o‘rganganingizda, o‘zingizga nima yoqishini yaxshiroq tushunasiz. Bizning mobil dasturchilarimizning ba’zilari bir paytlar frontender bo‘lgan, ammo ularga mobil dasturlash ko‘proq yoqdi. Bu yangi narsalarni sinab ko‘rish o‘z sohangizni topishga va o‘z sohangizda yaxshiroq bo‘lishga qanday yordam berishi mumkinligiga misol bo‘la oladi.",
+      "text_11": "Mening ish kunim odatda jamoa tomonidan qanday o‘zgarishlar kiritilganini ko‘rish uchun omborimizdagi qo‘shimchalarni tekshirishdan boshlanadi. Keyin hozirgi ishlarimga kirishaman. Ko‘pincha ertalab o‘zgarishlarim hayajonlanishga tayyorligini payqayman. Bu bosqichda Jamoa rahbari yoki Mahsulot menejeri mening o‘zgartirishlarimni tekshiradi, shundan so‘ng ular qabul qilinishi yoki qo‘shimcha tahrirlar talab qilinishi mumkin. Bu vazifani bajarib bo‘lgach, ro‘yxatimizdagi boshqa vazifalarga o‘taman. Kompaniyamizda erkin ish vaqti bor, lekin odatda kuniga 7-8 soat ishlayman. Bu ishning barqarorligi va samaradorligini saqlash uchun muhimdir. Erkin jadvalga qaramay, ba’zida uyimiz yonida ijaraga olingan ofisga kelamiz. Bosh direktorning fikricha, bu ko‘proq mahsuldorlik va yaxshiroq g‘oyalarni o‘z ichiga oladi. Shunga qaramay, hech kim ofisga borishga majburlanmaydi va bizda istalgan vaqtda kelib ishlashimiz uchun ofis kaliti bor. Jamoamizda men Junior Frontend React Developer sifatida ish boshladim, lekin asta-sekin o‘z vazifalarimni kengaytirib, bekend bilan shug‘ullana boshladim. Buning sababi shundaki, ba’zida frontend tayyor, lekin backend hali yo‘q va vaqtni behuda sarflamaslik uchun menga mustaqil ravishda ma’lumotlar bazasiga so‘rovlar yaratish topshiriladi. Shuning uchun to‘laqonli stekka intilaman, lekin hozircha rasman frontender bo‘lib qolaman.",
+      "text_12": "5 yildan keyin o‘zingni kim deb bilasan?",
+      "text_13": "Besh yildan so‘ng o‘zimni “Facebook,” “Amazon,” “Netflix,” “Google” yoki “Apple” kabi fan-kompaniyalarda ko‘raman. Biroq, men moslashuvchan va imkoniyatlar uchun ochiq bo‘lish kerakligini tushunaman. Shu bois yirik kompaniyalar faol sarmoya kiritayotgan Dubayda ishlash variantini ham ko‘rib chiqmoqdaman. Hozirda Google’da ishlashni maqsad qilganman, chunki u yerda dasturiy ta’minot muhandisligi bo‘yicha imkoniyatlar ko‘proq, lekin sun’iy intellekt va Python’ga ham qiziqaman.",
+      "img_3": "/news_stories_3.jpg",
+      "text_14": "Sun’iy intellekt bozorining kelajagi haqida xavotirlarim bor, chunki 2000-yillardagi yuksalish bilan solishtirganda, u kamroq ahamiyatga ega ko‘rinadi. Shuning uchun men qaror qabul qilishga shoshilmayman va bu texnologiyalar qanday rivojlanayotganini kuzataman. Agar sun’iy intellektga qiziqish pasaysa, men Kaliforniyada yoki Dubayda Google’da ishlashga moyilman, issiq mamlakatlarni afzal ko‘raman. Men bu maqsadlar yo‘lida to‘siqlar paydo bo‘lishi mumkinligini tushunaman, lekin men ularni yengib o‘tishga tayyorman."
+    },
+    {
+      "id": 3
+    }
+  ],
+  "webHome": {
+    "top": {
+      "text": "Eng dolzarb veb-dasturlash texnologiyalarini o‘rganing va o‘z kasbingizning ustasi bo‘ling.",
+      "title": "Kurslar",
+      "extra": "Veb dasturlash",
+      "link": "Maslahat olish",
+      "link_2": "Batafsil"
+    },
+    "bottom": [
+      {
+        "id": 1,
+        "title": "Kurs davomiyligi:",
+        "text": "8 oy"
+      },
+      {
+        "id": 2,
+        "title": "Darslar soni:",
+        "text": "64."
+      },
+      {
+        "id": 3,
+        "title": "O‘qitish formati:",
+        "text": "Oflayn"
+      },
+      {
+        "id": 4,
+        "title": "Dars davomiyligi:",
+        "text": "2 soat"
+      }
+    ]
+  },
+  "moreСourse": {
+    "top": {
+      "title": "Kurs haqida batafsil",
+      "text": [
+        "FRONTEND DASTURLASH kursida siz asosiy dasturlash tillarini o‘rganasiz, zamonaviy veb-saytlarni yaratishni o‘rganasiz, muvaffaqiyatli veb-dasturchilar foydalanadigan vositalar bilan tanishasiz.",
+        "Atigi 64 ta dars davomida siz to‘laqonli kasb uchun zarur bo‘lgan barcha ko‘nikmalarni o‘zlashtirasiz."
+      ],
+      "subtitle": "Frontend dasturchi maoshi",
+      "data": "hh.uz ma’lumotlariga ko‘ra"
+    },
+    "bottom": [
+      {
+        "id": 1,
+        "title": "Junior",
+        "text": "kursdan keyin",
+        "price": "4 000 000 so‘m",
+        "maxWidth": 620
+      },
+      {
+        "id": 2,
+        "title": "Middle",
+        "text": "Kursdan keyin 1-2 yil",
+        "price": "7 000 000 so‘m",
+        "maxWidth": 983
+      },
+      {
+        "id": 3,
+        "title": "Senior",
+        "text": "5+ yil",
+        "price": "12 000 000 so‘m",
+        "maxWidth": 1366
+      }
+    ]
+  },
+  "moreСourseGraphic": {
+    "top": {
+      "title": "Kurs haqida batafsil",
+      "text": [
+        "Dizayner professional grafik dasturlardan foydalangan holda veb-sayt yaratishdan tortib qadoqlashni ishlab chiqishgacha bo'lgan hamma narsani qamrab olgan mahsulotlarning vizual komponentini boshqaradi. U kontseptual yechimlarni ishlab chiqadi, maketlar va prototiplarni ishlab chiqadi, rang sxemalari va shriftlarni tanlaydi, maket va animatsiyani amalga oshiradi."
+      ],
+      "subtitle": "Grafik dizaynerning ish haqi",
+      "data": "hh.uz ma’lumotlariga ko‘ra"
+    },
+    "bottom": [
+      {
+        "id": 1,
+        "title": "Junior",
+        "text": "kursdan keyin",
+        "price": "4 000 000 so‘m",
+        "maxWidth": 620
+      },
+      {
+        "id": 2,
+        "title": "Middle",
+        "text": "Kursdan keyin 1-2 yil",
+        "price": "7 000 000 so‘m",
+        "maxWidth": 983
+      },
+      {
+        "id": 3,
+        "title": "Senior",
+        "text": "5+ yil",
+        "price": "12 000 000 so‘m",
+        "maxWidth": 1366
+      }
+    ]
+  },
+  "moreСourseGraphicScience": {
+    "top": {
+      "title": "Kurs haqida batafsil",
+      "text": [
+        "Dizayner professional grafik dasturlardan foydalangan holda veb-sayt yaratishdan tortib qadoqlashni ishlab chiqishgacha bo'lgan hamma narsani qamrab olgan mahsulotlarning vizual komponentini boshqaradi. U kontseptual yechimlarni ishlab chiqadi, maketlar va prototiplarni ishlab chiqadi, rang sxemalari va shriftlarni tanlaydi, maket va animatsiyani amalga oshiradi."
+      ],
+      "subtitle": "Grafik dizaynerning ish haqi",
+      "data": "hh.uz ma’lumotlariga ko‘ra"
+    },
+    "bottom": [
+      {
+        "id": 1,
+        "title": "Junior",
+        "text": "kursdan keyin",
+        "price": "4 000 000 so‘m",
+        "maxWidth": 620
+      },
+      {
+        "id": 2,
+        "title": "Middle",
+        "text": "Kursdan keyin 1-2 yil",
+        "price": "7 000 000 so‘m",
+        "maxWidth": 983
+      },
+      {
+        "id": 3,
+        "title": "Senior",
+        "text": "5+ yil",
+        "price": "12 000 000 so‘m",
+        "maxWidth": 1366
+      }
+    ]
+  },
+  "goodForIt": {
+    "top": {
+      "title": "Kimga to‘g‘ri keladi?",
+      "text": "Kurs yangi boshlovchilar uchun mo‘ljallangan bo‘lib, o‘qitish noldan boshlanadi. Shunday qilib, biz hech narsani o‘tkazib yubormaymiz, talabalar esa darslarda o‘zlarini qulay his qilishadi."
+    },
+    "bottom": [
+      {
+        "id": 1,
+        "src": "/good_for_it_1.jpg",
+        "title": "Yoshlarga",
+        "text": "Maktab o‘quvchilari, oliy o‘quv yurtlari, litsey va kollej talabalari yuqori maosh to‘lanadigan kasbni egallashni xohlaydilar"
+      },
+      {
+        "id": 2,
+        "src": "/good_for_it_2.jpg",
+        "title": "Boshlovchi dasturchilar uchun",
+        "text": "Dasturlashga qiziquvchilar va ushbu sohada professional rivojlanishni xohlovchilar uchun"
+      },
+      {
+        "id": 3,
+        "src": "/good_for_it_3.jpg",
+        "title": "Texnologiya ishqibozlari",
+        "text": "IT sohasi, kompyuter o‘yinlari, zamonaviy gadjetlarga qiziqqan va orzudagi karyera qurishni istagan odamlar uchun"
+      }
+    ]
+  },
+  "courseProgram": {
+    "title": "Kurs dasturi",
+    "modules": [
+      {
+        "id": 1,
+        "text": "Modul 1"
+      },
+      {
+        "id": 2,
+        "text": "Modul 2"
+      },
+      {
+        "id": 3,
+        "text": "Modul 3"
+      },
+      {
+        "id": 4,
+        "text": "Modul 4"
+      }
+    ],
+    "plans": [
+      {
+        "id": 1,
+        "month": "1-2 oy",
+        "stage": "Saytlarni sahifalash asoslari - HTML, CSS, Figma"
+      },
+      {
+        "id": 2,
+        "month": "3 oy",
+        "stage": "Git va GitHub"
+      },
+      {
+        "id": 3,
+        "month": "4-6 oy",
+        "stage": "JavaScript asoslari. Foydalanuvchi bilan aloqa"
+      },
+      {
+        "id": 4,
+        "month": "7-8 oy",
+        "stage": "React kutubxonasining kirish va asoslari.."
+      }
+    ],
+    "programs": {
+      "1": [
+        {
+          "id": 1,
+          "title": "HTML",
+          "text": "HTML - bu brauzerda veb-sahifalarni ko‘rish uchun hujjatlarni belgilashning standartlashtirilgan tili. Veb-sahifada matn, rasm, jadval va video kabi elementlarni joylashtira olish uchun uni o‘rganamiz."
+        },
+        {
+          "id": 2,
+          "title": "CSS",
+          "text": "(Cascading Style Sheets) - bu veb-sahifangizni uslublash uchun ishlatiladigan kod. Boshqacha qilib aytganda, siz sahifaning ko‘rinishini shakllantirasiz: fon va bezak elementlarining rangi, shriftlarning o‘lchami va uslubi."
+        },
+        {
+          "id": 3,
+          "title": "Figma",
+          "text": "Figma - bu saytlar va ilovalar maketlarini yaratish uchun grafik onlayn muharrir.Figma yordamida dizayner saytning tashqi ko‘rinishini yaratadi. Dizayner bilan jamoada ishlash va saytni kodlash uchun ushbu vositani bilish dasturchi uchun juda muhimdir."
+        }
+      ],
+      "2": [
+        {
+          "id": 1,
+          "title": "Git",
+          "text": "Git - bu loyiha versiyalarini boshqarishning taqsimlangan tizimi. Ularni saqlash va tezda har qanday saqlangan holatga qaytish imkonini beradi. Bu dasturchilarga kod yozishda biror narsa buzilib, ishdan chiqqan vaziyatlarni hal qilishga yordam beradi."
+        },
+        {
+          "id": 2,
+          "title": "GitHub",
+          "text": "Github - IT-loyihalarni joylashtirish va ularni birgalikda ishlab chiqish bo‘yicha eng yirik veb-servis. Veb-xizmat Git versiyalarini nazorat qilish tizimiga asoslangan.Bu yerda ishlab chiquvchilar boshqa odamlarning kod namunalari bilan loyihalarni o‘rganishlari, o‘z portfoliosini joylashtirishlari va ishlab chiqishda foydali vositalarni yuklab olishlari mumkin."
+        }
+      ],
+      "3": [
+        {
+          "id": 1,
+          "title": "JavaScript",
+          "text": "JavaScript ko‘p paradigmali dasturlash tilidir. Obyektga yo‘naltirilgan, imperativ va funksional uslublarni qo‘llab-quvvatlaydi.Front-end ishlab chiquvchilari undan sayt elementlarini boshqarish - animatsiyalar, qalqib chiquvchi shakllar yaratish va effektlarni yuklash uchun foydalanadilar. Bularning barchasi sahifani qayta yuklamasdan amalga oshiriladi."
+        }
+      ],
+      "4": [
+        {
+          "id": 1,
+          "title": "React",
+          "text": "React - bu foydalanuvchi interfeyslarini yaratish uchun deklarativ, samarali va moslashuvchan JavaScript kutubxonasi. U sizga «komponentlar» deb ataladigan kichik izolyatsiyalangan kod bo‘laklaridan murakkab interfeysni yig‘ish imkonini beradi."
+        },
+        {
+          "id": 2,
+          "title": "Redux Toolkit",
+          "text": "Redux Toolkit - bu dasturdagi ma’lumotlar bazasi. Ushbu bazada holat - ya’ni ilova ma’lumotlari saqlanadi. Bu baza faqat ma’lumotlar uchun javob beradi, shuning uchun u brauzer, DOM va umuman frontend bilan hech qanday bog‘liq emas."
+        }
+      ]
+    }
+  },
+  "courseProgramGraphic": {
+    "title": "Kurs dasturi",
+    "modules": [
+      {
+        "id": 1,
+        "text": "Modul 1"
+      },
+      {
+        "id": 2,
+        "text": "Modul 2"
+      },
+      {
+        "id": 3,
+        "text": "Modul 3"
+      },
+      {
+        "id": 4,
+        "text": "Modul 4"
+      }
+    ],
+    "plans": [
+      {
+        "id": 1,
+        "month": "1 oy",
+        "stage": "Figmani o'rganish. Veb-dizaynning asosiy tamoyillari."
+      },
+      {
+        "id": 2,
+        "month": "2 oy",
+        "stage": "UI | UX. Ilova dizayni"
+      },
+      {
+        "id": 3,
+        "month": "3 oy",
+        "stage": "Photoshop o'rganish"
+      },
+      {
+        "id": 4,
+        "month": "4 oy",
+        "stage": "Illustratorni o'rganish"
+      }
+    ],
+    "programs": {
+      "1": [
+        {
+          "id": 1,
+          "title": "Figma",
+          "text": "Figma - bu veb-saytlar, ilovalar va boshqa dizayn mahsulotlarini yaratish uchun onlayn muharrir. U foydalanuvchilarga qulay vositalar to'plami tufayli veb-dizaynda mashhur bo'ldi. Figma yordamida siz funktsional dizaynlar va hatto animatsiyalarni ishlab chiqishingiz mumkin."
+        }
+      ],
+      "2": [
+        {
+          "id": 1,
+          "title": " UI | UX",
+          "text": "UX qisqartmasi foydalanuvchi tajribasini, ya'ni foydalanuvchining sayt bilan o'zaro munosabatini bildiradi. UI - bu foydalanuvchi interfeysi yoki oddiyroq aytganda, veb-sayt dizayni. Siz veb-dizayn asoslarini va yuqori sifatli veb-saytlar uchun maketlarni yaratishning asosiy tamoyillarini o'zlashtirasiz."
+        },
+        {
+          "id": 2,
+          "title": "Mobil ilova dizayni",
+          "text": "Siz veb-saytlar va ilovalar o'rtasidagi farqlarni bilib olasiz, dizayn elementlarining o'zaro ta'sirining asosiy funktsiyalari va tamoyillarini o'rganasiz va mobil ilovalarni noldan qanday qilib loyihalashni o'rganasiz."
+        }
+      ],
+      "3": [
+        {
+          "id": 1,
+          "title": "Photoshop",
+          "text": "Photoshop - bu rastrli tasvirlar bilan ishlash uchun ko'pincha ishlatiladigan kuchli grafik muharrir. Dastur illyustratsiyalar, kollajlar, ijtimoiy tarmoqlar uchun vizual tasvirlar yaratish, fotosuratlarni qayta ishlash va kamroq tez-tez veb-dizayn uchun ideal. Mashg'ulotlar davomida siz tasvirni tahrirlash va ranglarni to'g'rilash uchun barcha kerakli vositalarni o'zlashtirasiz, shuningdek, guruhda amaliy ishlarni bajarasiz."
+        }
+      ],
+      "4": [
+        {
+          "id": 1,
+          "title": "Illustrator",
+          "text": "Illustrator bu vektor grafik muharriri bo'lib, unda siz ijtimoiy tarmoqlar uchun logotiplar, oddiy tekis rasmlar va piktogrammalarni yaratishni o'rganasiz. Dastur shuningdek, bosma mahsulotlar uchun infografika va maketlarni ishlab chiqish uchun ishlatiladi. Mashg'ulotlar davomida siz egri chiziqlar va gradientlar bilan ishlash, ob'ektlar bilan ishlash, 3D filtrlar, matn va logotiplar bilan ishlashni o'rganasiz."
+        }
+      ]
+    }
+  },
+  "alumniWorks": {
+    "title": "Bitiruvchilarimizning ishlari",
+    "text": "Bu saytlar talabalarimizning mehnati va iste’dodi natijasidir. G‘oyadan tortib, yakuniy relizgacha - barchasi ularning o‘z qo‘llari bilan qilingan. Real loyihalar, real ko‘nikmalar, real amaliyot. IT-Academy’da o‘qishdan keyin nimalarga erishish mumkinligini ko‘ring!",
+    "informations": [
+      {
+        "id": 1,
+        "bg": "/byd.png",
+        "src": "/user.png",
+        "student": "Talaba",
+        "month": "5 oylik o‘qish"
+      },
+      {
+        "id": 2,
+        "bg": "/bmw.png",
+        "src": "/user.png",
+        "student": "Talaba",
+        "month": "4 oylik o‘qish"
+      },
+      {
+        "id": 3,
+        "bg": "/nft.png",
+        "src": "/user.png",
+        "student": "Talaba",
+        "month": "5 oylik o‘qish"
+      },
+      {
+        "id": 4,
+        "bg": "/nft2.png",
+        "src": "/user.png",
+        "student": "Talaba",
+        "month": "6 oylik o‘qish"
+      },
+      {
+        "id": 5,
+        "bg": "/hotel.png",
+        "src": "/user.png",
+        "student": "Talaba",
+        "month": "5 oylik o‘qish"
+      },
+      {
+        "id": 6,
+        "bg": "/hotel2.png",
+        "src": "/user.png",
+        "student": "Talaba",
+        "month": "4 oylik o‘qish"
+      }
+    ]
+  },
+  "nearbyGroups": {
+    "title": "Yaqin-atrofdagi guruhlarni ishga tushirish",
+    "text": "Ta’lim sohasidagi ko‘p yillik tajribamiz davomida biz mashg‘ulotlar uchun moslashuvchan kunlar va vaqt tizimiga ega bo‘lish qanchalik muhimligini angladik. Bu yerda siz ertalab, kunduzi yoki kechqurun o‘rganish uchun o‘zingizga qulay guruhni tanlashingiz mumkin.",
+    "blockTitle": "Kurs haqida qisqacha",
+    "subtitle": "Raqamlarda",
+    "informations": [
+      {
+        "id": 1,
+        "text": "O‘qitish guruhda olib boriladi"
+      },
+      {
+        "id": 2,
+        "text": "Bir guruhda 10-14 kishi o‘qiydi."
+      },
+      {
+        "id": 3,
+        "text": "Kurs 64 ta darsdan iborat."
+      },
+      {
+        "id": 4,
+        "text": "1 ta modul = 8 ta dars"
+      },
+      {
+        "id": 5,
+        "text": "Haftasiga 2 ta dars"
+      },
+      {
+        "id": 6,
+        "text": "1 ta dars = 90 daqiqa"
+      }
+    ],
+    "formTitle": "Kursni boshlash",
+    "formText": "Guruhning boshlanish sanasi va vaqtini tanlang, shuningdek, guruhda siz uchun joy band qilishimiz uchun kontakt ma’lumotlaringizni qoldiring",
+    "labText": [
+      "Sana:",
+      "Vaqt:"
+    ],
+    "dates": [
+      {
+        "id": 1,
+        "text": "1 Mart"
+      },
+      {
+        "id": 2,
+        "text": "1 Aprel"
+      }
+    ],
+    "times": [
+      {
+        "id": 1,
+        "text": "15:00"
+      },
+      {
+        "id": 2,
+        "text": "17:00"
+      }
+    ],
+    "inpName": "Ism Familiya",
+    "inpNumber": "Telefon raqami",
+    "offer": "Ommaviy oferta",
+    "btn": "Yuborish"
+  },
+  "costOfTraining": {
+    "title": "O‘qitish narxi",
+    "subtitle": "O‘quv oyi 8 darsdan iborat",
+    "leftTitle": "Oflayn guruh ta’limi",
+    "leftSubtitle": "1 400 000",
+    "extra": "so‘m/oy",
+    "oldPrice": [
+      "o‘rniga ",
+      "1 550 000",
+      " so‘m"
+    ],
+    "lists": [
+      {
+        "id": 1,
+        "text": "Oflayn ma’ruza"
+      },
+      {
+        "id": 2,
+        "text": "O‘qituvchining mulohazasi"
+      },
+      {
+        "id": 3,
+        "text": "Texnik yordam"
+      },
+      {
+        "id": 4,
+        "text": "Kovorking hududiga kirish"
+      },
+      {
+        "id": 5,
+        "text": "O‘quv markazi tadbirlarida ishtirok etish"
+      },
+      {
+        "id": 6,
+        "text": "IT hamjamiyatiga kirish"
+      },
+      {
+        "id": 7,
+        "text": "Dars yozuvlarini o‘qish paytida va o‘qishni tugatgandan keyin 3 oy davomida ko‘rish mumkin"
+      }
+    ],
+    "rightTitle": "IT Bilim hamkorimizning muddatli to‘lov xizmatidan har doim foydalanishingiz mumkin",
+    "rightText_1": "IT sohasini o‘zlashtirishni orzu qilasan-u, lekin byudjet tufayli kechiktirasanmi? IT Bilim bilan hoziroq o‘qish va 18 oygacha qismlarga bo‘lib to‘lash mumkin! Boshlang‘ich to‘lovsiz va imtiyozli davr bilan.",
+    "rightText_2": "Qulay to‘lov jadvalini tanlang va bugunoq hayotingizni o‘zgartirishni boshlang. Kelajakka sarmoya kiritish yanada osonlashdi!",
+    "rightText_3": "Savollaringiz bo‘lsa, biz bajonidil yordam beramiz va maslahat beramiz",
+    "link": "Maslahat olish"
+  },
+  "coursesGraphicDesign": {
+    "title": "grafik dizayn",
+    "text": "Rang, kompozitsiya va shriftlar bilan ishlashni o‘rganing, zamonaviy va professional vizual tasvirlar yarating!",
+    "info": [
+      {
+        "id": 1,
+        "title": "Kurs davomiyligi:",
+        "text": "6 oy"
+      },
+      {
+        "id": 2,
+        "title": "Darslar soni:",
+        "text": "48"
+      },
+      {
+        "id": 3,
+        "title": "O‘qitish formati:",
+        "text": "Oflayn"
+      },
+      {
+        "id": 4,
+        "title": "Dars davomiyligi:",
+        "text": "2 soat"
+      }
+    ],
+    "link": "Batafsil"
+  },
+  "coursesScratch": {
+    "title": "Scratch kursi",
+    "info": [
+      {
+        "id": 1,
+        "title": "Kurs davomiyligi:",
+        "text": "3 oy"
+      },
+      {
+        "id": 2,
+        "title": "Darslar soni:",
+        "text": "24"
+      },
+      {
+        "id": 3,
+        "title": "O‘qitish formati:",
+        "text": "Oflayn"
+      },
+      {
+        "id": 4,
+        "title": "Dars davomiyligi:",
+        "text": "2 soat"
+      }
+    ],
+    "text": "Bolalar uchun dasturlashga sayohat! Dasturlashga oson kirish: qiziqarli loyihalar, o‘yinlar va animatsiyalar yaratish orqali kodlashni o‘rgatamiz!",
+    "link": "Batafsil"
+  },
+  "coursesPython": {
+    "title": "PYTHON kursi",
+    "text": "Veb, avtomatlashtirish, ma’lumotlarni tahlil qilish va sun’iy intellekt yaratish uchun universal dasturlash tilini o‘zlashtiring!",
+    "info": [
+      {
+        "id": 1,
+        "title": "Kurs davomiyligi:",
+        "text": "8 oy"
+      },
+      {
+        "id": 2,
+        "title": "Darslar soni:",
+        "text": "64"
+      },
+      {
+        "id": 3,
+        "title": "O‘qitish formati:",
+        "text": "Oflayn"
+      },
+      {
+        "id": 4,
+        "title": "Dars davomiyligi:",
+        "text": "2 soat"
+      }
+    ],
+    "link": "Batafsil"
+  },
+  "coursesNodsJS": {
+    "title": "Node js",
+    "text": "Siz amaldagi front-end dasturchimisiz? Qo‘shimcha dasturlash tilini o‘rganmasdan fullstack bo‘lish orqali mahoratingizni oshiring",
+    "info": [
+      {
+        "id": 1,
+        "title": "Kurs davomiyligi:",
+        "text": "8 oy"
+      },
+      {
+        "id": 2,
+        "title": "Darslar soni:",
+        "text": "64"
+      },
+      {
+        "id": 3,
+        "title": "O‘qitish formati:",
+        "text": "Oflayn"
+      },
+      {
+        "id": 4,
+        "title": "Dars davomiyligi:",
+        "text": "2 soat"
+      }
+    ],
+    "link": "Batafsil"
+  },
+  "moreCourseNode": {
+    "top": {
+      "title": "Kurs haqida batafsil",
+      "text": [
+        "NODE.JS kursida siz JavaScriptda server tomonini ishlab chiqishni o‘zlashtirasiz va yangi dasturlash tilini o‘rganmasdan fullstack-dasturchiga aylanasiz. Siz REST API yaratishni, ma’lumotlar bazalari bilan ishlashni va loyihalarni produksiyaga chiqarishni o‘rganasiz.",
+        "Atigi 64 ta dars davomida siz Node.js asoslaridan tortib avtorizatsiya va ma’lumotlar bazasiga ega tayyor server ilovasigacha bo‘lgan yo‘lni bosib o‘tasiz."
+      ],
+      "subtitle": "Fullstack dasturchi maoshi",
+      "data": "hh.uz ma’lumotlariga ko‘ra"
+    },
+    "bottom": [
+      {
+        "id": 1,
+        "title": "Junior",
+        "text": "kursdan keyin",
+        "price": "5 000 000 so‘m",
+        "maxWidth": 620
+      },
+      {
+        "id": 2,
+        "title": "Middle",
+        "text": "Kursdan keyin 1-2 yil",
+        "price": "9 000 000 so‘m",
+        "maxWidth": 983
+      },
+      {
+        "id": 3,
+        "title": "Senior",
+        "text": "5+ yil",
+        "price": "16 000 000 so‘m",
+        "maxWidth": 1366
+      }
+    ]
+  },
+  "courseProgramNode": {
+    "title": "Kurs dasturi",
+    "modules": [
+      { "id": 1, "text": "Modul 1" },
+      { "id": 2, "text": "Modul 2" },
+      { "id": 3, "text": "Modul 3" },
+      { "id": 4, "text": "Modul 4" }
+    ],
+    "plans": [
+      {
+        "id": 1,
+        "month": "1-2 oy",
+        "stage": "Node.js asoslari va asinxron JavaScript"
+      },
+      {
+        "id": 2,
+        "month": "3-4 oy",
+        "stage": "Express.js va REST API ishlab chiqish"
+      },
+      {
+        "id": 3,
+        "month": "5-6 oy",
+        "stage": "Ma’lumotlar bazalari: SQL va MongoDB"
+      },
+      {
+        "id": 4,
+        "month": "7-8 oy",
+        "stage": "Autentifikatsiya, real vaqt va deploy"
+      }
+    ],
+    "programs": {
+      "1": [
+        {
+          "id": 1,
+          "title": "Node.js",
+          "text": "Node.js — bu V8 dvigatelida qurilgan, brauzerdan tashqarida JavaScriptni bajarish muhiti. Siz JSni serverda ishga tushirishni, modullar va fayl tizimi bilan ishlashni hamda hodisalar sikli (event loop) qanday tuzilganini tushunishni o‘rganasiz."
+        },
+        {
+          "id": 2,
+          "title": "npm",
+          "text": "npm — Node.js paketlar menejeri. Siz tashqi kutubxonalarni ulashni, loyiha bog‘liqliklarini package.json orqali boshqarishni va o‘z modullaringizni yig‘ishni o‘rganasiz."
+        },
+        {
+          "id": 3,
+          "title": "Asinxronlik",
+          "text": "Asinxron dasturlash — Node.js asosidir. Siz kolbeklar, va’dalar (promise) va async/await sintaksisini o‘rganib, xatolarni qayta ishlashni va bloklamaydigan kod yozishni o‘zlashtirasiz."
+        }
+      ],
+      "2": [
+        {
+          "id": 1,
+          "title": "Express.js",
+          "text": "Express — Node.js uchun eng mashhur veb-freymvork. Siz server yaratishni, marshrutlarni (routing) tavsiflashni va HTTP so‘rovlari hamda javoblarini qayta ishlashni o‘rganasiz."
+        },
+        {
+          "id": 2,
+          "title": "REST API",
+          "text": "REST API — mijoz va server o‘rtasidagi o‘zaro aloqa standarti. Siz GET, POST, PUT va DELETE metodlariga ega o‘z API’ingizni loyihalashtirasiz va amalga oshirasiz."
+        },
+        {
+          "id": 3,
+          "title": "Middleware",
+          "text": "Middleware — Express’dagi oraliq so‘rov ishlovchilari. Siz loglashtirish, ma’lumotlarni tekshirish (validatsiya), xatolarni qayta ishlash va CORS’ni ulashni o‘rganasiz."
+        }
+      ],
+      "3": [
+        {
+          "id": 1,
+          "title": "PostgreSQL",
+          "text": "PostgreSQL — kuchli relyatsion ma’lumotlar bazasi. Siz SQL so‘rovlarini, jadvallar va bog‘lanishlarni loyihalashni hamda bazani serverga ORM Sequelize orqali ulashni o‘rganasiz."
+        },
+        {
+          "id": 2,
+          "title": "MongoDB",
+          "text": "MongoDB — hujjatga yo‘naltirilgan NoSQL ma’lumotlar bazasi. Siz ma’lumotlarni JSON formatida saqlashni, so‘rovlar bajarishni va baza bilan Mongoose kutubxonasi orqali ishlashni o‘rganasiz."
+        }
+      ],
+      "4": [
+        {
+          "id": 1,
+          "title": "JWT va autentifikatsiya",
+          "text": "Siz foydalanuvchilarni ro‘yxatdan o‘tkazish va tizimga kirishni amalga oshirasiz, parollarni heshlashni va marshrutlarni JSON Web Token (JWT) yordamida himoyalashni o‘rganasiz."
+        },
+        {
+          "id": 2,
+          "title": "WebSocket",
+          "text": "WebSocket real vaqtda ma’lumot almashish imkonini beradi. Siz Socket.IO kutubxonasi yordamida chat yoki jonli yangilanishlar yaratasiz."
+        },
+        {
+          "id": 3,
+          "title": "Deploy",
+          "text": "Siz ilovani Docker konteyneriga joylashni va uni serverga chiqarishni, muhit o‘zgaruvchilarini sozlashni hamda loyihani produksiyada ishga tushirishni o‘rganasiz."
+        }
+      ]
+    }
+  },
+  "coursesUnity": {
+    "title": "Unity",
+    "text": "O‘yinlar olamini kashf eting, o‘z olamingiz va personajlaringizni yarating. Kurs 11 yoshdan katta bolalar uchun juda mos keladi",
+    "info": [
+      {
+        "id": 1,
+        "title": "Kurs davomiyligi:",
+        "text": "6 oy"
+      },
+      {
+        "id": 2,
+        "title": "Darslar soni:",
+        "text": "48"
+      },
+      {
+        "id": 3,
+        "title": "O‘qitish formati:",
+        "text": "Oflayn"
+      },
+      {
+        "id": 4,
+        "title": "Dars davomiyligi:",
+        "text": "2 soat"
+      }
+    ],
+    "link": "Batafsil"
+  },
+  "coursesComputerLiteracy": {
+    "title": "Kompyuter savodxonligi",
+    "text": "Kompyuterni nol darajadan ishonchli foydalanuvchi darajasigacha o‘zlashtirish",
+    "info": [
+      {
+        "id": 1,
+        "title": "Kurs davomiyligi:",
+        "text": "3 oy"
+      },
+      {
+        "id": 2,
+        "title": "Darslar soni:",
+        "text": "24"
+      },
+      {
+        "id": 3,
+        "title": "O‘qitish formati:",
+        "text": "Oflayn"
+      },
+      {
+        "id": 4,
+        "title": "Dars davomiyligi:",
+        "text": "2 soat"
+      }
+    ],
+    "link": "Batafsil"
+  },
+  "coursesDataScience": {
+    "title": "data science",
+    "text": "Katta hajmli ma’lumotlarni tahlil qilish, mashinali o‘rganish, sinovdan o‘tkazish va muammolarni hal qilish",
+    "info": [
+      {
+        "id": 1,
+        "title": "Kurs davomiyligi:",
+        "text": "6 - 8 oy"
+      },
+      {
+        "id": 2,
+        "title": "Darslar soni:",
+        "text": "48"
+      },
+      {
+        "id": 3,
+        "title": "O‘qitish formati:",
+        "text": "Oflayn"
+      },
+      {
+        "id": 4,
+        "title": "Dars davomiyligi:",
+        "text": "2 soat"
+      }
+    ],
+    "link": "Batafsil"
+  },
+  "campHome": {
+    "top": {
+      "text": "",
+      "title": "Bolalar IT Oromgohi",
+      "title_2": "Bolalar IT-lageriga qabul qilish boshlandi!",
+      "extra": "Bu yozni foydali o'tkazing",
+      "link": "Maslahat olish",
+      "link_2": "Batafsil ma'lumot"
+    },
+    "bottom": [
+      {
+        "id": 1,
+        "title": "Kurs davomiyligi:",
+        "text": "2 hafta"
+      },
+      {
+        "id": 2,
+        "title": "Darslar soni:",
+        "text": "30 ta"
+      },
+      {
+        "id": 3,
+        "title": "O‘qitish shakli:",
+        "text": "Oflayn"
+      },
+      {
+        "id": 4,
+        "title": "Dars jadvali:",
+        "text": "8:00 dan 13:00 gacha, dushanba–juma"
+      }
+    ]
+  },
+  "campMoreСourse": {
+    "top": {
+      "title": "Lager haqida batafsil",
+      "text": [
+        "Bolalaringizni IT-Academy qiziqarli yozgi lageriga taklif qilamiz! Ikki hafta davomida 8 yoshdan 15 yoshgacha bo'lgan bolalar oltita turli IT yo'nalishida o'zlarini sinab ko'radilar, texnik va ijtimoiy ko'nikmalarini rivojlantiradilar, yangi do'stlar topadilar va qiziqarli vaqt o'tkazadilar!",
+        "Bularning barchasi — interaktiv formatda, tanlovlar, jamoa vazifalari va amaliyot bilan. Smena oxirida biz har bir bolaga qaysi yo'nalish unga eng mos kelishini tushunishga yordam berish uchun kasbiy yo'nalish sessiyasini o'tkazamiz. Bolalaringizga kashfiyotlar va yorqin taassurotlarga to'la yoz sovg'a qiling!"
+      ],
+      "subtitle": "Frontend dasturchining maoshi",
+      "data": "hh.uz ma'lumotlari bo'yicha"
+    },
+    "bottom": [
+      {
+        "id": 1,
+        "title": "Junior",
+        "text": "kurs tugagandan keyin",
+        "price": "4 000 000 so'm",
+        "maxWidth": 620
+      },
+      {
+        "id": 2,
+        "title": "Middle",
+        "text": "kurs tugagandan keyin 1-2 yil",
+        "price": "7 000 000 so'm",
+        "maxWidth": 983
+      },
+      {
+        "id": 3,
+        "title": "Senior",
+        "text": "5+ yil",
+        "price": "12 000 000 so'm",
+        "maxWidth": 1366
+      }
+    ]
+  },
+  "campFor": {
+    "title": "Kimga mos keladi?",
+    "groups": [
+      {
+        "id": 1,
+        "ageRange": "8 yoshdan 11 yoshgacha bolalar",
+        "description": "Texnologiyalar dunyosining yosh tadqiqotchilari qiziqarli IT dunyosi bilan tanishadilar, o'z o'yinlarini yaratishni o'rganadilar, dasturlash mantiqini tushunadilar, ingliz tilida amaliyot qiladilar va boshqa ko'p narsalarni o'rganadilar",
+        "image": "/camp-for-1.jpg"
+      },
+      {
+        "id": 2,
+        "ageRange": "12 yoshdan 15 yoshgacha bolalar",
+        "description": "Yanada murakkab dastur bo'lib, interaktiv qismdan tashqari bolalar masalalar yechish bilan shug'ullanadilar, shuningdek, kelajakdagi kasbiy yo'nalishda ishonchli qadam qo'ya oladilar",
+        "image": "/camp-for-2.jpg"
+      }
+    ]
+  },
+  "campVideos": {
+    "title": "Bizning yozgi lager dasturlarimiz qandey o'tadi",
+    "subtitle": "Bizning lager 2 ta filialda o'tkaziladi. Yunusobod va Sergeli",
+    "videos": [
+      {
+        "id": 1,
+        "link": "https://www.youtube.com/embed/h2-lgj-CzXM",
+        "name": "Yunusobodda lager qandey o'tadi"
+      },
+      {
+        "id": 2,
+        "link": "https://www.youtube.com/embed/K9Cdiiu8B8E",
+        "name": "Sergelida lager qandey o'tadi"
+      }
+    ]
+  },
+  "blackFriday": {
+    "title": "Barakali Juma",
+    "label": "Black Friday",
+    "subtitle": "30-noyabrgacha barcha kurslarga 40% chegirma",
+    "highlight": "-40% 30-noyabrgacha",
+    "deadlineNote": "Chegirma faqat 30-noyabrgacha to'lov qilinsa saqlanadi, keyin narxlar odatiy bo'ladi.",
+    "coursesTitle": "Aksiyadagi kurslar",
+    "courses": [
+      "Frontend",
+      "Backend",
+      "Grafik dizayn",
+      "Unity (o'yinlar)"
+    ],
+    "benefitsTitle": "Nega hozir boshlash kerak",
+    "benefits": [
+      "O'qish narxidan 40% tejaysiz",
+      "Amaliy darslar va kuchli ustozlar",
+      "Bolalar, o'smirlar va kattalar uchun mos",
+      "Bolalar mantiq, diqqat va ishonchni rivojlantiradi",
+      "Kattalar yangi kasb va daromad o'sishini oladi"
+    ],
+    "cta": {
+      "title": "Joy band qilmoqchimisiz yoki bepul darsga yozilmoqchimisiz?",
+      "button": "Bepul darsga yozilish",
+      "note": "\"+\" deb yozing — darhol bog'lanamiz",
+      "more": "Aksiya tafsilotlari"
+    },
+    "availability": "Aksiya joylari cheklangan — narxni hozir band qiling"
+  },
+  "blackFridayPage": {
+    "hero": {
+      "title": "Barakali Juma IT-Academy'da",
+      "subtitle": "-40% 30-noyabrgacha",
+      "description": "Eng ommabop IT yo'nalishlariga 40% chegirma. Narxni 30-noyabrgacha to'lab, mustahkamlang.",
+      "cta": "Bepul darsga yozilish",
+      "note": "\"+\" deb yozing — darhol bog'lanamiz"
+    },
+    "stickers": {
+      "discount": "40% OFF",
+      "deadline": "30-noyabrgacha",
+      "tagline": "Barakali Juma"
+    },
+    "courses": {
+      "title": "Qaysi kurslar aksiyada",
+      "list": [
+        {
+          "id": "frontend",
+          "title": "Frontend",
+          "description": "HTML, CSS, JavaScript va birinchi web sahifalar. Tez natija ko'rmoqchi bo'lgan yangi boshlovchilar va maktab o'quvchilari uchun qulay."
+        },
+        {
+          "id": "backend",
+          "title": "Backend",
+          "description": "Python asosida server mantiqi, ma'lumotlar bazasi va API. Tuzilish va tartib bilan ishlashni yoqtiradiganlar uchun."
+        },
+        {
+          "id": "design",
+          "title": "Grafik dizayn",
+          "description": "Photoshop va Figma, maketlar, brending va reklama materiallari. Yorqin vizuallar yaratmoqchi bo'lganlar uchun."
+        },
+        {
+          "id": "unity",
+          "title": "Unity (o'yinlar)",
+          "description": "2D/3D o'yinlar va interaktiv loyihalar. Geymdevga qiziqqan o'smirlar va kattalar uchun."
+        }
+      ]
+    },
+    "benefits": {
+      "title": "Nega hozir boshlash kerak",
+      "items": [
+        "30-noyabrgacha to'lov qilsangiz 40% tejaysiz",
+        "Amaliy darslar va kuchli ustozlar",
+        "Bolalar, o'smirlar va kattalar uchun mos",
+        "Bolalarda mantiq, diqqat va ishonch rivojlanadi",
+        "Kattalar uchun yangi kasb va daromad o'sishi"
+      ]
+    },
+    "terms": {
+      "title": "Aksiya shartlari",
+      "items": [
+        "-40% chegirma faqat 30-noyabrgacha to'lov qilinsa amal qiladi",
+        "30-noyabrdan keyin narxlar odatiy holatga qaytadi",
+        "Joylar soni cheklangan — oldindan band qiling",
+        "Avval to'lov qilish yoki bepul darsga kelib ko'rish mumkin"
+      ]
+    },
+    "steps": {
+      "title": "Qanday yozilish",
+      "items": [
+        "Tugma orqali ariza qoldiring — atigi bir necha daqiqa",
+        "Menejer qo'ng'irog'ini kuting va tafsilotlarni aniqlang",
+        "Chegirmaga ega bo'lish uchun 30-noyabrgacha to'lovni amalga oshiring"
+      ]
+    },
+    "cta": {
+      "title": "Joyni hoziroq band qilasizmi?",
+      "button": "Bepul darsga yozilish",
+      "note": "\"+\" deb yozing — darhol bog'lanamiz"
+    }
+  },
+  "adminSchedule": {
+    "title": "Dars jadvali admini",
+    "login": {
+      "title": "Admin kabinetiga kirish",
+      "login": "Login",
+      "password": "Parol",
+      "button": "Kirish",
+      "helper": "admin / admin",
+      "error": "Login yoki parol noto'g'ri"
+    },
+    "editor": {
+      "title": "Joriy jadval",
+      "addTitle": "Yangi guruh qo'shish",
+      "empty": "Jadval hozircha bo'sh",
+      "logout": "Chiqish"
+    },
+    "form": {
+      "course": "Kurs",
+      "branch": "Filial",
+      "days": "Dars kunlari",
+      "timeFrom": "Boshlanish vaqti",
+      "timeTo": "Tugash vaqti",
+      "descriptionRu": "Tavsif (ru)",
+      "descriptionUz": "Tavsif (uz)",
+      "start": "Start (sana, ixtiyoriy)",
+      "discount": "Chegirma",
+      "duration": "Davomiylik (oy)"
+    },
+    "actions": {
+      "add": "Qo'shish",
+      "delete": "O'chirish"
+    },
+    "branches": {
+      "sergeli": "Sergeli, 6-massiv",
+      "yunusabad": "Yunusobod, Bosh pochtamt",
+      "online": "Onlayn"
+    }
+  },
+  "discountPopup": {
+    "title": {
+      "ru": "Подарок для вас",
+      "uz": "Siz uchun sovga"
+    },
+    "text": {
+      "ru": "Сейчас доступна скидка 15% на обучение. Успейте закрепить цену.",
+      "uz": "Hozir o'qish uchun 15% chegirma mavjud. Narxni hoziroq mustahkamlang."
+    },
+    "cta": {
+      "ru": "Получить скидку",
+      "uz": "Chegirmani olish"
+    }
+  },
+  "catalog": {
+    "kicker": "Ta’lim dasturlari",
+    "title": "Barcha kurslar",
+    "duration": "Davomiyligi: {{count}} oy",
+    "price": "Narxi",
+    "cta": "Yozilish"
+  },
+  "courseBanner": {
+    "duration": "Kurs davomiyligi:",
+    "lessons": "Darslar soni:",
+    "format": "O‘qitish formati:",
+    "lessonDuration": "Dars davomiyligi:",
+    "defaultButton": "Batafsil",
+    "empty": "Hozircha e’lon qilingan kurslar yo‘q."
+  },
+  "courseDetail": {
+    "courseLabel": "Kurs",
+    "aboutKicker": "Dastur haqida",
+    "aboutTitle": "Kurs haqida batafsil",
+    "priceKicker": "Ta’lim narxi",
+    "currency": "so‘m",
+    "free": "Bepul",
+    "readyTitle": "Ta’limni boshlang",
+    "readyText": "Ariza qoldiring — jamoamiz siz bilan bog‘lanadi, savollaringizga javob beradi va mos guruhni tanlashga yordam beradi.",
+    "apply": "Ariza qoldirish",
+    "loading": "Kurs yuklanmoqda…",
+    "notFound": "Kurs topilmadi",
+    "loadError": "Kursni yuklab bo‘lmadi",
+    "retry": "Qayta urinish",
+    "backToCourses": "Barcha kurslar"
+  },
+  "teachers": {
+    "kicker": "IT Academy jamoasi",
+    "title": "Bizning ustozlar"
+  },
+  "oferta": {
+    "text": "IT Academy ommaviy ofertasi (PDF).",
+    "open": "Ofertani ochish (PDF)"
+  }
+}

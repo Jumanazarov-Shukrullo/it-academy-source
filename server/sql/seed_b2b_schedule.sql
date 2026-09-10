@@ -1,0 +1,97 @@
+-- Seed default B2B schedule items for the /b2b/schedule timeline.
+-- Idempotent-ish: removes these sample course titles first, then inserts the current set.
+
+DELETE FROM b2b_schedule_items
+WHERE course_ru IN (
+  'Frontend для корпоративных команд',
+  'Python автоматизация для бизнеса',
+  'Data Science и AI для аналитиков'
+);
+
+INSERT INTO b2b_schedule_items
+  (course_ru, course_uz, audience_ru, audience_uz, format_ru, format_uz,
+   location_ru, location_uz, days_ru, days_uz, time_from, time_to,
+   start_date, end_date, duration_ru, duration_uz, trainer_ru, trainer_uz,
+   seats, price_ru, price_uz, description_ru, description_uz, sort_order, is_published)
+VALUES
+  (
+    'Frontend для корпоративных команд',
+    'Korporativ jamoalar uchun Frontend',
+    'Маркетинг, продуктовые и junior-разработчики',
+    'Marketing, produkt va junior dasturchilar',
+    'Офлайн в офисе компании',
+    'Kompaniya ofisida offline',
+    'Ташкент или офис клиента',
+    'Toshkent yoki mijoz ofisi',
+    'Пн, Ср, Пт',
+    'Du, Ch, Ju',
+    '10:00',
+    '12:00',
+    '2026-07-20',
+    '2026-09-18',
+    '2 месяца',
+    '2 oy',
+    'Корпоративный тренер IT Academy',
+    'IT Academy korporativ treneri',
+    14,
+    'по запросу',
+    'kelishiladi',
+    'Практический поток для команды, которой нужно быстро собрать единый frontend-базис: HTML, CSS, JavaScript, компоненты, Git и командная работа.',
+    'HTML, CSS, JavaScript, komponentlar, Git va jamoaviy ishlash bo‘yicha yagona frontend bazasini tez shakllantirish uchun amaliy guruh.',
+    10,
+    1
+  ),
+  (
+    'Python автоматизация для бизнеса',
+    'Biznes uchun Python avtomatlashtirish',
+    'Операционные команды, аналитики, back-office',
+    'Operatsion jamoalar, analitiklar, back-office',
+    'Онлайн с живыми практиками',
+    'Jonli amaliyotlar bilan online',
+    'Онлайн',
+    'Online',
+    'Вт, Чт',
+    'Se, Pa',
+    '16:00',
+    '18:00',
+    '2026-07-28',
+    '2026-10-08',
+    '2.5 месяца',
+    '2.5 oy',
+    'Корпоративный тренер IT Academy',
+    'IT Academy korporativ treneri',
+    12,
+    'по запросу',
+    'kelishiladi',
+    'Участники автоматизируют повторяющиеся задачи, работают с таблицами, файлами, API и собирают мини-инструмент для своего отдела.',
+    'Ishtirokchilar takrorlanuvchi vazifalarni avtomatlashtiradi, jadvallar, fayllar, API bilan ishlaydi va o‘z bo‘limi uchun mini-vosita yaratadi.',
+    20,
+    1
+  ),
+  (
+    'Data Science и AI для аналитиков',
+    'Analitiklar uchun Data Science va AI',
+    'Аналитики, руководители отделов, BI-специалисты',
+    'Analitiklar, bo‘lim rahbarlari, BI mutaxassislari',
+    'Гибридный формат',
+    'Gibrid format',
+    'IT Academy Yunusabad + онлайн',
+    'IT Academy Yunusobod + online',
+    'Ср, Пт',
+    'Ch, Ju',
+    '18:30',
+    '20:30',
+    '2026-08-05',
+    '2026-10-21',
+    '3 месяца',
+    '3 oy',
+    'Корпоративный тренер IT Academy',
+    'IT Academy korporativ treneri',
+    10,
+    'по запросу',
+    'kelishiladi',
+    'Поток для команд, которые хотят применять данные и AI в ежедневной работе: очистка данных, визуализация, базовые ML-модели и прикладной промптинг.',
+    'Ma’lumot va AIni kundalik ishda qo‘llamoqchi bo‘lgan jamoalar uchun guruh: ma’lumot tozalash, vizualizatsiya, asosiy ML modellar va amaliy prompting.',
+    30,
+    1
+  );

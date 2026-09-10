@@ -1,0 +1,9 @@
+/* /graphic page — only the standalone students banner needs styling;
+   everything else reuses global classes / CourseBlocks. */
+.gr-banner {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: var(--radius);
+  object-fit: cover;
+}

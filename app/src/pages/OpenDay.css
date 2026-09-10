@@ -1,0 +1,129 @@
+/* OpenDay page-specific styles. Prefixed .od-* so they cannot collide. */
+
+/* Hero — emoji-only, no images */
+.od-hero {
+  text-align: center;
+}
+.od-hero h1 {
+  font-size: clamp(32px, 5vw, 52px);
+  font-weight: 800;
+  color: var(--ink-page);
+  margin: 0 0 18px;
+}
+.od-hero .od-emoji {
+  font-size: clamp(40px, 7vw, 64px);
+  display: block;
+  margin-bottom: 12px;
+}
+.od-hero p {
+  color: var(--muted-page);
+  max-width: 640px;
+  margin: 0 auto;
+  font-size: 17px;
+  line-height: 1.6;
+}
+
+/* Prize list under the hero */
+.od-prizes {
+  list-style: none;
+  padding: 0;
+  margin: 28px auto 0;
+  max-width: 520px;
+  display: grid;
+  gap: 12px;
+}
+.od-prizes li {
+  background: var(--panel);
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  padding: 14px 18px;
+  color: var(--text);
+  font-size: 15px;
+}
+.od-note {
+  text-align: center;
+  color: var(--muted-page);
+  font-size: 14px;
+  margin: 24px auto 0;
+  max-width: 560px;
+}
+
+/* Form is a dark card on the light page (consistent with the other surfaces). */
+.od-form-section { padding-top: 4px; }
+.od-form-section .lead-card { max-width: 480px; }
+
+/* ---- Floating gift popup ---- */
+.od-popup {
+  position: fixed;
+  right: 22px;
+  bottom: 22px;
+  z-index: 1200;
+  width: min(320px, calc(100vw - 32px));
+  background: var(--panel-2);
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  padding: 22px 20px 20px;
+  box-shadow: 0 18px 50px rgba(0, 0, 0, .55);
+  animation: od-pop-in .35s ease-out;
+}
+@keyframes od-pop-in {
+  from { opacity: 0; transform: translateY(16px) scale(.96); }
+  to   { opacity: 1; transform: translateY(0) scale(1); }
+}
+.od-popup .od-gift {
+  font-size: 40px;
+  line-height: 1;
+  margin-bottom: 8px;
+}
+.od-popup h3 {
+  margin: 0 0 6px;
+  color: var(--head);
+  font-size: 20px;
+  font-weight: 700;
+}
+.od-popup p {
+  margin: 0 0 10px;
+  color: var(--muted);
+  font-size: 14px;
+  line-height: 1.5;
+}
+.od-popup .od-tracks {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 14px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+}
+.od-popup .od-tracks li {
+  background: rgba(175, 255, 66, .12);
+  color: var(--lime);
+  border-radius: 999px;
+  padding: 4px 12px;
+  font-size: 12px;
+  font-weight: 600;
+}
+.od-close {
+  position: absolute;
+  top: 8px;
+  right: 10px;
+  background: none;
+  border: none;
+  color: var(--muted);
+  font-size: 22px;
+  line-height: 1;
+  cursor: pointer;
+  padding: 4px;
+}
+.od-close:hover { color: var(--text); }
+
+@media (max-width: 480px) {
+  .od-popup {
+    right: 12px;
+    bottom: 12px;
+    left: 12px;
+    width: auto;
+    max-height: calc(100dvh - 24px);
+    overflow-y: auto;
+  }
+}
