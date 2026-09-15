@@ -1,0 +1,179 @@
+name: Verify and deploy production
+
+on:
+  push:
+    branches:
+      - "**"
+  pull_request:
+    branches:
+      - main
+  workflow_dispatch:
+    inputs:
+      ref:
+        description: Commit SHA, tag, or branch to deploy
+        required: true
+        default: main
+        type: string
+      confirm_schema_compatible:
+        description: I confirm the selected code works with the current production schema
+        required: true
+        default: false
+        type: boolean
+
+permissions:
+  contents: read
+
+jobs:
+  verify:
+    name: Build and verify
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    outputs:
+      deploy_sha: ${{ steps.version.outputs.sha }}
+    steps:
+      - name: Check out requested source
+        uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          ref: ${{ github.event_name == 'workflow_dispatch' && inputs.ref || github.sha }}
+          fetch-depth: 0
+
+      - name: Resolve immutable version
+        id: version
+        run: echo "sha=$(git rev-parse HEAD)" >> "$GITHUB_OUTPUT"
+
+      - name: Set up Node.js
+        uses: actions/setup-node@820762786026740c76f36085b0efc47a31fe5020 # v7.0.0
+        with:
+          node-version: "24"
+          cache: npm
+          cache-dependency-path: app/package-lock.json
+          package-manager-cache: false
+
+      - name: Verify required public files
+        run: |
+          test -f "app/public/ПРАВИЛА_ПРОВЕДЕНИЯ_АКЦИИ_DODO_IT_PROMO_1.pdf"
+          test -f "app/public/Публичная оферта 2025.pdf"
+
+      - name: Install frontend dependencies
+        working-directory: app
+        run: npm ci
+
+      - name: Build frontend
+        working-directory: app
+        run: npm run build
+
+      - name: Verify PHP syntax
+        run: |
+          find server/api server/cms server/tools -type f -name '*.php' \
+            ! -name config.php -print0 \
+            | xargs -0 -n1 php -l
+
+      - name: Verify production markers in the build
+        run: |
+          test -f app/dist/index.html
+          find app/dist/assets -maxdepth 1 -type f -name '*.js' -print -quit | grep -q .
+          find app/dist/assets -maxdepth 1 -type f -name '*.css' -print -quit | grep -q .
+          grep -Fq '1413969527493790' app/dist/index.html
+          grep -Fq 'connect.facebook.net/en_US/fbevents.js' app/dist/index.html
+
+      - name: Record the immutable release version
+        env:
+          DEPLOY_SHA: ${{ steps.version.outputs.sha }}
+          ACTIONS_RUN_ID: ${{ github.run_id }}
+        run: |
+          node -e '
+            const fs = require("node:fs");
+            fs.writeFileSync(
+              "app/dist/deploy-meta.json",
+              JSON.stringify({ commit: process.env.DEPLOY_SHA, runId: process.env.ACTIONS_RUN_ID }) + "\n",
+            );
+          '
+
+      - name: Check out deployment control plane
+        if: >-
+          (github.event_name == 'push' && github.ref == 'refs/heads/main') ||
+          github.event_name == 'workflow_dispatch'
+        uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          ref: ${{ github.sha }}
+          path: .deployment-control
+
+      - name: Enforce the production migration gate
+        if: >-
+          (github.event_name == 'push' && github.ref == 'refs/heads/main') ||
+          github.event_name == 'workflow_dispatch'
+        env:
+          BEFORE_SHA: ${{ github.event.before }}
+          DEPLOY_SHA: ${{ steps.version.outputs.sha }}
+          SCHEMA_CONFIRMED: ${{ inputs.confirm_schema_compatible }}
+        run: bash .deployment-control/server/deploy/guard-production-migrations.sh
+
+      - name: Upload verified production artifact
+        if: >-
+          (github.event_name == 'push' && github.ref == 'refs/heads/main') ||
+          github.event_name == 'workflow_dispatch'
+        uses: actions/upload-artifact@043fb46d1a93c77aae656e7c1c64a875d1fc6a0a # v7.0.1
+        with:
+          name: production-${{ steps.version.outputs.sha }}
+          path: |
+            app/dist
+            server/api
+            server/cms
+          if-no-files-found: error
+          retention-days: 30
+
+  deploy:
+    name: Deploy production
+    if: >-
+      (github.event_name == 'push' &&
+       github.ref == 'refs/heads/main' &&
+       !contains(github.event.head_commit.message, '[skip deploy]')) ||
+      github.event_name == 'workflow_dispatch'
+    needs: verify
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    environment:
+      name: production
+      url: https://it-academy.uz
+    concurrency:
+      group: it-academy-production
+      cancel-in-progress: false
+    steps:
+      - name: Check out the verified source
+        uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          ref: ${{ github.sha }}
+
+      - name: Download the verified frontend artifact
+        uses: actions/download-artifact@3e5f45b2cfb9172054b4087a40e8e0b5a5461e7c # v8.0.1
+        with:
+          name: production-${{ needs.verify.outputs.deploy_sha }}
+          path: release
+
+      - name: Install FTPS client
+        run: |
+          sudo apt-get update
+          sudo apt-get install --yes lftp
+
+      - name: Verify the current production baseline
+        env:
+          PRODUCTION_URL: https://it-academy.uz
+          PRODUCTION_WWW_URL: https://www.it-academy.uz
+        run: bash server/deploy/smoke-production.sh
+
+      - name: Deploy the verified release
+        env:
+          DEPLOY_SHA: ${{ needs.verify.outputs.deploy_sha }}
+          PROD_FTP_HOST: ${{ secrets.PROD_FTP_HOST }}
+          PROD_FTP_USER: ${{ secrets.PROD_FTP_USER }}
+          PROD_FTP_PASSWORD: ${{ secrets.PROD_FTP_PASSWORD }}
+          PROD_FTP_REMOTE_DIR: ${{ secrets.PROD_FTP_REMOTE_DIR }}
+          RELEASE_ROOT: ${{ github.workspace }}/release
+        run: bash server/deploy/deploy-production.sh
+
+      - name: Verify the deployed release
+        env:
+          DEPLOY_SHA: ${{ needs.verify.outputs.deploy_sha }}
+          PRODUCTION_URL: https://it-academy.uz
+          PRODUCTION_WWW_URL: https://www.it-academy.uz
+        run: bash server/deploy/smoke-production.sh

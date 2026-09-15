@@ -5,6 +5,9 @@
 # Bearer-token admin API (/api, /cms) can authenticate.
 <IfModule mod_setenvif.c>
   SetEnvIf Authorization "(.*)" HTTP_AUTHORIZATION=$1
+  # Keep staging-only headers tied to the beta hostname so this file is safe
+  # when the tested site is promoted to the production document root.
+  SetEnvIf Host "^beta\.it-academy\.uz(?::[0-9]+)?$" ITACADEMY_STAGING=1
 </IfModule>
 
 <IfModule mod_rewrite.c>
@@ -25,15 +28,15 @@
   RewriteRule ^ index.html [L]
 </IfModule>
 
-# Security + staging headers (lives in the beta deploy only, so the build
-# artifact stays production-safe — no noindex baked into index.html).
+# Security + staging headers. The staging header is hostname-gated so a
+# production copy stays indexable without changing the tested artifact.
 <IfModule mod_headers.c>
   Header always set X-Content-Type-Options "nosniff"
   Header always set X-Frame-Options "SAMEORIGIN"
   Header always set Referrer-Policy "strict-origin-when-cross-origin"
   Header always set Strict-Transport-Security "max-age=31536000; includeSubDomains"
   # Staging copy must never be indexed alongside production it-academy.uz.
-  Header always set X-Robots-Tag "noindex, nofollow"
+  Header always set X-Robots-Tag "noindex, nofollow" env=ITACADEMY_STAGING
 </IfModule>
 
 # Cache policy: index.html must never be cached (it points at hashed assets, so
