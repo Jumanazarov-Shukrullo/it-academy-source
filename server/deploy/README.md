@@ -70,7 +70,7 @@ the schema-compatibility confirmation. A rollback uses the same manual workflow:
 
 ```bash
 gh workflow run deploy-production.yml \
-  --repo Laziz95m/it-academy-source \
+  --repo Jumanazarov-Shukrullo/it-academy-source \
   --ref main \
   -f ref=<known-good-commit-sha> \
   -f confirm_schema_compatible=true
