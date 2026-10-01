@@ -52,6 +52,15 @@ One-time GitHub/Plesk setup:
 4. Keep `cms/config.php` and `uploads/` on the host. They are never uploaded or
    deleted by the workflow.
 
+Telegram lead notifications are optional. The bot token committed in PR #1 was
+exposed and must be revoked by the bot owner. After issuing a new token, put it
+and the destination chat ID in the private production `cms/config.php` under
+`telegram.bot_token` and `telegram.chat_id` (see `server/cms/config.sample.php`).
+Never put either value in frontend code or GitHub. The lead is saved to MySQL
+first; Telegram errors are logged without personal data or credentials and do
+not turn a saved lead into a failed form submission. Test with one authorized
+form submission and confirm both the admin lead entry and the Telegram message.
+
 The production workflow does not upload `.htaccess`, delete old hashed assets,
 or apply SQL. PHP files are uploaded first using temporary remote names, static
 assets follow, and `index.html` switches last. The final `deploy-meta.json`

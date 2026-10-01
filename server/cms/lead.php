@@ -12,8 +12,8 @@ require __DIR__ . "/_bootstrap.php";
  *   GET    /cms/lead.php        (admin)  — list leads, newest first.
  *   DELETE /cms/lead.php?id=N   (admin)  — delete a lead.
  *
- * Leads land in the `leads` table and are read from the admin panel.
- * (This used to proxy submissions to a Telegram bot — Telegram is no longer used.)
+ * Leads land in the `leads` table and are read from the admin panel. When
+ * configured, a successful insert also sends a Telegram notification.
  */
 
 function format_uz_phone(string $phone): ?string
@@ -29,6 +29,68 @@ function format_uz_phone(string $phone): ?string
         . substr($local, 2, 3) . "-"
         . substr($local, 5, 2) . "-"
         . substr($local, 7, 2);
+}
+
+/** Keep user input from adding forged lines to the notification. */
+function telegram_field(string $value): string
+{
+    return trim(preg_replace('/\s+/u', ' ', $value) ?? '');
+}
+
+/** Notify after storing the lead; Telegram failures must not lose the lead. */
+function notify_telegram_lead(array $lead): void
+{
+    global $CONFIG;
+    $telegram = $CONFIG['telegram'] ?? [];
+    $token = trim((string)($telegram['bot_token'] ?? ''));
+    $chatId = trim((string)($telegram['chat_id'] ?? ''));
+    if ($token === '' || $chatId === '') {
+        return;
+    }
+    if (!function_exists('curl_init')) {
+        error_log('Lead Telegram notification unavailable: cURL missing');
+        return;
+    }
+
+    $lines = [
+        '📩 Новая заявка',
+        '👤 Имя: ' . telegram_field($lead['name']),
+        '📞 Телефон: ' . $lead['phone'],
+    ];
+    foreach (['course' => 'Курс', 'form' => 'Форма', 'source' => 'Страница'] as $key => $label) {
+        if ($lead[$key] !== '') {
+            $lines[] = $label . ': ' . telegram_field($lead[$key]);
+        }
+    }
+    $lines[] = '🕒 ' . (new DateTimeImmutable('now', new DateTimeZone('Asia/Tashkent')))->format('d.m.Y H:i') . ' (Ташкент)';
+
+    try {
+        $request = curl_init('https://api.telegram.org/bot' . $token . '/sendMessage');
+        if ($request === false) {
+            error_log('Lead Telegram notification unavailable: cURL initialization failed');
+            return;
+        }
+        curl_setopt_array($request, [
+            CURLOPT_POST => true,
+            CURLOPT_POSTFIELDS => http_build_query([
+                'chat_id' => $chatId,
+                'text' => implode("\n", $lines),
+            ]),
+            CURLOPT_RETURNTRANSFER => true,
+            CURLOPT_CONNECTTIMEOUT => 2,
+            CURLOPT_TIMEOUT => 4,
+            CURLOPT_FOLLOWLOCATION => false,
+        ]);
+        $result = curl_exec($request);
+        $status = (int)curl_getinfo($request, CURLINFO_HTTP_CODE);
+        curl_close($request);
+        if ($result === false || $status !== 200) {
+            error_log('Lead Telegram notification failed (HTTP ' . $status . ')');
+        }
+    } catch (Throwable $e) {
+        // Never log the exception: cURL errors may include the token in the URL.
+        error_log('Lead Telegram notification failed');
+    }
 }
 
 // --- Admin: list leads ---------------------------------------------------
@@ -99,6 +161,14 @@ db()->prepare(
     mb_substr($form, 0, 60),
     mb_substr($source, 0, 190),
     substr($ip, 0, 45),
+]);
+
+notify_telegram_lead([
+    'name' => mb_substr($name, 0, 120),
+    'phone' => $phone,
+    'course' => mb_substr($course, 0, 190),
+    'form' => mb_substr($form, 0, 60),
+    'source' => mb_substr($source, 0, 190),
 ]);
 
 json_out(["ok" => true]);
