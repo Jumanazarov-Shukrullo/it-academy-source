@@ -1,6 +1,6 @@
 <?php
 // Copy this file to config.php and fill in real values on the server.
-// config.php is gitignored and must NEVER be committed (holds DB pass + HolliHop key).
+// config.php is gitignored and must NEVER be committed (holds server secrets).
 return [
     "db" => [
         "host"    => "localhost",
@@ -26,6 +26,13 @@ return [
         "key"      => "CHANGE_ME",        // HolliHop V2 authkey
     ],
 
+    // Optional lead notifications. Put a newly issued bot token in the host's
+    // private cms/config.php only; a token previously committed is compromised.
+    "telegram" => [
+        "bot_token" => "",
+        "chat_id"   => "",
+    ],
+
     // Admin session lifetime in seconds (default 7 days).
     "session_ttl" => 604800,
 
@@ -41,5 +48,5 @@ return [
     "assets_dir"  => $_SERVER["DOCUMENT_ROOT"] ?? "",
     "assets_url"  => "",
     // Leads from the contact/consultation forms are stored in the `leads`
-    // table and read from the admin panel (no Telegram/email integration).
+    // table and read from the admin panel. Telegram is optional.
 ];
